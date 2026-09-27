@@ -1,0 +1,88 @@
+# Encounter Tour 0.1.2
+
+A standalone gen1recomp FireRed/LeafGreen teleport mod with the same native blue header, patterned background, window frames, bitmap font and Pokemon portrait layout as LegalMon. LegalMon is not required.
+
+## Install
+
+Import `encounter-tour-0.1.2.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed or LeafGreen, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
+
+Tested against an isolated copy of the installed **0.3.21** engine payload using both games' imported data. This uses engine internals; future releases may need an adapter update. It does not modify installed game files or live saves during installation. Pokemon art and UI assets load from your own imported game; the mod ZIP contains no ROM data.
+
+## Controls and behaviour
+
+- **Browse encounters:** select a category, Pokemon, then **Teleport here**.
+- **Automatic tour → Start new automatic tour:** visits unresolved entries in catalogue order. You interact, choose dialogue, battle and catch normally. After a new matching Pokemon is acquired or the encounter's completion flag changes, it waits for the field to be idle for one second and moves onward.
+- **Tour from here:** starts the sequence from your selected encounter.
+- **Next / skip encounter:** moves onward when a prerequisite cannot be met or you wish to skip a stop. The tour cannot supply a fossil, coins, friendship, trade partner or Poke Flute for you.
+- **START:** pauses the automatic tour before opening the normal game menu. Use Next to resume the route.
+- **Return to start:** returns to the position before your first teleport in this session. It keeps your current party, PC, items and story progress; it is not a save rollback. A new return point is recorded on the next teleport after returning.
+- **A** selects; **B / L / START** backs out of the mod menu. **Left / Right** jumps six rows. The game pauses while this menu is open.
+
+The tour and return point are kept in memory and reset when the loaded session changes. Save normally to keep game progress. Pause Shiny Hunter or any other input/reset automation before using an automatic tour; simultaneous automation has not been verified.
+
+## Complete fixed-encounter catalogue
+
+40 menu entries across both versions, with 39 version-compatible entries per game. The other version's prize is marked `[X]` and cannot be selected for teleporting.
+
+| Category | Entries |
+|---|---|
+| Starters | Bulbasaur, Charmander, Squirtle |
+| Legendaries | Articuno, Zapdos, Moltres, Mewtwo |
+| Event islands | Lugia, Ho-Oh, Deoxys |
+| Static battles | Route 12 Snorlax, Route 16 Snorlax, both Power Plant Electrodes, Lostelle's Hypno, Marowak ghost |
+| Gifts and eggs | Eevee, Lapras, Hitmonlee, Hitmonchan, Magikarp purchase, Togepi egg |
+| Fossils | Omanyte, Kabuto, Aerodactyl |
+| Game Corner | Abra, Clefairy, Dratini, Scyther (FR), Pinsir (LG), Porygon |
+| NPC trades | Mr. Mime, Jynx, Nidoran, Farfetch'd, Nidorina/Nidorino, Lickitung, Electrode, Tangela, Seel |
+
+The original story and acquisition scripts remain in control. Oak must offer a starter; only one starter and one Dojo prize can be claimed normally. Claimed gifts or resolved battles are not reset. `[DONE]` means the original completion flag is set, which may indicate defeat or a mutually exclusive choice rather than capture. You can still visit a resolved location individually.
+
+**Event islands:** teleports bypass ferry/ticket access. Deoxys still requires the triangle puzzle. For Ho-Oh, walk one tile up from the landing point. Marowak's ghost is not catchable: walk one tile down from its landing point to trigger the story encounter. The menu includes the required interaction notes.
+
+**No fictional destinations:** Raikou, Entei and Suicune roam rather than occupying fixed tiles. Mew, Celebi, Jirachi, external distribution Pokemon, event eggs and GameCube gifts have no native FRLG map encounter to teleport to. These are explained under **Other special Pokemon**; use the separate Event Distributor/LegalMon tools for external origins. Normal wild encounters, fishing, Surf, Rock Smash, Safari, Unown and breeding eggs are not individual static encounters.
+
+## Validation and limits
+
+- 25 controller checks passed: progression, completion gating, busy-field delay, pause, skip, version filtering, return point and session isolation.
+- Both FireRed and LeafGreen passed all 40 landing validations and 40 real engine map loads, plus return, position/party/money preservation, blocked movement, version, flag, gift-egg and native menu/input tests.
+- Both games passed native Zapdos interaction from the computed landing point through the original script into battle, and START-before-teleport pause checks.
+- Landing validation rejects walls, water, ledges, occupied cells, map warps and coordinate-trigger tiles. Alternate adjacent tiles are used for Route 16 Snorlax and Electrode 1.
+- Native menu draw traces were rendered and visually inspected. These are UI previews, not live gameplay screenshots.
+- Mod manifest validation and ROM-content lint passed.
+
+Map-load tests isolate each location by halting prior story setup in the test fixture. The shipped mod never halts scripts: it refuses teleporting during active dialogue, battles, movement, fades, linked activities or a Safari game. Every destination has been checked, but every story branch, capture, trade, gift and puzzle has **not** been completed end to end in live desktop play.
+
+Locations and acquisition scope were checked against [pret/pokefirered](https://github.com/pret/pokefirered/tree/master/data/maps), then validated against the locally imported FRLG maps. The catalogue contains destination metadata only; original scripts and ROM data are not redistributed.
+
+## Screenshot gallery
+
+Native UI previews from development, using fixture state rather than live gameplay captures.
+
+![encounter-tour-categories](../../docs/screenshots/encounter-tour-categories.png)
+
+![encounter-tour-deoxys](../../docs/screenshots/encounter-tour-deoxys.png)
+
+![encounter-tour-events](../../docs/screenshots/encounter-tour-events.png)
+
+![encounter-tour-home](../../docs/screenshots/encounter-tour-home.png)
+
+![encounter-tour-notes](../../docs/screenshots/encounter-tour-notes.png)
+
+## 0.1.1 compatibility update
+
+Uses the shared `src.core.CollPermissions` predicates instead of importing the Gen 2 wrapper. This preserves landing checks and fixes rejection by the current host’s cross-generation mod guard. Required alongside the FRLG Dual Screen collection build.
+
+## 0.1.2 dual-screen integration
+
+Adds explicit detached editor ownership for FRLG Dual Screen 0.2.0 and reports active tours to its encounter browser. Live browsing forwards field updates; running tours keep their own controls. Includes the 0.1.1 shared collision-helper fix.
+
+
+## Native Pokémon legality corrections — 0.1.3
+
+This release includes the shared FRLG generation/export corrections. It sets valid ability slots for newly generated/caught Pokémon, creates native gift eggs with the correct egg metadata, preserves fixed NPC-trade identity and contest values, and generates new roamers with retail FRLG PID/IV correlations. The roaming beast's stored personality and IVs now reach the battle without being regenerated. Native unhatched eggs receive the required OT-name padding during in-game export.
+
+The same helper is bundled independently with Dual Screen, Shiny Hunter, Encounter Reset, Encounter Tour, Day Care Viewer and Pokémon Services. No additional mod is required. Co-loading these packages applies the corrections once; disabling every participating mod or unloading the game stops the wrappers. Existing Pokémon are not rerolled or bulk-repaired.
+
+**For a cartridge save, use MODS → this mod → SAVE + EXPORT while in the field.** This first saves the active game and then exports with the egg-name correction loaded. The log gives the output path under `exports/<edition>/`. A fresh launcher export can still use the host's unpatched egg-name encoder; copy the in-game export directly. Restart after installing updates.
+
+See the collection's `docs/LEGALITY-FIXES.md` for the regression results and limits. This corrects the identified defects; a passing sample matrix does not certify every possible modified ROM, species combination or future host release.

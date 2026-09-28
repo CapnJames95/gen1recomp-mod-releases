@@ -109,7 +109,7 @@ Public releases are hosted in [gen1recomp-mod-releases](https://github.com/CapnJ
 
 ### All-in-one manual-install bundle
 
-**[Download all 38 mods in one ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/gen1recomp-all-mods-manual-install.zip)**
+**[Download all 38 mods in one ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.1.0/gen1recomp-all-mods-manual-install.zip)**
 
 Use this direct download while signed in to GitHub. If viewing the ZIP’s file page instead, choose **Download raw file**; do not save the webpage itself. The bundle uses standard uncompressed ZIP entries for extractor compatibility.
 
@@ -123,7 +123,7 @@ Extract this ZIP, then copy the contents of its `mods/` folder into the game's a
 | --- | --- | --- | --- |
 | Pokemon Services | **0.1.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/pokemon-services-0.1.3.zip) | [README](mods/pokemon-services/README.md) |
 | LegalMon | **0.17.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/legalmon-0.17.1.zip) | [README](mods/legalmon/README.md) |
-| Event Distributions | **1.2.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/event-distributor-1.2.0.zip) | [README](mods/event-distributor/README.md) |
+| Event Distributions | **1.3.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.1.0/event-distributor-1.3.0.zip) | [README](mods/event-distributor/README.md) |
 | Shiny Hunter | **0.1.5** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/shiny-hunter-0.1.5.zip) | [README](mods/shiny-hunter/README.md) |
 | Auto Breeder | **1.0.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/autobreeder-1.0.3.zip) | [README](mods/autobreeder/README.md) |
 | Fly Teleport | **0.2.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/fly-teleport-0.2.0.zip) | [README](mods/fly-teleport/README.md) |
@@ -184,11 +184,12 @@ Coverage means supported acquisition routes, not every possible origin or build.
 
 <a id="mod-event-distributions"></a>
 
-## Event Distributions 1.2.0
+## Event Distributions 1.3.0
 
-**START → EVENTS** — browse **80 campaign menus, 305 Pokémon choices and 375 normal/shiny variants**.
+**START → EVENTS** — browse **87 campaign menus, 322 Pokémon choices and 670 selectable variants**.
 
 - GBA and Japanese gifts, Pokémon Center NY, bonus-disc distributions, event eggs and ticket encounters.
+- Nine preserved JEREMY gifts, Japanese city OT choices, regional Mt. Battle Ho-Oh rewards and both Wishing Star Jirachi methods. Eon replicas carry Soul Dew; Mystic journeys support the remaining unused counterpart. See [what is new and what remains missing](mods/event-distributor/README.md#whats-new-in-130).
 - Normal/shiny availability checks against your trainer identity, with clear explanations for unavailable variants.
 - Event eggs delivered as eggs or already hatched; normal walking/hatching support and the correct event/hatcher identities.
 - **Aurora Ticket and Mystic Ticket** delivery unlocks native island travel and Deoxys, Lugia and Ho-Oh encounters; you catch them normally.
@@ -683,6 +684,8 @@ The VS Seeker’s Bag description shows 42/100 charge and 58 remaining steps.
 <img src="docs/screenshots/qol-effect-firered-vs-seeker.png" alt="VS Seeker Readiness: The VS Seeker’s Bag description shows 42/100 charge and 58 remaining steps." width="480">
 
 ## Updates
+
+**Event Distributions 1.3.0** expands the catalogue to 87 campaigns, 322 choices and 670 variants, preserving existing USED markers. Read [what is new and what remains missing](mods/event-distributor/README.md#whats-new-in-130). The manual-install bundle includes this update.
 
 This update adds Fly Teleport 0.2.0, Summary IVs 0.1.0 and Disable L/R Help 0.1.0. Dual Screen 0.3.16 adds menu touch controls and touch-held fast-forward; Encounter Reset 0.2.0 expands gifts, fossils and NPC trades. Auto Surf, Faster Center Healing, Party Nickname, Key Item Help and Scrollable Start Menu include their completed fixes. PC Box Tools is removed; Four-Item Wheel remains paused.
 

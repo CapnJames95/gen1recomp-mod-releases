@@ -5,7 +5,7 @@ Checked the completed release archives in the original mod workspaces and the co
 | Mod | Version | Download |
 | --- | --- | --- |
 | legalmon | 0.17.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/legalmon-0.17.1.zip) |
-| event-distributor | 1.2.0 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/event-distributor-1.2.0.zip) |
+| event-distributor | 1.3.0 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.1.0/event-distributor-1.3.0.zip) |
 | shiny-hunter | 0.1.5 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/shiny-hunter-0.1.5.zip) |
 | autobreeder | 1.0.3 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/autobreeder-1.0.3.zip) |
 | encounter-tour | 0.1.3 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-tour-0.1.3.zip) |

@@ -1,12 +1,17 @@
 # Included campaigns
 
-305 choices; 375 variants. Eggs can arrive unhatched or hatched. Shiny availability is checked for your IDs. Native journeys support Aurora and Mystic Tickets; other source games retain caught replicas.
+322 choices; 670 variants, including city OTs and regional language rewards. Eggs can arrive unhatched or hatched. Shiny availability is checked for your IDs. Native journeys support Aurora and Mystic Tickets; other source games retain caught replicas. See [fidelity audit](FIDELITY.md) for sources and exclusions.
 
 | Family | Campaign | Pokémon choices | Shiny choices |
 |---|---|---|---|
 | Bonus discs | Ageto Celebi / JPN | Celebi | None |
 | Bonus discs | Colosseum Pikachu / JPN | Pikachu | None |
 | Bonus discs | Mt. Battle Ho-Oh / ENG | Ho-Oh | None |
+| Bonus discs | Mt. Battle Ho-Oh / FRE | Ho-Oh | None |
+| Bonus discs | Mt. Battle Ho-Oh / GER | Ho-Oh | None |
+| Bonus discs | Mt. Battle Ho-Oh / ITA | Ho-Oh | None |
+| Bonus discs | Mt. Battle Ho-Oh / JPN | Ho-Oh | None |
+| Bonus discs | Mt. Battle Ho-Oh / SPA | Ho-Oh | None |
 | Bonus discs | Pokemon Channel / ENG | Jirachi | Jirachi |
 | Bonus discs | Pokemon Channel / FRE | Jirachi | Jirachi |
 | Bonus discs | Pokemon Channel / GER | Jirachi | Jirachi |
@@ -37,6 +42,7 @@
 | GBA gifts | Party of the Decade / ENG | Bulbasaur, Charizard, Blastoise, Pikachu, Alakazam, Articuno, Zapdos, Moltres, Dragonite, Typhlosion, Espeon, Umbreon, Raikou, Entei, Suicune, Tyranitar, Blaziken, Absol, Latias, Latios | None |
 | GBA gifts | ROCKS Metang / ENG | Metang | None |
 | GBA gifts | Space Center Deoxys / ENG | Deoxys | None |
+| GBA gifts | Trade and Battle Day - JEREMY / ENG | Ekans, Gengar, Growlithe, Machamp, Oddish, Psyduck, Staryu, Tauros, Vulpix | None |
 | Japanese gifts | ANA Flying Pikachu / JPN | Pikachu | None |
 | Japanese gifts | Berry Fix - Ruby JPN / JPN | Zigzagoon | Zigzagoon |
 | Japanese gifts | Berry Fix - Sapphire JPN / JPN | Zigzagoon | Zigzagoon |
@@ -61,7 +67,7 @@
 | Japanese gifts | Tanabata 2004 / JPN | Jirachi | None |
 | Japanese gifts | Tanabata 2005 / JPN | Jirachi | None |
 | Japanese gifts | Tanabata 2006 / JPN | Jirachi | None |
-| Japanese gifts | Wishing Star Jirachi / JPN | Jirachi | None |
+| Japanese gifts | Wishing Star Jirachi / JPN | Jirachi, Jirachi / recipient gender | None |
 | Japanese gifts | Yokohama Pikachu / JPN | Pikachu | None |
 | Pokemon Center NY | PCNY AncientAliens / ENG | Sableye Lv.18, Mawile Lv.18, Cradily Lv.40, Armaldo Lv.40 | None |
 | Pokemon Center NY | PCNY BabyTrade / ENG | Azurill Lv.5, Wynaut Lv.5, Huntail Lv.20, Gorebyss Lv.20 | None |
@@ -83,4 +89,5 @@
 | Ticket encounters | Eon Ticket - S | Latios | Latios |
 | Ticket encounters | Mystic Ticket - E | Lugia, Ho-Oh | Lugia, Ho-Oh |
 | Ticket encounters | Mystic Ticket - FR | Lugia, Ho-Oh | Lugia, Ho-Oh |
+| Ticket encounters | Mystic Ticket - LG | Lugia, Ho-Oh | Lugia, Ho-Oh |
 | Ticket encounters | Old Sea Map - E | Mew | Mew |

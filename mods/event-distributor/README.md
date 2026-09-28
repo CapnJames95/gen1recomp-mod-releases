@@ -1,6 +1,34 @@
-# Event Distributions 1.2.0
+# Event Distributions 1.3.0
 
-A standalone **EVENTS** entry beside LegalMon in the FireRed/LeafGreen START menu. Includes **80 campaign menus, 305 Pokémon choices and 375 normal/shiny variants**. No LegalMon dependency, ROM download, PKHeX installation or network connection is needed to play.
+A standalone **EVENTS** entry beside LegalMon in the FireRed/LeafGreen START menu. Includes **87 campaign menus, 322 Pokémon choices and 670 selectable variants**. No LegalMon dependency, ROM download, PKHeX installation or network connection is needed to play.
+
+## What's new in 1.3.0
+
+Compared with 1.2.0, coverage grows from **80 to 87 campaign menus**, **305 to 322 Pokémon choices**, and **375 to 670 selectable variants**. The variant total includes city OTs and language rewards, not just different species or shiny choices.
+
+- **Nine preserved JEREMY gifts:** Ekans, Vulpix, Oddish, Psyduck, Growlithe, Machamp, Gengar, Staryu and Tauros. Their preserved records retain the original OT, IDs, PID, IVs, moves and held items. These are fixed specimens, with no invented shiny rerolls.
+- **Both Wishing Star Jirachi methods:** restores the missing recipient-gender variant alongside the original restricted-table method. Both keep the event OT and IDs and carry Salac Berry; only the alternate method matches your trainer's OT gender.
+- **Japanese Pokémon Center city OTs:** select the permitted city OT for all 58 existing Gotta Catch 'Em All choices. Campaigns First–Fifth offer six cities; Sixth excludes Sapporo. City variants share the original claim.
+- **Five additional Mt. Battle Ho-Oh languages:** Japanese, French, German, Italian and Spanish join English, with their appropriate OTs. All remain non-shiny.
+- **Eon Ticket held-item correction:** all eight normal/shiny replica templates now carry Soul Dew.
+- **Mystic Ticket fixes:** adds separate LeafGreen-origin replicas and uses the current game's origin for native captures. If you previously received one counterpart as a replica, you can claim the remaining one without receiving the used Pokémon again. Failed/cancelled delivery does not change encounter flags, and older LeafGreen reservations are recognised.
+
+**All 305 previous claim IDs are retained:** upgrading does not reset USED markers or grant repeat claims. The development validation reports **14,896/14,896 exports passing the pinned PKHeX checks**, plus ticket, save and menu regression tests. These are automated headless checks; this release is not claimed to have had a new manual live-play test.
+
+## What's missing, and why
+
+| Missing or limited | Why it is not included |
+| --- | --- |
+| **JEREMY Sandshrew and Slowpoke** | The circulated records are disputed/rejected as fake by preservation researchers. They are not included as authenticated gifts. |
+| **JEREMY Shellder** | No sufficiently authenticated preserved specimen was established in the audited source archive. Known species/move details alone are not enough to recreate its original record faithfully. |
+| **Unevolved JEREMY Machoke and Haunter** | The original trades evolved them, so the mod supplies Machamp and Gengar. Devolved reconstructions are excluded. |
+| **Pokémon Stamp Pichu and Absol** | Original identity or complete distribution data remains insufficiently verified for faithful reproduction. Newer Stamp Pichu research does not by itself provide a fully verified original specimen. |
+| **Altering Cave distributions** | The audit did not establish a released campaign to reproduce. Unused game support is not treated as a historical release. |
+| **Eon Ticket / Old Sea Map island travel** | These journeys require Ruby/Sapphire/Emerald maps and scripts that FRLG does not have. Their caught Pokémon replicas are included; Old Sea Map Mew keeps Japanese Emerald provenance. Aurora and Mystic Ticket journeys are implemented. |
+| **e-Reader berries, decorations and Trainer Hill / Trainer Tower cards** | Their original delivery and gameplay systems are not implemented here. They are not converted into invented FRLG Pokémon gifts. |
+| **Every regional Wonder Card and original distribution screen** | The mod recreates supported rewards and journeys through themed native menus. It does not run distribution ROMs, reproduce every historical operator screen, or overwrite your Wonder Cards. |
+
+**Passing PKHeX checks does not prove historical authenticity.** These are the known gaps identified by the audit, not a claim that every historical regional variant has been accounted for. See the [fidelity audit and research sources](FIDELITY.md) and [full campaign list](COVERAGE.md).
 
 ## Install or upgrade
 
@@ -36,13 +64,13 @@ Keep the mod enabled through hatching and export so the event-specific hatch and
 
 Choose normal/shiny separately for each Pokémon, prepare the results, then confirm ticket delivery. The key item and native travel flags are granted through the engine's Mystery Gift delivery function. Travel from Vermilion port; existing story requirements remain in force. Catch mechanics and ball use remain normal.
 
-Ticket delivery reserves each linked Pokémon's claim immediately, preventing a second replica delivery while the island encounter is pending. The journal adds a capture entry only after the Pokémon is stored. Saving preserves pending results. Fleeing, defeating the Pokémon or losing follows the original game's encounter rules; this mod does not reset fought flags or guarantee another attempt. Previously received tickets, fought encounters or linked USED claims block a new ticket delivery.
+Ticket delivery reserves each linked Pokémon's claim immediately, preventing a second replica delivery while the island encounter is pending. The journal adds a capture entry only after the Pokémon is stored. Saving preserves pending results. Fleeing, defeating the Pokémon or losing follows the original game's encounter rules; this mod does not reset fought flags or guarantee another attempt. Previously received tickets and fought encounters block new delivery. If only one Mystic counterpart was already received as a replica, the ticket reserves the remaining Pokémon and keeps the USED encounter unavailable. Older LeafGreen native reservations remain recognized.
 
 **Eon Ticket and Old Sea Map journeys are unavailable in FRLG:** they require Ruby/Sapphire/Emerald maps. Their normal/shiny caught replicas remain under **Ticket encounters**, preserving the selected source game's provenance. The mod does not emulate Emerald's world or overwrite existing Wonder Cards.
 
 ## OT and legality
 
-Direct distributions and bonus-disc gifts retain their fixed event OTs and IDs. Hatched eggs and ticket replicas use your trainer identity. Native island captures use your identity and the current FireRed/LeafGreen origin. The mod emulates distribution results; it does not execute distribution ROMs.
+Direct distributions and bonus-disc gifts retain their fixed event OTs and IDs. Hatched eggs and ticket replicas use your trainer identity. Native island captures use your identity and the current FireRed/LeafGreen origin. The alternate Wishing Star Jirachi retains its fixed OT name and IDs while matching only your OT gender. The mod emulates distribution results; it does not execute distribution ROMs.
 
 Some requests cannot be satisfied for every identity:
 
@@ -51,7 +79,7 @@ Some requests cannot be satisfied for every identity:
 - Some egg distributions have finite RNG seed sets. A shiny hatch may be unavailable for your IDs. The reason is shown without changing your IDs or consuming the event.
 - Unrestricted searches have a bounded attempt limit. B dismisses preparation without delivery; background availability checking may continue while the archive is open.
 
-Normal/shiny variants share a claim. Berry Fix is shiny-only; most direct distributions have no legal shiny option. Original event moves, origin restrictions, ribbons and RNG correlations are preserved. WISHMKR/CHANNEL retain algorithm-derived held items; additional documented items use Project Pokémon archive references.
+Normal/shiny variants share a claim. Berry Fix is shiny-only; most direct distributions have no legal shiny option. Original event moves, origin restrictions, ribbons and RNG correlations are preserved. Eon Ticket replicas carry the original Soul Dew. WISHMKR/CHANNEL retain algorithm-derived held items; additional documented items use Project Pokémon archive references.
 
 Japanese OT bytes are preserved through a small runtime converter wrapper. **Keep the mod enabled when exporting Japanese event OTs.** The engine's Latin font may not display Japanese names. No engine files are changed on disk. Other mods that alter Pokémon after delivery are outside these checks; modified species/ability/move data is rejected during gift preparation.
 
@@ -59,23 +87,23 @@ These generated replicas satisfy the pinned PKHeX checks in the test matrix. Thi
 
 ## Coverage and presentation
 
-See `COVERAGE.md` for all campaigns and choices. Coverage follows the pinned PKHeX Gen III event tables, bonus gifts and ticket encounters. It is not a claim to reproduce every historical regional machine or unreleased distribution. City-specific PCJP OTs use valid samples rather than a selector for every city.
+See [COVERAGE.md](COVERAGE.md) for all campaigns and choices. Coverage follows the pinned PKHeX Gen III event tables, bonus gifts and ticket encounters. It is not a claim to reproduce every historical regional machine or unreleased distribution. PCJP city selectors include all permitted city OTs; the Sixth campaign excludes Sapporo. The nine preserved JEREMY gifts have fixed records, including their original unused nickname bytes, and no speculative shiny rerolls. See [FIDELITY.md](FIDELITY.md) for additions, provenance and deliberately excluded uncertain events.
 
 The native pixel menus use ROM-derived sprites, campaign palettes, status and counters. Layouts are inspired by distribution operator screens, not pixel-perfect copies of each historical cartridge.
 
 ## Validation and source
 
-Tested against gen1recomp `fab224458f9d5af79a82b5ff5338347ef74c0189` and PKHeX `17157eb18013dc29a44f7bb7810117390431087b`.
+Tested against gen1recomp `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf` and PKHeX `17157eb18013dc29a44f7bb7810117390431087b`.
 
-- 750 byte-exact fixture exports, across both imported ROM data packs.
-- 5,056 personalized exports across 20 identities and both games.
+- 1,340 byte-exact fixture exports, across both imported ROM data packs.
+- 5,216 personalized exports across 20 identities and both games.
 - 8,300 new exports: unhatched eggs, their engine-hatched results and native island captures, across both games. Egg profiles cover both genders, long names and boundary IDs.
-- PKHeX: **14,106/14,106 exports valid** across those suites.
+- 40 fixed-specimen/recipient-gender exports; PKHeX: **14,896/14,896 exports valid** across all suites.
 - Real engine tests cover egg cycles, ticket key items/travel flags, battle generation, party capture, deferred PC capture, save serialization and duplicate claims.
-- UI tests cover all 375 original variant paths plus search, filters, availability, egg modes, detailed previews, cancellation, journal and ticket confirmation.
-- Strict modkit validation, reproducible packaging and inspected native draw previews. These are headless engine integration tests, not a manual live-play session.
+- UI tests cover all 670 variant paths, distinct city OT previews and partial Mystic claims plus search, filters, availability, egg modes, detailed previews, cancellation, journal and ticket confirmation.
+- Strict modkit validation and reproducible packaging. Existing native draw previews illustrate the menu styling. These are headless engine integration tests, not a manual live-play session.
 
-Source and tests are included in the source folder and excluded from the runtime ZIP. Build `tools/Build.csproj` with .NET 10 and `-p:PKHeXAssembly=/path/to/PKHeX.Core.dll`. Modes include `<output-directory>`, `--enrich <catalog.json> <held-items.json>`, `--check <export-directory>` and `--egg-meta <output.json>`. Compile the main catalogue with `tools/catalog.py`; compile egg metadata with `python3 tools/egg_catalog.py <egg-meta.json> <mod-directory>/eggs.lua`.
+Source and tests are included in the source folder and excluded from the runtime ZIP. Build `tools/Build.csproj` with .NET 10 and `-p:PKHeXAssembly=/path/to/PKHeX.Core.dll`. Modes include `<output-directory>`, `--enrich <catalog.json> <held-items.json>`, `--check <export-directory>` and `--egg-meta <output.json>` and `--fidelity <enriched-catalog.json> <official-jeremy-directory> <augmented-catalog.json>`. Compile the main catalogue with `tools/catalog.py`; compile egg metadata with `python3 tools/egg_catalog.py <egg-meta.json> <mod-directory>/eggs.lua`.
 
 Run Lua tests with LuaJIT, using a separate output directory for each export suite:
 
@@ -83,6 +111,7 @@ Run Lua tests with LuaJIT, using a separate output directory for each export sui
 EVENT_CACHE='/path/to/edition-cache-root' luajit tests/roundtrip.lua /path/to/gen1recomp /path/to/event-distributor /path/to/fixture-exports firered
 EVENT_CACHE='/path/to/edition-cache-root' luajit tests/personal.lua /path/to/gen1recomp /path/to/event-distributor /path/to/personal-exports firered
 EVENT_CACHE='/path/to/edition-cache-root' luajit tests/features.lua /path/to/gen1recomp /path/to/event-distributor /path/to/feature-exports firered
+EVENT_CACHE='/path/to/edition-cache-root' luajit tests/fidelity.lua /path/to/gen1recomp /path/to/event-distributor /path/to/fidelity-exports firered
 EVENT_CACHE='/path/to/edition-cache-root' luajit tests/ui-features.lua /path/to/gen1recomp /path/to/event-distributor /path/to/scratch firered
 luajit tests/screen.lua /path/to/gen1recomp /path/to/event-distributor
 ```

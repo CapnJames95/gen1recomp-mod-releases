@@ -1,7 +1,7 @@
 # Gen1Recomp Mods
 
 <p align="center">
-  <a href="https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest"><img src="https://img.shields.io/github/v/release/CapnJames95/gen1recomp-mod-releases?label=release&color=5c8a3c" alt="Latest release"></a>
+  <a href="https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest"><img src="https://img.shields.io/github/v/release/CapnJames95/gen1recomp-mod-releases?label=release&color=5c8a3c&cacheSeconds=300&refresh=v1.2.0" alt="Latest release"></a>
   <a href="https://github.com/CapnJames95/gen1recomp-mod-releases/releases"><img src="https://img.shields.io/github/downloads/CapnJames95/gen1recomp-mod-releases/total?label=downloads&color=2f81f7" alt="Total downloads across all releases"></a>
   <a href="https://bryanthaboi.github.io/gen1recomp-mod-index/"><img src="https://img.shields.io/badge/official-Mod%20Index-6f42c1" alt="Gen1Recomp Mod Index"></a>
   <a href="#supported-games"><img src="https://img.shields.io/badge/games-FireRed%20%2B%20LeafGreen-e8b923" alt="Supported games: Pokémon FireRed and LeafGreen"></a>

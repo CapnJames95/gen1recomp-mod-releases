@@ -2,7 +2,7 @@
 
 **START → TELEPORT** lists every native Fly destination in the collection's usual FRLG menu: blue header, striped background, six scrolling rows and the player's selected window frame.
 
-Import [fly-teleport-0.2.0.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/fly-teleport-0.2.0.zip), enable it for your edition and restart. Works independently. With [FRLG Dual Screen](../frlg_dual_screen/README.md) 0.3.15 installed and enabled, a **TELEPORT** map tile appears automatically on Home; the menu opens on the companion screen with touch rows and physical controls. Disabling or removing Fly Teleport hides its tile.
+Import [fly-teleport-0.2.0.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/fly-teleport-0.2.0.zip), enable it for your edition and restart. Works independently. With [FRLG Dual Screen](../frlg_dual_screen/README.md) 0.3.15 installed and enabled, a **TELEPORT** map tile appears automatically on Home; the menu opens on the companion screen with touch rows and physical controls. Disabling or removing Fly Teleport hides its tile.
 
 Select a destination, then **Teleport now**. Confirmation starts on **Cancel**. Up/Down scrolls, Left/Right skips five rows, A selects, B/L goes back and START closes.
 

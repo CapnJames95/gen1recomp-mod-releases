@@ -6,7 +6,7 @@ Uses the collection's native FRLG fonts, blue header, striped background, six-ro
 
 ## Install and use
 
-Import [quick-heal-party-0.1.0.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/quick-heal-party-0.1.0.zip) through **MODS → Import mod .zip**, enable it for FireRed or LeafGreen and restart.
+Import [quick-heal-party-0.1.0.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/quick-heal-party-0.1.0.zip) through **MODS → Import mod .zip**, enable it for FireRed or LeafGreen and restart.
 
 1. Open **START → QUICK HEAL**.
 2. Choose **Preview healing: whole party** or **Heal one Pokemon**.

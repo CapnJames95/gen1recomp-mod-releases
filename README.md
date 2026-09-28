@@ -40,7 +40,7 @@ Click a mod’s name to jump to its full features, screenshots and download.
 | --- | --- |
 | [Quick Heal Party](#mod-quick-heal-party) | Heal one Pokémon or the whole party with owned medicine after reviewing the cost. |
 | [Capture Assistant](#mod-capture-assistant) | Compare owned balls, catch estimates and moveset risks during wild battles. |
-| [Summary IVs](#mod-summary-ivs) | Show all six IVs inline in the orange Summary stat area without changing the stat totals. |
+| [Summary IVs](#mod-summary-ivs) | Show inline Summary IVs and inspect uncaught wild Pokémon in a read-only native preview. |
 | [Scrollable Start Menu](#mod-scrollable-start-menu) | Expand and scroll the native Start menu; sort entries and group mod shortcuts into folders. |
 | [Quiet EXP](#mod-quiet-exp) | Hide individual EXP announcements while retaining EXP gains, level-ups and move learning. |
 | [Auto Surf](#mod-auto-surf-prompt) | Press A facing water to start Surf directly; no walking trigger or confirmation. |
@@ -75,11 +75,11 @@ Version 0.3.10 adds FRLG Dual Screen branding to startup, Home and settings, ret
 
 Includes a built-in Y/F7 ball picker, configurable under Options → Battle, with a clear CHOOSE BALL prompt and themed selection/confirmation screens. No separate ball mod is required.
 
-[Download 0.3.16](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-dual-screen-0.3.16.zip) · [Instructions, coverage and limits](mods/frlg_dual_screen/README.md) · [Validation](mods/frlg_dual_screen/VALIDATION.md)
+[Download 0.3.16](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip) · [Instructions, coverage and limits](mods/frlg_dual_screen/README.md) · [Validation](mods/frlg_dual_screen/VALIDATION.md)
 
 **FRLG Dual Screen is built on Kanto Gear 3.3.3 by AverageConsumer.** It extends Kanto Gear’s DS-style companion interface with FireRed/LeafGreen styling and integrations that bring the other mods in this collection together: shared Home shortcuts, live controls, encounter tools and QoL settings. Adds a Home encounter browser with caught/seen/new labels, sprite-triggered battles and configurable uncaught hotkeys; Home shortcuts for supported collection tools and direct-touch/live editors for the original five, native-menu fallback and live toggles for all 23 QoL mods. Disable the original Kanto Gear/DS mod while using this replacement. **AYN Thor is the only tested dual-screen device. Other dual-screen devices have not been tested.**
 
-Use [Encounter Tour 0.1.3](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-tour-0.1.3.zip) and [Shiny Hunter 0.1.5](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/shiny-hunter-0.1.5.zip) for live-editor/encounter coordination. Only current versions are kept in downloads. Version 0.3.1 lets you tap the battery indicator to switch to a saved percentage display. Home tiles hide their matching native Start entries while enabled. Virtual controller buttons were removed in 0.2.2; direct touch menus and physical controls remain.
+Use [Encounter Tour 0.1.3](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-tour-0.1.3.zip) and [Shiny Hunter 0.1.5](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/shiny-hunter-0.1.5.zip) for live-editor/encounter coordination. Only current versions are kept in downloads. Version 0.3.1 lets you tap the battery indicator to switch to a saved percentage display. Home tiles hide their matching native Start entries while enabled. Virtual controller buttons were removed in 0.2.2; direct touch menus and physical controls remain.
 
 ![FRLG Dual Screen collection pages](docs/screenshots/frlg-dual-screen/collection.png)
 
@@ -109,7 +109,7 @@ Public releases are hosted in [gen1recomp-mod-releases](https://github.com/CapnJ
 
 ### All-in-one manual-install bundle
 
-**[Download all 38 mods in one ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.1.0/gen1recomp-all-mods-manual-install.zip)**
+**[Download all 38 mods in one ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/gen1recomp-all-mods-manual-install.zip)**
 
 Use this direct download while signed in to GitHub. If viewing the ZIP’s file page instead, choose **Download raw file**; do not save the webpage itself. The bundle uses standard uncompressed ZIP entries for extractor compatibility.
 
@@ -121,26 +121,26 @@ Extract this ZIP, then copy the contents of its `mods/` folder into the game's a
 
 | Mod | Version | Installable ZIP | Instructions / source |
 | --- | --- | --- | --- |
-| Pokemon Services | **0.1.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/pokemon-services-0.1.3.zip) | [README](mods/pokemon-services/README.md) |
-| LegalMon | **0.17.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/legalmon-0.17.1.zip) | [README](mods/legalmon/README.md) |
-| Event Distributions | **1.3.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.1.0/event-distributor-1.3.0.zip) | [README](mods/event-distributor/README.md) |
-| Shiny Hunter | **0.1.5** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/shiny-hunter-0.1.5.zip) | [README](mods/shiny-hunter/README.md) |
-| Auto Breeder | **1.0.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/autobreeder-1.0.3.zip) | [README](mods/autobreeder/README.md) |
-| Fly Teleport | **0.2.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/fly-teleport-0.2.0.zip) | [README](mods/fly-teleport/README.md) |
-| Day Care Viewer | **0.2.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/daycare-viewer-0.2.1.zip) | [README](mods/daycare-viewer/README.md) |
-| Encounter Tour — static encounter teleports | **0.1.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-tour-0.1.3.zip) | [README](mods/encounter-tour/README.md) |
-| Encounter Reset | **0.2.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-reset-0.2.0.zip) | [README](mods/encounter-reset/README.md) |
-| FRLG Dual Screen | **0.3.16** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-dual-screen-0.3.16.zip) | [README](mods/frlg_dual_screen/README.md) |
+| Pokemon Services | **0.1.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/pokemon-services-0.1.3.zip) | [README](mods/pokemon-services/README.md) |
+| LegalMon | **0.17.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/legalmon-0.17.1.zip) | [README](mods/legalmon/README.md) |
+| Event Distributions | **1.3.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/event-distributor-1.3.0.zip) | [README](mods/event-distributor/README.md) |
+| Shiny Hunter | **0.1.5** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/shiny-hunter-0.1.5.zip) | [README](mods/shiny-hunter/README.md) |
+| Auto Breeder | **1.0.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/autobreeder-1.0.3.zip) | [README](mods/autobreeder/README.md) |
+| Fly Teleport | **0.2.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/fly-teleport-0.2.0.zip) | [README](mods/fly-teleport/README.md) |
+| Day Care Viewer | **0.2.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/daycare-viewer-0.2.1.zip) | [README](mods/daycare-viewer/README.md) |
+| Encounter Tour — static encounter teleports | **0.1.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-tour-0.1.3.zip) | [README](mods/encounter-tour/README.md) |
+| Encounter Reset | **0.2.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-reset-0.2.0.zip) | [README](mods/encounter-reset/README.md) |
+| FRLG Dual Screen | **0.3.16** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip) | [README](mods/frlg_dual_screen/README.md) |
 
 ### QoL downloads
 
 | Mod | Version | Installable ZIP | Instructions / source |
 | --- | --- | --- | --- |
-| Quick Heal Party | **0.1.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/quick-heal-party-0.1.0.zip) | [README](mods/quick-heal-party/README.md) |
-| Capture Assistant | **0.1.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/capture-assistant-0.1.1.zip) | [README](mods/capture-assistant/README.md) |
-| Summary IVs | **0.1.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/summary-ivs-0.1.0.zip) | [README](mods/summary-ivs/README.md) |
-| Disable L/R Help | **0.1.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/disable-lr-help-0.1.0.zip) | [README](mods/disable-lr-help/README.md) |
-| FRLG Scrollable Start Menu | **0.2.2** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-scrollable-start-0.2.2.zip) | [README](mods/frlg_scrollable_start/README.md) |
+| Quick Heal Party | **0.1.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/quick-heal-party-0.1.0.zip) | [README](mods/quick-heal-party/README.md) |
+| Capture Assistant | **0.1.1** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/capture-assistant-0.1.1.zip) | [README](mods/capture-assistant/README.md) |
+| Summary IVs | **0.2.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/summary-ivs-0.2.3.zip) | [README](mods/summary-ivs/README.md) |
+| Disable L/R Help | **0.1.0** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/disable-lr-help-0.1.0.zip) | [README](mods/disable-lr-help/README.md) |
+| FRLG Scrollable Start Menu | **0.2.2** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-scrollable-start-0.2.2.zip) | [README](mods/frlg_scrollable_start/README.md) |
 | FRLG QoL collection — 28 independent mods | **Mixed versions** | [Choose individual mod ZIPs](qol/PACKAGES.md) | [Individual ZIPs](qol/PACKAGES.md) / [README](qol/README.md) |
 
 Download ZIPs from the release assets below the release notes. Import individual mod ZIPs through the launcher's **MODS → Import mod .zip**, enable them and restart. Each QoL mod has its own directly importable ZIP in `downloads/QOL/`, with `manifest.json` at the archive root. Choose the QoL mods you want from the package list. Use your own supported imported ROM and back up saves before trying beta mods.
@@ -155,7 +155,7 @@ The mods are independently installable; LegalMon is not a required dependency. A
 
 Remote native Pokemon/item PCs, free party healing, all town/island Poke Marts, Celadon department-store counters and vending machines, free Move Reminder (no mushrooms), Move Deleter, Name Rater, Day Care management. Uses existing game logic, imported stock, normal shop prices and native restrictions. Move relearning is free and preserves owned mushrooms. Two Island retains progression-dependent stock; other remote services bypass travel. Day Care eggs are collected on Four Island.
 
-[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/pokemon-services-0.1.3.zip) · [Instructions and screenshots](mods/pokemon-services/README.md) · [Validation](mods/pokemon-services/VALIDATION.md). 402 automated checks pass across both editions, including Dual Screen launch integration. Physical device playtesting remains outstanding.
+[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/pokemon-services-0.1.3.zip) · [Instructions and screenshots](mods/pokemon-services/README.md) · [Validation](mods/pokemon-services/VALIDATION.md). 402 automated checks pass across both editions, including Dual Screen launch integration. Physical device playtesting remains outstanding.
 
 ![Pokemon Services](docs/screenshots/pokemon-services/services-home.png)
 
@@ -249,7 +249,7 @@ Use **Export / repair / help → Save + export for PKHeX** for the corrected exp
 
 FRLG Dual Screen 0.3.16 adds a **TELEPORT** Home tile automatically when this mod is installed and enabled. Busy-state and landing checks protect travel.
 
-[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/fly-teleport-0.2.0.zip) · [Instructions](mods/fly-teleport/README.md) · [Validation](mods/fly-teleport/VALIDATION.md)
+[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/fly-teleport-0.2.0.zip) · [Instructions](mods/fly-teleport/README.md) · [Validation](mods/fly-teleport/VALIDATION.md)
 
 ![Fly Teleport](docs/screenshots/fly-teleport/destinations-firered.png)
 
@@ -261,7 +261,7 @@ FRLG Dual Screen 0.3.16 adds a **TELEPORT** Home tile automatically when this mo
 
 View deposited Pokémon, levels gained, fees, EXP, steps, current and projected moves, IVs/EVs/stats, held items and trainer details. Includes breeding compatibility, offspring species, egg readiness, steps to the next egg check and party egg progress. Manage / teleport adds native party deposits, paid withdrawals and travel to either daycare. Egg collection stays at Four Island; browsing remains read-only.
 
-[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/daycare-viewer-0.2.1.zip) · [Instructions and screenshots](mods/daycare-viewer/README.md) · [Verification](mods/daycare-viewer/TEST-REPORT.md)
+[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/daycare-viewer-0.2.1.zip) · [Instructions and screenshots](mods/daycare-viewer/README.md) · [Verification](mods/daycare-viewer/TEST-REPORT.md)
 
 ![Day Care Viewer](docs/screenshots/daycare-viewer/daycare-home.png)
 
@@ -290,7 +290,7 @@ Event-island teleports bypass ferry/ticket access, but puzzles and encounters re
 
 **START → ENCOUNTER RESET** — individually restore Articuno, Zapdos, Moltres, Mewtwo, Lugia, Ho-Oh, Deoxys, each Snorlax, each Electrode and Lostelle's Hypno. Restores your previously unlocked roaming beast after capture or defeat, plus Eevee, Lapras, each Dojo prize, Magikarp, the Togepi egg, all three fossil revivals and all nine NPC trades. Matches Encounter Tour's native menu style.
 
-Leave the encounter map, select one entry, confirm its reset and return to catch it normally. Keeps existing Pokémon and Pokédex records. Deoxys restarts its puzzle; Hypno replays the rescue, reward and return trip. Roamer options cannot unlock a different starter's beast. [Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-reset-0.2.0.zip) · [Coverage and instructions](mods/encounter-reset/README.md) · [Validation](mods/encounter-reset/VALIDATION.md)
+Leave the encounter map, select one entry, confirm its reset and return to catch it normally. Keeps existing Pokémon and Pokédex records. Deoxys restarts its puzzle; Hypno replays the rescue, reward and return trip. Roamer options cannot unlock a different starter's beast. [Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-reset-0.2.0.zip) · [Coverage and instructions](mods/encounter-reset/README.md) · [Validation](mods/encounter-reset/VALIDATION.md)
 
 ![Encounter Reset menu](docs/screenshots/encounter-reset-home.png)
 
@@ -302,11 +302,13 @@ Every entry below includes its features, download and instructions. **Several mo
 
 <a id="mod-summary-ivs"></a>
 
-### Summary IVs 0.1.0
+### Summary IVs 0.2.3
 
-Shows all six IVs (0–31) beside the native Pokémon Skills stat labels without changing the calculated stats. Works in party and PC summaries; eggs are excluded and missing data shows `--`. The SHOW IVS setting is read-only. With Dual Screen 0.3.13+, the native Skills page appears below; touch access follows the current companion's menu controls.
+Shows all six IVs (0–31) beside the native Pokémon Skills stat labels without changing the calculated stats. Works in party and PC summaries; eggs are excluded and missing data shows `--`. The SHOW IVS setting is read-only. With Dual Screen 0.3.13+, the native Skills page appears below and uses physical navigation controls.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/summary-ivs-0.1.0.zip) · [Instructions and validation](mods/summary-ivs/README.md)
+**Wild Pokémon preview:** press keyboard **I** or controller **X / West** at the ordinary wild-battle command menu. Inspect native summary pages and toggle IV/EV values with Select. The battle pauses, data is read-only, and no caught requirement applies. Keyboard/gamepad bindings are configurable; existing saved bindings are preserved. This addition has automated coverage but has not been tested on physical hardware.
+
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/summary-ivs-0.2.3.zip) · [Instructions and validation](mods/summary-ivs/README.md)
 
 ![Native Skills page with IVs](docs/screenshots/summary-ivs/firered.png)
 
@@ -316,7 +318,7 @@ Shows all six IVs (0–31) beside the native Pokémon Skills stat labels without
 
 Suppresses native L/R Help and the L=A alias while enabled, leaving shoulder presses available for menu navigation and mod hotkeys. Disabling restores normal behaviour without rewriting saved button settings. It adds no overlay; the image below shows the existing Party Held Items panel whose L shortcut remains available.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/disable-lr-help-0.1.0.zip) · [Instructions and validation](mods/disable-lr-help/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/disable-lr-help-0.1.0.zip) · [Instructions and validation](mods/disable-lr-help/README.md)
 
 ![Existing Party Held Items panel](docs/screenshots/qol-effect-firered-party-items.png)
 
@@ -326,7 +328,7 @@ Suppresses native L/R Help and the L=A alias while enabled, leaving shoulder pre
 
 **START → QUICK HEAL** — preview the healing items to spend and resulting party HP/status, then confirm. Heal the whole party or one Pokémon using owned medicine. Revives and status cures are configurable; Full Restores, Max Potions and Max Revives are protected by default. Uses native field item actions and the collection's FRLG menu styling.
 
-[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/quick-heal-party-0.1.0.zip) · [Instructions](mods/quick-heal-party/README.md) · [Validation](mods/quick-heal-party/VALIDATION.md)
+[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/quick-heal-party-0.1.0.zip) · [Instructions](mods/quick-heal-party/README.md) · [Validation](mods/quick-heal-party/VALIDATION.md)
 
 ![Quick Heal review](docs/screenshots/quick-heal-party/quick-heal-review.png)
 
@@ -338,7 +340,7 @@ With **FRLG Dual Screen 0.3.12+** active, the assistant opens on the **bottom sc
 
 **R at the wild battle command menu** — compare owned balls, see native one-throw catch estimates and hypothetical 1 HP/sleep improvements, and inspect moveset risks. Reading takes no turn and spends no items. Master Balls are excluded from recommendations. **START → CAPTURE HELP** provides instructions. Matches the collection's native FRLG menus.
 
-[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/capture-assistant-0.1.1.zip) · [Instructions and limits](mods/capture-assistant/README.md) · [Validation](mods/capture-assistant/VALIDATION.md)
+[Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/capture-assistant-0.1.1.zip) · [Instructions and limits](mods/capture-assistant/README.md) · [Validation](mods/capture-assistant/VALIDATION.md)
 
 ![Capture Assistant ball comparison](docs/screenshots/capture-assistant/capture-balls.png)
 
@@ -364,7 +366,7 @@ These examples render the actual native menu with isolated fixture entries and i
 
 Quiet EXP skips individual EXP announcements while keeping level-ups and move learning. It changes presentation without removing earned EXP.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_quiet_exp-0.1.0.zip) · [Instructions](qol/mods/frlg_qol_quiet_exp/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_quiet_exp-0.1.0.zip) · [Instructions](qol/mods/frlg_qol_quiet_exp/README.md)
 
 ![Quiet EXP settings](docs/screenshots/frlg_qol_quiet_exp-options.png)
 
@@ -378,7 +380,7 @@ Press A facing adjacent water to start Surf directly.
 
 Walking into water no longer triggers a prompt. A skips the YES/NO and “used Surf” text, then starts normal Surf execution. Requires the normal badge and party Surf capability (or HM Field Kit). Native NPC/script interaction priority and busy-state checks remain intact. Replace the existing Auto Surf Prompt package and restart.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_auto_surf-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_auto_surf/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_auto_surf-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_auto_surf/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -392,7 +394,7 @@ Sort displayed pocket rows without rewriting saved inventory.
 
 Sort by name, descending quantity, or numeric item ID. Pocket assignment stays native. TM Case and Berry Pouch have separate renderers and are not reordered. Manual bag ordering is hidden while enabled; disable to restore it.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_bag_sort-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_bag_sort/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_bag_sort-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_bag_sort/README.md)
 
 Before: original inventory order.
 
@@ -410,7 +412,7 @@ Throw a selected ordinary Ball with SELECT from a wild single battle command men
 
 Configure Poke/Great/Ultra Ball, then SELECT (Tab/Shift) in the main command menu. No fallback to a different Ball and no Master Ball option. Empty stock falls through. Trainer, Safari, double, link, spectated and tutorial battles excluded. The battle engine still resolves the normal turn and catch.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_ball_shortcut-0.2.2.zip) · [Full instructions](qol/mods/frlg_qol_ball_shortcut/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_ball_shortcut-0.2.2.zip) · [Full instructions](qol/mods/frlg_qol_ball_shortcut/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -424,7 +426,7 @@ Choose independent instant HP and EXP bars while preserving battle logic and cal
 
 INSTANT HP and INSTANT EXP can be toggled separately. Uses upstream's own instant-tween path, retaining callbacks and display values. Move-animation on/off and overall battle speed are already engine options; animation-script time scaling is not included.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_battle_pacing-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_battle_pacing/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_battle_pacing-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_battle_pacing/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -438,7 +440,7 @@ Replace a berry actually consumed in battle using one matching berry from your B
 
 Restocks after battle writeback, only for confirmed berry consumption and an unchanged party member with an empty item slot. Never manufactures berries, restocks during battle, or replaces items merely lost to Knock Off/Thief. Link battles excluded.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_berry_restock-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_berry_restock/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_berry_restock-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_berry_restock/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -450,7 +452,9 @@ Restocks after battle writeback, only for confirmed berry consumption and an unc
 
 Search seen species, inspect imported evolutions and locations, and count owned species in the current area.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_dex_companion-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_dex_companion/README.md)
+**0.1.2 Start-menu fix:** without Scrollable Start Menu, overflowing menus use a compact right-hand scrolling sidebar. If both HM Field Kit and Dex Companion are installed, update both and restart.
+
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_dex_companion-0.1.2.zip) · [Full instructions](qol/mods/frlg_qol_dex_companion/README.md)
 
 Selecting a seen species shows its imported evolution rule and available wild-location records.
 
@@ -464,7 +468,7 @@ Accelerate the Center machine animation and remove its remaining jingle wait.
 
 Choose animation speed 2x/4x/8x (default 4x). WAIT FOR JINGLE defaults off: the nurse continues when the faster animation finishes, while the jingle plays out normally. Healing, dialogue and callbacks remain native; unrelated sound waits are unchanged.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_fast_healing-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_fast_healing/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_fast_healing-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_fast_healing/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -478,7 +482,9 @@ Use owned HMs with compatible party Pokemon without teaching the move.
 
 START > QOL > HM FIELD KIT lists actions currently usable. Existing overworld Cut/Surf/Strength/Rock Smash/Waterfall checks use the same compatible-party fallback. Badge and terrain checks remain. Fly is not added to this menu: WorldAPI.flyTo is unsupported in this FRLG beta, so this package does not provide destination selection. Retain a taught Fly for the native party menu. No moveslots or flags are modified.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_hm_field_kit-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_hm_field_kit/README.md)
+**0.1.2 Start-menu fix:** without Scrollable Start Menu, overflowing menus use a compact right-hand scrolling sidebar. If both HM Field Kit and Dex Companion are installed, update both and restart.
+
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_hm_field_kit-0.1.2.zip) · [Full instructions](qol/mods/frlg_qol_hm_field_kit/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -492,7 +498,7 @@ Temporarily speed up gameplay while holding a spare keyboard key.
 
 Hold Right Ctrl by default; choose Left Ctrl/F6 and 2x/4x/8x. Releasing restores native category speed immediately, without changing settings. Respects the engine's speed locks. Controller speed up/down and touch hold are already native.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_hold_fast_forward-0.2.1.zip) · [Full instructions](qol/mods/frlg_qol_hold_fast_forward/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_hold_fast_forward-0.2.1.zip) · [Full instructions](qol/mods/frlg_qol_hold_fast_forward/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -506,7 +512,7 @@ Reveal dialogue pages immediately while retaining all confirmation and choice pr
 
 TEXT selects instant (default) or fast. Applies to field and battle pages using the FRLG Message printer. Does not auto-confirm, skip scripted pauses, or change separate menu printers.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_instant_text-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_instant_text/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_instant_text-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_instant_text/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -520,7 +526,7 @@ Explain useful key items after acquisition and in Bag descriptions.
 
 Authored guidance replaces descriptions for Bicycle, Town Map, VS Seeker, Itemfinder, three rods, Poke Flute and Silph Scope. First acquisition through Bag.add queues a LegalMon-style help panel after scripts, movement and other UI finish. ACQUISITION HELP disables popups. Existing saves do not trigger retroactive popups. Unknown items retain native descriptions. Direct inventory writes bypass this notification. VS Seeker Readiness takes priority for that item's description when both mods are enabled.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_key_item_help-0.1.2.zip) · [Full instructions](qol/mods/frlg_qol_key_item_help/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_key_item_help-0.1.2.zip) · [Full instructions](qol/mods/frlg_qol_key_item_help/README.md)
 
 The mod’s native help panel explains the Bicycle and registered-item shortcut.
 
@@ -534,7 +540,7 @@ Read service notes and native Fly eligibility for the Town Map cursor.
 
 Press SELECT on an idle Town Map or Fly map for service notes. Fly availability uses the native map's selection checks; nothing unlocks destinations or bypasses badges. Notes cover main towns, not every building. Story access is not promised.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_map_services-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_map_services/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_map_services-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_map_services/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -548,7 +554,7 @@ Read all party held-item names in a compact panel.
 
 Press the logical L shoulder action on the normal party list (bind it in CONTROLS). Displays names without covering native HP/item icons. Read-only; giving/taking items remains native.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_party_items-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_party_items/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_party_items-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_party_items/README.md)
 
 Pressing L in the party list opens a compact list of Pokémon and held items.
 
@@ -562,7 +568,7 @@ Rename non-Egg Pokemon from the party list, regardless of original trainer.
 
 On the normal party list, highlight a Pokemon and press SELECT (default Tab/Shift). Eggs, battle selection and item-target menus are excluded. Own, event/gift and genuinely traded Pokemon can all be renamed; original-trainer data is not changed. Uses the original naming UI and 10-character limit.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_party_nickname-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_party_nickname/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_party_nickname-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_party_nickname/README.md)
 
 Pressing SELECT in the party list opens the native nickname keyboard for Charmander.
 
@@ -576,7 +582,7 @@ Open the move reminder from the party list with the original FRLG mushroom payme
 
 On the normal party list press START (default Escape). Costs two Tiny Mushrooms, otherwise one Big Mushroom, only after learning. Cancel/no eligible move costs nothing. Uses FRLG's actual currency, not Heart Scales. Available wherever the normal party menu opens.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_party_reminder-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_party_reminder/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_party_reminder-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_party_reminder/README.md)
 
 Pressing START in the party list opens the native move reminder when a Big Mushroom is available.
 
@@ -593,7 +599,7 @@ Remove the redundant second confirmation from the normal Save menu.
 
 Selecting YES performs the existing save operation immediately. The first confirmation, success/failure handling and atomic persistence remain. This does not accelerate disk I/O or bypass verification.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_quick_save_prompt-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_quick_save_prompt/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_quick_save_prompt-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_quick_save_prompt/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -607,7 +613,7 @@ Offer another owned Repel after the existing wear-off message.
 
 After dismissing the normal expiry message, choose YES or NO; B means no. Prefers the last used type, then Max/Super/normal Repel. No prompt when none remain. The default selection is NO.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_repel_reuse-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_repel_reuse/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_repel_reuse-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_repel_reuse/README.md)
 
 After the original Repel expiry message, the mod offers another owned Repel and defaults to NO.
 
@@ -621,7 +627,7 @@ Keep a TM after successfully teaching its move, including the replacement-move f
 
 Retains compatibility checks, friendship changes and move replacement/cancel behavior. Selling, tossing, giving and other item use still consume inventory normally. HMs remain unchanged.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_reusable_tms-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_reusable_tms/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_reusable_tms-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_reusable_tms/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -635,7 +641,7 @@ Hold B to run immediately, without changing the Running Shoes story flag.
 
 No configuration beyond ENABLED. Indoor running already works in this upstream build. This only removes the shoes requirement.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_running_start-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_running_start/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_running_start-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_running_start/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -649,7 +655,7 @@ Show owned quantity while browsing a shop, before entering the purchase dialogue
 
 Browsing the buy list shows current Bag count below the money box. Native quantity/confirmation count remains unchanged. Cancel row has no count. Does not include PC inventory or held items.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_shop_count-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_shop_count/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_shop_count-0.2.0.zip) · [Full instructions](qol/mods/frlg_qol_shop_count/README.md)
 
 The added OWNED 7 panel shows the Bag quantity while browsing Potions.
 
@@ -663,7 +669,7 @@ Read nature effects and optional IV/EV values from the Summary screen.
 
 In an out-of-battle Summary screen press SELECT. Nature effects and ability appear in a paged read-only panel. SHOW IV/EV is off by default. These are Gen III IVs (0–31) and EVs, not Gen I DVs/stat experience. Native ability description remains on the normal Summary.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_summary_info-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_summary_info/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_summary_info-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_summary_info/README.md)
 
 The extra Summary panel shows nature modifiers and optional IV/EV values.
 
@@ -677,7 +683,7 @@ Show VS Seeker battery charge in its Bag description.
 
 Open the Key Items pocket and highlight VS Seeker. The description updates when reopened; full battery does not guarantee a nearby eligible rematch. Does not charge the battery or unlock encounters.
 
-[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_vs_seeker_status-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_vs_seeker_status/README.md)
+[Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_vs_seeker_status-0.1.1.zip) · [Full instructions](qol/mods/frlg_qol_vs_seeker_status/README.md)
 
 The VS Seeker’s Bag description shows 42/100 charge and 58 remaining steps.
 
@@ -685,9 +691,11 @@ The VS Seeker’s Bag description shows 42/100 charge and 58 remaining steps.
 
 ## Updates
 
+**Collection v1.2.0:** Summary IVs 0.2.3 adds the native wild-Pokémon preview and configurable controls. Dex Companion 0.1.2 and HM Field Kit 0.1.2 fix the Start-menu overflow fallback. The manual-install bundle includes all three updates.
+
 **Event Distributions 1.3.0** expands the catalogue to 87 campaigns, 322 choices and 670 variants, preserving existing USED markers. Read [what is new and what remains missing](mods/event-distributor/README.md#whats-new-in-130). The manual-install bundle includes this update.
 
-This update adds Fly Teleport 0.2.0, Summary IVs 0.1.0 and Disable L/R Help 0.1.0. Dual Screen 0.3.16 adds menu touch controls and touch-held fast-forward; Encounter Reset 0.2.0 expands gifts, fossils and NPC trades. Auto Surf, Faster Center Healing, Party Nickname, Key Item Help and Scrollable Start Menu include their completed fixes. PC Box Tools is removed; Four-Item Wheel remains paused.
+This update adds Fly Teleport 0.2.0, Summary IVs 0.2.3 and Disable L/R Help 0.1.0. Dual Screen 0.3.16 adds menu touch controls and touch-held fast-forward; Encounter Reset 0.2.0 expands gifts, fossils and NPC trades. Auto Surf, Faster Center Healing, Party Nickname, Key Item Help and Scrollable Start Menu include their completed fixes. PC Box Tools is removed; Four-Item Wheel remains paused.
 
 Four-Item Wheel is temporarily withdrawn from the downloads and manual-install bundle.
 

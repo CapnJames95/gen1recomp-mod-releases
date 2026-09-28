@@ -4,9 +4,9 @@ Native FireRed / LeafGreen services from **START → MODS → Pokemon Services �
 
 ## Install
 
-Import [pokemon-services-0.1.3.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/pokemon-services-0.1.3.zip) through the launcher's **MODS → Import mod .zip**, enable it and restart. Requires Gen1Recomp >=0.3.21 <0.4.0, mod API 2 and `engine_internals`. No other mod is required.
+Import [pokemon-services-0.1.3.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/pokemon-services-0.1.3.zip) through the launcher's **MODS → Import mod .zip**, enable it and restart. Requires Gen1Recomp >=0.3.21 <0.4.0, mod API 2 and `engine_internals`. No other mod is required.
 
-With [FRLG Dual Screen 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-dual-screen-0.3.16.zip), the **SERVICES** Home tile opens the same menu and replaces the duplicate START entry. The Mods-menu action remains available. Earlier companion versions can use the Mods-menu action or START entry.
+With [FRLG Dual Screen 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip), the **SERVICES** Home tile opens the same menu and replaces the duplicate START entry. The Mods-menu action remains available. Earlier companion versions can use the Mods-menu action or START entry.
 
 ## Included services
 

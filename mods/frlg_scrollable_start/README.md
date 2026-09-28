@@ -2,7 +2,7 @@
 
 A standalone FireRed / LeafGreen mod for gen1recomp, mod API 2.
 
-[Download the installable ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-scrollable-start-0.2.2.zip).
+[Download the installable ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-scrollable-start-0.2.2.zip).
 Import through **MODS → Import mod .zip**, enable **FRLG Scrollable Start Menu** for your edition, and restart. This replaces 0.1.x using the same mod ID.
 
 ## Scrolling

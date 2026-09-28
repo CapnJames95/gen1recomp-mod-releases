@@ -6,7 +6,7 @@ Uses the same native FR/LG fonts, blue title bar, six-row scrolling menus and pl
 
 ## Install
 
-Import [daycare-viewer-0.2.1.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/daycare-viewer-0.2.1.zip) using **MODS → Import mod .zip**, enable **Day Care Viewer** for your edition, and restart. Requires mod API 2, FR/LG engine internals and Gen1Recomp >=0.3.21 <0.4.0. Later engine changes within that range are not guaranteed compatible.
+Import [daycare-viewer-0.2.1.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/daycare-viewer-0.2.1.zip) using **MODS → Import mod .zip**, enable **Day Care Viewer** for your edition, and restart. Requires mod API 2, FR/LG engine internals and Gen1Recomp >=0.3.21 <0.4.0. Later engine changes within that range are not guaranteed compatible.
 
 ## Manage or travel
 

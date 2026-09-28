@@ -1,6 +1,6 @@
 # Touchscreen support with FRLG Dual Screen
 
-All 38 current collection mods have a touch access path with **FRLG Dual Screen 0.3.16**. Install the [Dual Screen update](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-dual-screen-0.3.16.zip) and [Hold Fast Forward 0.2.1](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg_qol_hold_fast_forward-0.2.1.zip), or the [updated manual-install bundle](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/gen1recomp-all-mods-manual-install.zip). Restart after replacing installed packages. This work targets the Dual Screen setup requested, not independent touch controls in every standalone package.
+All 38 current collection mods have a touch access path with **FRLG Dual Screen 0.3.16**. Install the [Dual Screen update](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip) and [Hold Fast Forward 0.2.1](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_hold_fast_forward-0.2.1.zip), or the [updated manual-install bundle](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/gen1recomp-all-mods-manual-install.zip). Restart after replacing installed packages. This work targets the Dual Screen setup requested, not independent touch controls in every standalone package.
 
 ## Touch controls
 

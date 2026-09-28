@@ -6,12 +6,12 @@
 
 | Mod | Version | Download |
 | --- | --- | --- |
-| FRLG Dual Screen | 0.3.13 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/frlg-dual-screen-0.3.16.zip) |
-| Shiny Hunter | 0.1.5 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/shiny-hunter-0.1.5.zip) |
-| Encounter Reset | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-reset-0.2.0.zip) |
-| Encounter Tour | 0.1.3 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/encounter-tour-0.1.3.zip) |
-| Day Care Viewer | 0.2.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/daycare-viewer-0.2.1.zip) |
-| Pokémon Services | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/pokemon-services-0.1.3.zip) |
+| FRLG Dual Screen | 0.3.13 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip) |
+| Shiny Hunter | 0.1.5 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/shiny-hunter-0.1.5.zip) |
+| Encounter Reset | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-reset-0.2.0.zip) |
+| Encounter Tour | 0.1.3 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-tour-0.1.3.zip) |
+| Day Care Viewer | 0.2.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/daycare-viewer-0.2.1.zip) |
+| Pokémon Services | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/pokemon-services-0.1.3.zip) |
 
 These packages carry the same shared engine compatibility corrections, so each works independently. Loading several installs one shared set of wrappers; disabling all participating mods restores native behaviour. Encounter Tour also carries the fixes because its travel routes reach the affected native generation paths.
 

@@ -6,7 +6,7 @@ Uses the same native FRLG fonts, blue header, striped background, six-row scroll
 
 ## Install and use
 
-Import [capture-assistant-0.1.1.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.0.0/capture-assistant-0.1.1.zip) through **MODS → Import mod .zip**, enable it and restart.
+Import [capture-assistant-0.1.1.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/capture-assistant-0.1.1.zip) through **MODS → Import mod .zip**, enable it and restart.
 
 1. Reach **FIGHT / BAG / POKEMON / RUN** in an ordinary wild single battle.
 2. Press the **R shoulder button**, using its current controller/keyboard binding.

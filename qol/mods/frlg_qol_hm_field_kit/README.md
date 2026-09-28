@@ -33,3 +33,6 @@ Native FRLG mod-manager renders from the loaded 0.1.0 package in an isolated tes
 ## Compatibility update (0.1.1)
 
 Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Independently installable; restart after replacement.
+## Start menu fix (0.1.2)
+
+Without Scrollable Start Menu, more than nine entries now use a compact right-hand scrolling sidebar instead of a full-screen panel. Native selection and callbacks are preserved. Update both HM Field Kit and Dex Companion if installed, then restart the game. No configuration changes are required.

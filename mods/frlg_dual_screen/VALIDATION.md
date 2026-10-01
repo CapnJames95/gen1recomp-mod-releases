@@ -1,4 +1,15 @@
+# Current validation — Gen3DualScreen 0.4.14
+
+Current combined collection/touch checks pass **4,367 in FireRed, 4,367 in LeafGreen and 4,233 in Emerald** on gen1recomp 0.3.39. Coverage includes Emerald PokéNav routing/acquisition guards, black upper-viewport ownership, isolated native navigation rendering, and removal of the Start size/position editor. The Mac and Thor QoL Test installations have 275 mod files verified each, with saves/settings preserved. Full gameplay validation and Thor confirmation of the navigation flicker fix remain pending. [Current evidence and limits](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md) · [Screenshot provenance](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/SCREENSHOTS.md).
+
+## Historical test records
+
+Versions, counts and installation statements below refer to earlier runs, not the current installed build.
+
 # Validation — 27 September 2026
+
+> **Historical validation record.** Counts, versions and pending-work statements below refer to the recorded test runs. For current package versions, installation status and latest checks, see [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
 
 Host source: `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf` (official dev).
 Base: AverageConsumer/kanto-gear `6155d4d9c01f9b2fe44840382193ef3ad1db332c` (3.3.3).
@@ -82,4 +93,50 @@ Adds the optional Fly Teleport tile and companion menu routing. Both-edition col
 
 ## 0.3.16 — Collection touch support
 
-595/595 collection/touch checks per edition. Native runtime, pointer, control, route, progress and online regressions pass. Real LÖVE-rendered layouts were inspected; physical-device testing remains outstanding. See [touch coverage](../../docs/TOUCH-SUPPORT.md).
+595/595 collection/touch checks per edition. Native runtime, pointer, control, route, progress and online regressions pass. Real LÖVE-rendered layouts were inspected; physical-device testing remains outstanding. See [touch coverage](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/TOUCH-SUPPORT.md).
+
+## Home editing — 29 September 2026 / 0.3.17
+
+All 16 selected FireRed/LeafGreen suites passed; collection integration now has 371 checks per edition. The actual editor test moves a full-width Team widget onto occupied app tiles, checks every placement, restores all positions with Undo, and exits with Done. Layout tests perform 120 repeated mixed-size moves (full-width, seven-column and two-row widgets) and verify no overlaps, lost tiles or mutation of the Undo copy. The GPU preview was inspected for selected-widget feedback, instructions, Undo/Done and the completed move. Physical Thor interaction remains unverified.
+
+## Contextual FIELD tile — 29 September 2026 / 0.3.18
+
+All 16 native-data suites passed across FireRed and LeafGreen. The collection suite now passes 396 checks per edition, including 25 new checks covering native move/badge restrictions, eggs, terrain, Waterfall direction, rod ownership, stale eligibility and busy-world rejection. The actual native Party-menu selection and Field dispatcher are exercised for Fly; the RegionMap.show boundary is intercepted to verify Fly mode and its destination callback without starting a world fixture.
+
+The LÖVE preview uses the actual Home renderer with synthetic locked, waterside and cave section states; borders, labels and section spacing were inspected. This does not constitute an AYN Thor hardware test. Native animation completion and every field-action confirmation have not been manually played through.
+
+## Field execution regression — 29 September 2026
+
+The native-data collection suite passes 559 checks per edition on official dev `5540fc1`, including execution/access checks for the FIELD tile, legacy Tools and Field Kit. Runs cover both menus with owned, untaught HMs and the tile with taught moves while Field Kit is disabled. Native dispatch reaches Cut's object-removal callback, Flash's flag and zero darkness level, Waterfall's movement and crest completion, and all three rod tiers' native fishing state and Bag exit. Badge, egg, absent-HM, stale-selection and waterfall-fishing restrictions are covered.
+
+Tests use synthetic terrain/objects and replace the Pokemon presentation callback and physical step adapter; native Party/Bag dispatch and effect state machines run. These are not full fishing battle or hardware playthroughs. All 16 companion suites passed across both editions. The focused Field Kit behavior suite also passes. The broad QOL runner's pre-existing identical-support-file assertion fails before running tests; no unrelated support files were changed.
+
+Home visibility checks cover standard and large tiles, position preservation, enabling an unplaced widget, Options protection, and settings pagination. The native LÖVE settings preview was inspected. Runtime/control/online suites now pass 959/1405/1056 checks per edition; the collection suite passes 559 per edition. No AYN Thor hardware test was performed.
+
+## Tile label clarification — 0.3.20
+
+Settings now distinguish app shortcuts, wide panels and standard action tiles. The actual LÖVE settings renderer was inspected; the FireRed collection preview passed 559 checks, strict fixture validation passed, and existing saved tile IDs/visibility were preserved. This is a label-only change.
+
+## QoL Suite integration — 0.3.21
+
+The combined package passes 50 suites against installed Gen1recomp 0.3.31, including 532 native-data collection checks per edition. Menu previews using native fonts were visually inspected. See [QoL Suite validation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) for exact scope. Earlier broad companion suites above were not all rerun; physical-device verification remains outstanding.
+
+## 0.3.22 regression checks
+
+Both editions pass the combined collection tests, including absent HM catalog surfaces, contextual Strength eligibility, shortcut Fly cancellation to field and unchanged ordinary Party return. No device test is claimed for this update.
+
+## 0.3.25 Field widget removal
+
+All 56 combined suites pass across FireRed and LeafGreen, including 637 companion checks per edition. The retired Field surface is absent from Home, tile settings and the store; saved layout placement rejects it. Latest remote shortcut/field fixes remain included.
+
+## 0.3.26 Flash tile
+
+All 56 combined suites pass across both editions. New checks cover tile creation and dark/lit/missing-state/non-cave/already-active/badge/capability gates. Existing native Flash execution checks pass. Manual Thor gameplay testing remains outstanding.
+
+## 0.4.0 — Kanto Gear 3.4.0 and experimental Emerald
+
+Integrated upstream release v3.4.0 at `247187dcb15c8e9f0ebd36f78bb8a960d23ab203`, using v3.3.3 as the three-way merge base. The fork keeps its identity, FRLG presentation, mod integration, dedicated Flash tile, removed Field widget and user shortcut defaults. Added a Profile API fallback for the earlier FRLG host and used the host's Gen 3 manifest group so older loaders do not reject an unknown Emerald game identifier.
+
+On official host v0.3.39 (`faa6a02fc84de4adf7c640eec19aa900dba9637c`), all 16 pre-existing native suites and eight added dialogue/full-battle/menu-refresh/naming suites passed across FireRed and LeafGreen. The combined QoL/companion runner passed all 56 suites. An additional LeafGreen runtime run on the previous local FRLG host passed 959 assertions after the compatibility fallback.
+
+Emerald native/runtime/summary tests and the shared UI cases are retained and adapted to this fork's mod ID. Run `tools/frlg-dual-screen/check.py --editions emerald` with a 0.3.33+ host and an Emerald import. **Emerald native-data testing now passes:** 3,959 native checks; runtime 159, summary 237, dialogue 180, full battle 303, menu refresh 169 and naming 653 assertions. Tests use the user’s local import without distributing ROM data. No device playthrough or post-merge Thor UI check is claimed. Other collection packages remain FRLG-only.

@@ -1,12 +1,14 @@
 # Quick Heal Party 0.1.0 — FireRed / LeafGreen
 
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
+
 **START → QUICK HEAL** — preview and apply healing items from your Bag to the whole party or one Pokémon.
 
 Uses the collection's native FRLG fonts, blue header, striped background, six-row scrolling menus and the player's chosen window frame. Independently installable; no other mod is required.
 
 ## Install and use
 
-Import [quick-heal-party-0.1.0.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/quick-heal-party-0.1.0.zip) through **MODS → Import mod .zip**, enable it for FireRed or LeafGreen and restart.
+Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
 1. Open **START → QUICK HEAL**.
 2. Choose **Preview healing: whole party** or **Heal one Pokemon**.
@@ -32,22 +34,22 @@ Previewing uses copies and native item-effect routines. Confirmation rechecks pa
 
 ## Compatibility and validation
 
-Mod API 2, FRLG only, `engine_internals`. Tested with upstream `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`. The manifest's version range is not a promise of compatibility with every engine revision. No game data or save files are shipped.
+Mod API 2, FireRed/LeafGreen/Emerald, `engine_internals`. Tested with upstream `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`. The manifest's version range is not a promise of compatibility with every engine revision. No game data or save files are shipped.
 
-See [VALIDATION.md](VALIDATION.md). Automated checks use native imported data and synthetic sessions in both editions. Physical device/controller playthrough testing is outstanding.
+See [VALIDATION.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/quick-heal-party/VALIDATION.md). Automated checks use native imported data and synthetic sessions in both editions. Physical device/controller playthrough testing is outstanding.
 
 ## Screenshots
 
 Actual native drawing traces with imported fonts and frames, rendered from synthetic test sessions; not live-play screenshots.
 
-![Quick Heal home](../../docs/screenshots/quick-heal-party/quick-heal-home.png)
+Historical preview (older build): [Quick Heal home](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/quick-heal-party/quick-heal-home.png).
 
-![Healing review](../../docs/screenshots/quick-heal-party/quick-heal-review.png)
+Historical preview (older build): [Healing review](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/quick-heal-party/quick-heal-review.png).
 
-![Exact items to spend](../../docs/screenshots/quick-heal-party/quick-heal-items.png)
+Historical preview (older build): [Exact items to spend](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/quick-heal-party/quick-heal-items.png).
 
-![Party result preview](../../docs/screenshots/quick-heal-party/quick-heal-results.png)
+Historical preview (older build): [Party result preview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/quick-heal-party/quick-heal-results.png).
 
-![Healing preferences](../../docs/screenshots/quick-heal-party/quick-heal-options.png)
+Historical preview (older build): [Healing preferences](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/quick-heal-party/quick-heal-options.png).
 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC. Menu styling follows the collection's Day Care Viewer and LegalMon conventions.

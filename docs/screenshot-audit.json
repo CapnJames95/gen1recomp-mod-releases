@@ -1,0 +1,1440 @@
+{
+  "builds": {
+    "legalmon": "0.18.1",
+    "event-distributor": "1.4.1",
+    "shiny-hunter": "0.2.1",
+    "autobreeder": "1.1.2",
+    "encounter-tour": "0.3.0",
+    "frlg-dual-screen": "0.4.14",
+    "encounter-reset": "0.4.0",
+    "frlg-qol-suite": "0.3.9"
+  },
+  "engine": "0.3.39 / 0.3.42",
+  "images": [
+    {
+      "path": "docs/screenshots/autobreeder-home.png",
+      "sha256": "681e62e9a1838d90cde96bf4918214eb47f0bfcedf0002ded4e9bc940b4fef39",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/autobreeder-ivs.png",
+      "sha256": "01982d9925e365ac1ccaf74c33cd153a59706139c76b527d0944cfd0becd9ff0",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/autobreeder-keep.png",
+      "sha256": "5db4d9b53adba71aa7f168f330fc71282e69f75422e8e9638f2ebddbc8e6880a",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/autobreeder-progress.png",
+      "sha256": "8aaa191ae377d327b8cd3a3e2296e39a0b2ebae390760ca95e5ca206f104b254",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/autobreeder-result.png",
+      "sha256": "9b469cb5a4cce56261c5c7e4731ab0622f9b1a8e7591bb14fdccdc443443c0da",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/autobreeder-targets.png",
+      "sha256": "f5177f337c4648beadf61fe4e5a0d2371e364b9791f1d0ccdf36d009120d2bdb",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant/capture-balls.png",
+      "sha256": "056fa7f0e94372bd82b89ad590cba78f974f98b73947263911af9a2f6c3399e4",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant/capture-detail.png",
+      "sha256": "050abfe402d2b94296ee5908971b43666fb728c1cb861aa8c4d4d23f212c7f7c",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant/capture-home.png",
+      "sha256": "60ea72a5f95efcff82ccfc9d04399cba5b3d3f7c62497e8dd8ac4bf7e3f95944",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant/capture-risks.png",
+      "sha256": "64ac93ef164186c226969960b1d94b942e4ff7d745d804d01c2c464675dca5c3",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant/dual-screen.png",
+      "sha256": "49accadfe45ba81f3771095cd3330c26bd85d1634ef43ef0bfc1758b08639c5c",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant-detail.png",
+      "status": "current-native-preview",
+      "sha256": "a34b0f0db82312c3f35b2f468b982b020d888b679fdd09dada11ee03c508c147"
+    },
+    {
+      "path": "docs/screenshots/capture-assistant-options.png",
+      "status": "current-native-preview",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10"
+    },
+    {
+      "path": "docs/screenshots/current/capture-assistant.png",
+      "status": "current-native-preview",
+      "sha256": "d98b553e6305bc122a1affc89f91ea611d572f95f8de44aeee8af6c72b6bfa16"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-autobreeder.png",
+      "sha256": "fe4269815d944500b342b623c8bc4dbd9fef56ec87a6df7e9c10de7d13a7a3b2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-daycare-viewer.png",
+      "sha256": "1637be5f747fdb340ba533895204d71a087c9f72256d4d16c541d3c597d2549e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-encounter_reset.png",
+      "sha256": "d1de053864ee5b1560b82c027433231a9744a4aa5fe4748b448fae84229a9c19",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-encounter_tour.png",
+      "sha256": "18dd7aca7d896d448023eb95b4fb608b1e727471daf085231db341334a6dba40",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-event-distributor.png",
+      "sha256": "82809a1edf9bd09f6efad8fcc9a8d2102ed156cd5b4ef6701452474b1634bb3f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-fly-teleport.png",
+      "sha256": "825f4aceef83ce9b04750fc0c580454fc0b8975c9891dfe1901fafa00332f25a",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-hoenn-tools.png",
+      "sha256": "7538404e7ca98eb1d7ca8a01677a5c4d37ded01f448c0035664b543e2b6618f5",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-home-1.png",
+      "sha256": "6db69917790df56464570674468f4448198a2255613d6e3f27439d0cd8f7ec5e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-home-2.png",
+      "sha256": "5efdc9a7cba8bd610236e7a51cc2e24b9af0071bb7193c2618b40a384cb429da",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-home-3.png",
+      "sha256": "a98d26f60e74d56a7079e45f03d8f38b0381dcb8fde5659b0e6dba710dd72c97",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-home-4.png",
+      "sha256": "ebaebd6dc20114a1998a742d8d8ecd04bb4064dc8ef3a92120e1d63336d632af",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-home.png",
+      "sha256": "71f095ec016f428f74f8503731cbe3c1a84ce8fa87adada0b745c767eb721903",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-legalmon.png",
+      "sha256": "6b8999ce2a32514a24e815e39aaf134adafe84907df03f4fe7abbe81b6693057",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-pokemon-services.png",
+      "sha256": "a5cdafc4039f7d2e923ecbf4337b1dc2d5be68b77bf76ea9928795874eef0148",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-pokenav.png",
+      "status": "current-native-preview",
+      "sha256": "35e461602f9a6c61e5656de7779dd9b550e4f74b5cd884453683eec28c663eed"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-qol-suite.png",
+      "sha256": "e4a44e995888751806ad77b2c8d034d21c443f624c447d2cdf6503afbba9788f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-quick-heal-party.png",
+      "status": "current-native-preview",
+      "sha256": "3d445e17cb940296a557c3ed647c074bae1693c0307a60eb5279fb69eac01142"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-shiny_hunter.png",
+      "sha256": "1bafbe2e99bcdb0d3ec49a584e609bc233d1f1a1e1798d9eaafd27a2c0b31861",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/emerald-town-map.png",
+      "status": "current-native-preview",
+      "sha256": "06f6e61ec3979ca1742a0a0e43b24604865bb489e4fe57068e5cdc8b171b0510"
+    },
+    {
+      "path": "docs/screenshots/current/firered-autobreeder.png",
+      "sha256": "370de534096d58e5ab4da9a79802eb335c9d2815475c2bd56ce15d6f1f41b8af",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-daycare-viewer.png",
+      "sha256": "240d4e223760a009543575130f9bf6329cc4b07bd98ba53ae6908dab23d6e591",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-encounter_reset.png",
+      "sha256": "e62e635dc352ce38dcb9a59d80887aa6791783363b4275e817810c13a2ca3059",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-encounter_tour.png",
+      "sha256": "458cd4a20bca49cb5609eaecbdfe066ff7a3422f10ec1114def8f2efacf29864",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-event-distributor.png",
+      "sha256": "2659049448a072e4ecee0f0906181707c30ba350464aef499882b6b7ecd0ce75",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-fly-teleport.png",
+      "sha256": "215410ae4f82dfe7bad39f2543004dda52d6e843040dafd4d98dd15e62c225c3",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-home-1.png",
+      "sha256": "90be699571f3024e0b0de0ede2cc27389f3b3ed135c2c1ec1c6b3a5bd3fdb36f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-home-2.png",
+      "sha256": "31c0f91227b01bd1ae6e010806f7bfbcf4dab3b989489040e969b1d576ea7f27",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-home-3.png",
+      "sha256": "a98d26f60e74d56a7079e45f03d8f38b0381dcb8fde5659b0e6dba710dd72c97",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-home-4.png",
+      "sha256": "ebaebd6dc20114a1998a742d8d8ecd04bb4064dc8ef3a92120e1d63336d632af",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-home.png",
+      "sha256": "6dde1518a7c576aaf65bf919aaac6d174e770fdb5f1b37daa409210f219ab06f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-legalmon.png",
+      "sha256": "b35ffd47f64f187040bcbef26e598a61165cc91346431352ca19ba1098fd437e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-pokemon-services.png",
+      "sha256": "6dc09043a9676675b98b42182b4a1ee7b14ac0c87b466290924038b2d63b15b8",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-qol-suite.png",
+      "sha256": "3d385b3903a36d97cfe270e76e7558c53764531d32e10c67f6a9b09dba8c0555",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/current/firered-quick-heal-party.png",
+      "status": "current-native-preview",
+      "sha256": "bb32c582397273d60d89296cfdad6cf3b6467835b1f0828291c04c822acfe94d"
+    },
+    {
+      "path": "docs/screenshots/current/firered-shiny_hunter.png",
+      "sha256": "1bf77c170dc8b6db5f07121f42edb7e14a2147a20de6f6ba82042e236b0776da",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-breeding.png",
+      "sha256": "adfa807f30031508bea5ca60aa7fafcd928e01c93e7a32582f63f9f75cfc001a",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-controls.png",
+      "sha256": "996624def8b0653b8b97702618def97630076f06b142be9874f7fd92b0d51c4a",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-deposit-confirm.png",
+      "sha256": "f03d331accda7d7c7adde42a8fbb226035e85ed55ceb44a9bfc30e10599e62b2",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-deposit.png",
+      "sha256": "9af11b6a53683d352d66895c2b48a6011f47d85a8e8d13169b286ecb17ef0c29",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-egg-ready.png",
+      "sha256": "563af3d6f518bbdb1e7534107e737155e98204f4fcf776e6353727f26e3bc9a2",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-four-island.png",
+      "sha256": "194cc6e15edb0d31f8bfb030ba99d164ac0267c95040f3edf45d00867acadbcc",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-home.png",
+      "sha256": "6d4c70c0b48814a7494b811ac43b9b57a1ea0e3c8ccd9939b6faeffe79131328",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-moves.png",
+      "sha256": "2f0d346cd96288db039827658b7646d35e8c53124f699030c09c54185dd15425",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-pokemon.png",
+      "sha256": "13ba67e4cd76ce50f8030d34b90db5199f0e88bffabd85482c081ee8619ff5b0",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-stats.png",
+      "sha256": "13c485c37e27aee2d1b1737fd9b6432944d45886a09b844e38dc5d6154ca2957",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-teleport-confirm.png",
+      "sha256": "f74ecdc4a6be11622246743e7174878c1b9c59a53e6fe8818e3ab02797234b99",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-training.png",
+      "sha256": "ef3061200a1e39735bde070dc6069723f4ebf44576de6e71cf4a1702b7800136",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer/daycare-withdraw-confirm.png",
+      "sha256": "9a2901a139642f204a2da0f5ef23ca34d777b3e38ce2f1edf3cbcc8170bcc26f",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/daycare-viewer-detail.png",
+      "status": "current-native-preview",
+      "sha256": "30e315df4b66b22a6a5a4a6df831a48b11588a2e8101ea2d1b328c31da0b11b1"
+    },
+    {
+      "path": "docs/screenshots/disable-lr-help-detail.png",
+      "status": "current-native-preview",
+      "sha256": "f8696883ede3939c6858e5d8be737fb3f0d4a7ce5656fcb463829852b3cd7074"
+    },
+    {
+      "path": "docs/screenshots/disable-lr-help-options.png",
+      "status": "current-native-preview",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-confirm.png",
+      "sha256": "1d9b0f5f8bd5e71175c66600a65ce8a30af2ddca0b99cfe1bd1a170004b504bf",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-deoxys.png",
+      "sha256": "e874a68fa1404861df2bdc5d376f930662862981af8d1226acf1b394e09ae9eb",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-fossils-detail.png",
+      "sha256": "b37b7c8092bda7dfb8f406b8c4d27dc1cfd6fdef6509dee09b8260fd70278a2e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-fossils.png",
+      "sha256": "c757a3b69c6e302885aa91e76c3535463e36495c64f5bfcf3308e808e8e0cd94",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-home.png",
+      "sha256": "5dd548757a32466c4ab3c3f26225906719774c45f16325abfb86a0e0e677e68e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-johto-starters-detail.png",
+      "sha256": "af9ab50c32c840703f705b711db6a22e9d801a1ecae1b2e6430aaab3c0cdc0dc",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-johto-starters.png",
+      "sha256": "aa6b8ba040883646c1cce46f80fe88304a2fb22ae3b7d702cb12958c1f150897",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-npc-trades-detail.png",
+      "sha256": "b6df50724a62dec171196baf88ba4cfcbd2a538a6d288f9577014d8d40e28b07",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-npc-trades.png",
+      "sha256": "44bb268edf1a6afafab0610226fc228ceae4053bd0abce5cc7b7efe62dd73224",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-starters-detail.png",
+      "sha256": "b7a054e6dd52190f3bb1dc519949625beb191a425a4b84f1a5cb8677de557260",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-emerald-starters.png",
+      "sha256": "a41e51304e772135400e4cff16014f64c46e5587c7917bf6d3abc45415cf1511",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-fossils-detail.png",
+      "sha256": "57867e11a34863216e301c60744a7b6c9ce4cb74fe804123d05ff5e7e45f24de",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-fossils.png",
+      "sha256": "971d2e4cfba360c6f6155f295815289e18bb85b161048ea029d4d2af902d60b7",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-home.png",
+      "sha256": "5656651d2eda7331c71ece985bc178bfd4e6b46d570999c2f3c2e191ebbc3929",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-npc-trades-detail.png",
+      "sha256": "99adb83d6677088ccef5bf3cbf2d09c669dbae20abafa3e144b89d0bac241346",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-npc-trades.png",
+      "sha256": "d0b01836f35a2ea7aabc1bfb4ec10c5006b312c3c88c15f0a82ba03f81546f12",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-starters-detail.png",
+      "sha256": "8feaadbe9925d91d2b97392fbe58a60fdedbab3a4c4572e1ca22581b6c7a1bd4",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-firered-starters.png",
+      "sha256": "880f596455814c665c0b0cb2345a6018a7919bf00f084dce8fc98901c671499c",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-fossil.png",
+      "sha256": "6149247a3831d8db6ce1a0dbe48a304c7f887487995aea6167ae9eecc70987ed",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-gifts.png",
+      "sha256": "66410f47af5ca97b6f9c4dc7370164f42a1ef0225eb16970bce76eb95a084539",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-home.png",
+      "sha256": "03c0fc891febfa69ea748f32033822ee10a009353ad00c1f3ecc987961989642",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-reset-trades.png",
+      "sha256": "b6a3b0a0e0ddfce953013db050e31261b4616fd3abc85bb5b830f2cdcc64bf99",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-categories.png",
+      "sha256": "df7029ed7477162cf74bd5f007c468ff4e2b3592d237ba726532dbe8ea1a7fc4",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-deoxys.png",
+      "sha256": "ecda545991ed6e35ab9f2d5533368b4a360840c1922e0842feafd51941fe7289",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-fossils-detail.png",
+      "sha256": "9d38cf851ed66c9b9bb0a97bdc680c34d964cce3e09e3fa97de43555c0f045c4",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-fossils.png",
+      "sha256": "fe64bd282f8005c322cbdb079762a0ba6f1a778564fd5ac65ad7de8fa899adb0",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-home.png",
+      "sha256": "63827ee7203e108076a0c18809b0246e2faf2b6c62d595cb20ee7ede350f4586",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-johto-starters-detail.png",
+      "sha256": "776036679fa5042cae076ad9af6388718d2f6d24584fa73b7f51cd1387964f2c",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-johto-starters.png",
+      "sha256": "037ce4893b9737a5662d57f26fd0a4cf325c30a8d97457a4dd8d0a9041f710d6",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-npc-trades-detail.png",
+      "sha256": "2a1681c8d6007c3973346ef5ae6655f1a57c739b9b229f795454c2d15f882cbd",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-npc-trades.png",
+      "sha256": "74f696a2ba903eb04853d807599dffc06a7a99966bfef8d4e713e78651202324",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-starters-detail.png",
+      "sha256": "9e7e983609e7e20b334a5a85a6431f16e2ce15793acb300c8ddf5260b3937e95",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-emerald-starters.png",
+      "sha256": "62900b133de7bc68b9a4dfd3a80cff3af9134fb4c65b1d7876ca244e224ef704",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-events.png",
+      "sha256": "c15ffc31adb1198b8ad5cbdd82037099f86e3a877cbca3c52dbed12c60016af5",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-fossils-detail.png",
+      "sha256": "c1b13abcc5b631fe1221ac0fe675f5ba70c85b022b190ad249127ab34778a6e0",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-fossils.png",
+      "sha256": "16983c0349b21a0dfc4399a5bb8bc51b05caa5790488f714488e51d44d03b211",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-home.png",
+      "sha256": "e15db815424f87fb0bb345ea595f9be6e126cced0c9abf6acf5ab0d943909ef2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-npc-trades-detail.png",
+      "sha256": "2cd63d7579cedba0ea33d5bd1c2b1adc976a9327426927a55927415926663124",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-npc-trades.png",
+      "sha256": "906c41950effb79818ed4f0085972dc14d62d274490c5de5f4bb132afe7948ce",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-starters-detail.png",
+      "sha256": "b3444538f1b159c23b7b80a60a60fe719c265f5fe373d224f0f12ab6fb501e5f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-firered-starters.png",
+      "sha256": "2bb564ec5ea29e89f21747d405b37a30f4cb21d48d4a9840dc984d015b556f58",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-home.png",
+      "sha256": "e15db815424f87fb0bb345ea595f9be6e126cced0c9abf6acf5ab0d943909ef2",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/encounter-tour-notes.png",
+      "sha256": "e1f4b31a81587599e3d6a621ce37e1c4d0d4fccce177d5c75d54e67bc2faa032",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-anniversary.png",
+      "sha256": "2b8d5ddf389697eb9ecd6cc0de5c22594de4ce303316f7c1653982e363f582bd",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-details.png",
+      "sha256": "797bd6fde9d6b6533011194b6eee35e8a5f0eae9294091784b83fa5776161802",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-filters.png",
+      "sha256": "f9411ba6fc95458f7c5f606603edf0e06b1ea96df7dc1b9f316efcb6f0e3fb20",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-home.png",
+      "sha256": "4f9a760ce26603a351ba06803c1d147b8c2b7decfcab7badf02c269206306092",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-journal.png",
+      "sha256": "44ae9fbaabb3cb46c9c57d6ca12f7b318f517439bc90bde31533735702b19c50",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-personal.png",
+      "sha256": "ff12360a55d4aca5620fc83f8f922e47469cb840430c50774db579f3b93ae801",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-pikachu.png",
+      "sha256": "37a987ff132e7ba0e9d6add4cb7180b89212a9006744f67041d5e402aba61952",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-receive.png",
+      "sha256": "4da77f514501d32cd62d761d201e6348b1a058d6500caed19bfd456740d92e11",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-shiny.png",
+      "sha256": "e72f05ee182d1a92103a2a42adf71238dd4fc5f07ca7231d8ab40909fc4e11e5",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-ticket.png",
+      "sha256": "cc277ee25d43d302164bc36f5b03726e91f4a422e482958b3c5311a7532c1ffe",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/events-used.png",
+      "sha256": "ae5bc29bc00577add4c082b897e90f4c1d8cfd63ebd109dce337124194024724",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/fly-teleport/confirm-firered.png",
+      "sha256": "ee10e0b2f140389aec01199cc472754c9dc46d0b12936c493c52cded1d1b0289",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/fly-teleport/destinations-firered.png",
+      "sha256": "60e22ec41a5645fcf76fc4cb153c6800575fda960398fd72c52beb9eabf9f1c1",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/fly-teleport/sevii-firered.png",
+      "sha256": "908a52008575d9d92cbdfbca9d3705455ebe7107792d1db73786e6d30ca67d05",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/fly-teleport-detail.png",
+      "status": "current-native-preview",
+      "sha256": "5b54af2a7ddd1576b6e7d486c61c832f92435b95369980dcb1454fb22ae87d13"
+    },
+    {
+      "path": "docs/screenshots/fly-teleport-options.png",
+      "status": "current-native-preview",
+      "sha256": "7c0bb092e2e36fe10c30c1f693cd646236ac1c3bbc2b01f189d75fa84e12f8ab"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/battery-percentage.png",
+      "sha256": "2cad94cf646ef82ce4c17b7826b275cdb2d0b79dd7cd37182ac206f19b57559c",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/battery.png",
+      "sha256": "0041784c7bccceff1d3dd8fb1d858ae2adbecc0d1f4a3f2cedfd4e5ef6f87f13",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/battle-tools.png",
+      "sha256": "8533f517534a023ad2707556a5930822717c9b72ae73b58f3755ee12e507f88e",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/collection.png",
+      "sha256": "c7c56020f4919127cfc78c1c890ecaa84ce5a1b75482ede9e6cebfb5f1fc193f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/field.png",
+      "sha256": "e530babfa02c20c2d9b4ace8a9990f5c53f91ff6e466919a9ec3c4636c3fe861",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/home-mods.png",
+      "sha256": "af2218ee9b01a3686e9045c11e5b9072d2be95b602c536844c85a9a8de051be7",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/native-ui.png",
+      "sha256": "b2640b48c7302e5ab21b3025959a3ca36afefa9497b06b735033a912be0fdf9c",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/portable-summary.png",
+      "sha256": "774ab670a2a6a839f07a460cc4da0c8ea3d94d997115201655f3e5a0900919ac",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/qol-compatibility.png",
+      "sha256": "497b6c674736af1720683b7662456aa03e9083dc30ad19ee29480d72959a7b3a",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/rearrange.png",
+      "sha256": "49be5e375bedf39ae359a7a0431e5f4adac4b894fbd5cbbab6871596b257c723",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/startup.png",
+      "sha256": "c26232a0f2bb4aac59d14382e28ad515d79a4b519750e4abb1179fef9768b00a",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg-dual-screen/tile-settings.png",
+      "sha256": "8fe5d822d4e8c7dc4b4e6cd60db1ba597fe2f98ecc02d14a3fa2025750a14dd0",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_auto_surf-detail.png",
+      "sha256": "0bdb31597b8fd760f439d8ce8d57b6be5bde4381545e0102deb4331cfa766044",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_auto_surf-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_bag_sort-detail.png",
+      "sha256": "294ba1d7977d7cb01f8698d24c37f48375fd8bcb2edcd41b64b024fc93daf32f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_bag_sort-options.png",
+      "sha256": "3c489afa706a192a9c7e824e3ee9b8ec0091035cda45aecc6bf48c3d9a1cd233",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_ball_shortcut-detail.png",
+      "sha256": "11bd0a74636e2f84418529db942867927b2dc8eb41a55058ec935fc6f328591f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_ball_shortcut-options.png",
+      "sha256": "5ede24b970f2d1a14bad68a2cb305fb8b2b0774f0bf14dbdefb237a15209c6c1",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_battle_hints-detail.png",
+      "sha256": "192e633279eeb7eddbdce2213345ea5d0f3328f040518bd4300560370aa71476",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_battle_hints-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_battle_pacing-detail.png",
+      "sha256": "67167ec3e8e4d6734f9342b2a5ee0e0b9b107d98ae7f799fd23470551105fb98",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_battle_pacing-options.png",
+      "sha256": "c89e8047539d8ef1632baf3bcbd6412561bc8ba7b9f4bb116b66fdc307021fd6",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_berry_restock-detail.png",
+      "sha256": "e29e3e0be27692e4786ae5dc5263414b53bd64a51c6fbabc8b1e94b97640fff0",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_berry_restock-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_dex_companion-detail.png",
+      "sha256": "4434a74a166ee7693a4ee53b909622d128dd35d9840eb71be9601e5544fda9cb",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_dex_companion-options.png",
+      "sha256": "2af403099fcd719bf8e804e772edcf364a34a7c9aedd3d0dad4b07a0ead33f49",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_fast_healing-detail.png",
+      "sha256": "eab246b49df07ca4be2d1c1087642b83f8d39e62c73c3f0829e88775e7837e3f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_fast_healing-options.png",
+      "sha256": "0ffe06db65c5aae22491324512af768369c819c09027700c9d54dc008eda4e3e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_hm_field_kit-detail.png",
+      "sha256": "123975d34f477aa808184287ad20b438e81938ec0917230a41ef8badba9e00be",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_hm_field_kit-options.png",
+      "sha256": "e620c6c0f4c480fecb8969c7ccd85a391c99ff482fe1a0b801effedf8ffd4a03",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_hoenn_tools-detail.png",
+      "sha256": "1fa95bcf7e64f7fbd17a8aec27293858ed8d766ec51c25b987b3be2f6eefca51",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_hoenn_tools-options.png",
+      "sha256": "a53535fe0d77fdd6fc059454aee1d96bab4424c76cc8eb2faf47052b4a2c99f9",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_hold_fast_forward-detail.png",
+      "sha256": "511593437ed5c64813345e9db1d3e00f811136a850237019382bdcd0b56b25e2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_hold_fast_forward-options.png",
+      "sha256": "4b4abeddd4a8cfe7bf0ecfece17b8be1384fa2a3ccfe8641624feba59417b533",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_instant_text-detail.png",
+      "sha256": "4cf2e923f97e23361da186f048f143af3abfc894628a49db6fde282c147b5a22",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_instant_text-options.png",
+      "sha256": "caabb337cf63e407d7439eee840db88b9163bf6edfed140b830a2114e156a016",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_key_item_help-detail.png",
+      "sha256": "48938fd1467499d267cc1bff8f7d1bbdab13b408a75e93393be8e6b366ada5e9",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_key_item_help-options.png",
+      "sha256": "b983c842e2985437a5de26c6d8902654ab2d18c76022e3db41cb21aedec65f65",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_map_services-detail.png",
+      "sha256": "684c92a765df5ad8e7f3e4445531c28907f0338ff54b706e82ad95a45576f77e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_map_services-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_move_info-detail.png",
+      "sha256": "ee607d6675e0b89b834ae1d0a7d166a688e607de1154e79b602a9ee4240763ff",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_move_info-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_party_items-detail.png",
+      "sha256": "ca58cab338ce7f81691c53e1905aa6ab96de4450ca4dfaaeaf6719395c04e87c",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_party_items-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_party_nickname-detail.png",
+      "sha256": "d7f64a7a9b7464e6462f78eba216f67ddc6a7161c56ad8e0148ab7a3614561b1",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_party_nickname-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_party_reminder-detail.png",
+      "sha256": "74feb37b825ffea20655856c1045a42b2738a5d333155bf15af51cdb1c20aaf3",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_party_reminder-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_quick_save_prompt-detail.png",
+      "sha256": "6ccdb987724bcae8647c487e7f7f9228642bf7327f27289f837d7d4c5e95a2aa",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_quick_save_prompt-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_quiet_exp-detail.png",
+      "sha256": "2b913add5fc28593f7eb4935efa7da7ec1c67a57f123af3ae002a9c0c08c7f04",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_quiet_exp-options.png",
+      "sha256": "d7724c1d20dc84a17d41b1df314b7252be380bf76ab34b63c3834501141f7df5",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_repel_reuse-detail.png",
+      "sha256": "9d1f8fece7d823a7581da1f8f446306c9b2bb99a75644a11c7423b21ece26f1e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_repel_reuse-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_reusable_tms-detail.png",
+      "sha256": "ee71ad3ebdbcc005d23ce3c559c3bb7e3949c7eff36e25275ef3ea2542ab6c7b",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_reusable_tms-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_running_start-detail.png",
+      "sha256": "239d2ac9c0dfbfdb22f8cd26d17a4341dbb94da45d90481bc0af29331ef56f85",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_running_start-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_shop_count-detail.png",
+      "sha256": "8e73d58f985b5fea5bc6a64d9d38746786085be5b74529759f78ed9cee0eca1c",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_shop_count-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_summary_info-detail.png",
+      "sha256": "a0dd2766d41359f865b5524c11cf7a526ff247dbe9f774edf15322f329a43218",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_summary_info-options.png",
+      "sha256": "94bf840454f3038bbf58c9b0929e063a5ca0c03fafac2dd7cd64cb8f2c63aadb",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_vs_seeker_status-detail.png",
+      "sha256": "8bca78fe935c58967a7ff1fb87aac55f5d2c12112ce73b174dd9c22de0669fdf",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_qol_vs_seeker_status-options.png",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/frlg_scrollable_start-detail.png",
+      "status": "current-native-preview",
+      "sha256": "6fb2a6a5f198dc8313bd9896d4a2915e57eba11fd47776eb6b65c033ae397928"
+    },
+    {
+      "path": "docs/screenshots/frlg_scrollable_start-options.png",
+      "status": "current-native-preview",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-berries.png",
+      "sha256": "740aadd5104c702ba43b25b2aa62113dfac8784ee93b382ccce88a486d397429",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-berry-detail.png",
+      "sha256": "03910d25bcb1e2c6ac21098f71c2b71953a1eeffabea5eeba694452f0d56647e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-bike.png",
+      "sha256": "f6b240c3c5125c6ee6a37a106ed3cc10a34350000bdedfa556e0233721566a30",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-contest.png",
+      "sha256": "9899a05962baffd2bd5d3e675249ede8427205d40528ac34fb77470f5d50d905",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-daily-events.png",
+      "sha256": "68cdb495617552e4b2b9ff373aa5c23d91113dd630a806b70256c653e91881d5",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-feebas.png",
+      "sha256": "170a4d1517261fce55b564a2bb5a04767f74491ae57c394378168c9c9b0266d2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-frontier.png",
+      "sha256": "6357f93dda6920354b6ba38c69b174956169c98855a7702d6a9155d95169e11e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-home.png",
+      "sha256": "bcdff62e9f947da47615f3fa9289c444188d52765741b316890a7eeec99c7a20",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-match-call.png",
+      "sha256": "d93156a949edf02d5468193c2b2b8ce9e96dd9b96a725bc751493b97cc444004",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/hoenn-tools-secret-bases.png",
+      "sha256": "be20f514337e846d89827b2ea570e0279e20a09ab53aa5ad8968b90e4e1ca607",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/key-item-help/firered-bag.png",
+      "sha256": "407201502fd55ad371fc50157654b154800f52db1f01320fe65c6cca486387a5",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/key-item-help/leafgreen-bag.png",
+      "sha256": "407201502fd55ad371fc50157654b154800f52db1f01320fe65c6cca486387a5",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-compare.png",
+      "sha256": "6777f6189ca3893afdbc8ad6ed432052afe9f4e7cdc8abfcc59a88e0ae1e3b2e",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-ereader-confirm.png",
+      "sha256": "a754da210c4e192cae3131c8fd4298d7ad73e3ac07fa015df8f8f7295b2c1133",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-ereader.png",
+      "sha256": "79c621189c6dd3e960fb945cdd8dd0da99b50badaaaf936874237c5a2bd4fac2",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-gamecube.png",
+      "sha256": "38d80924d48bb006bded049376ab1f2eba946de9acd4a38b9b848712f5f2f530",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-home.png",
+      "sha256": "a41a80fc5d318e12af19aeadffcff65b90432da2ab87fa4e1449b4efca9f504b",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-npc-trade.png",
+      "sha256": "b0dbd7b5ed05f2e3cc8dff9a129c9de0180fe84114754cf416bb5bb42d8236b3",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-perfect.png",
+      "sha256": "4aa4141668de5ec19f290cb3c84b92980b5ad21146d6ab9c40bb51f2b64b52db",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-preview.png",
+      "sha256": "4fcdaab02ae216505361d7e6b3a1937aecd572459532112f2bec5f4ba0d774ca",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-profile-progress.png",
+      "sha256": "7b0f2506cee18d92281863e294faf42ad738751d8fb5f912f8236e82cdd7c512",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-search.png",
+      "sha256": "a25c271c4bd30384568781eac9bc756391d82cdb5d8b5e35ab35d94c7e1c5223",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-settings.png",
+      "sha256": "57143d4a7b851214f830a52b1f3138467e9d2fdc6a25efb6b46be2eedf7ec74b",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-species.png",
+      "sha256": "60397bb2deb828372ed79d123a8592d384002a6dda716c67fd0c261cee4ff599",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-spreads.png",
+      "sha256": "db79c839667620e66dab306108a9d84b40fa423b57c63fb6b36ada1675646a91",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-style.png",
+      "sha256": "f72655b18a68c7cabc2fe41dcce5ce9a080f404bb59fea5ee9c2a60f6de66dee",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-trade.png",
+      "sha256": "9e9f6362a4c93036b86459806550710e9e838da0064c034e2a07ba2cf16ffec7",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-trainer.png",
+      "sha256": "2f2db7d1c67b4c327fcea224b74ac363cbbb6061db18b7896de21b6781bfb925",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-unown-picker.png",
+      "sha256": "38a4278166441c3029fb7165cd82504a3cfbd9cdd41b25bd65c74cd6f0b25c72",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/legalmon-unown-preview.png",
+      "sha256": "e4090274626392c274890d0398498f3a196232dff5f83a96fd09dcbf38dd0f13",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/party-assistants-preview.png",
+      "sha256": "f3b9d027119201c410449b0f1d23f0ea848bb9204c110f12b64255f110164418",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services/services-daycare.png",
+      "sha256": "180b979e99a75711bc0480a49132b1020dec321d40e006478e2f630f1a70e550",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services/services-department.png",
+      "sha256": "33b652cdfc0c1c494932755fbe2629ad60ac2b07d81001d0fd864fde1514f932",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services/services-heal.png",
+      "sha256": "6f98c8001ab312950da351f7e1c41985ab53cffe90de7cbcb99c95f1ab480b4f",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services/services-help.png",
+      "sha256": "fb4fa0f07ba8b5dd581e487a0b22e8e4177aae50bc72db8ce41ae26b208d1af2",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services/services-home.png",
+      "sha256": "6c4542dd5d59ab484ae4fa33bf0f5502fa71e9c56a8d91f77e297626d88ce823",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services/services-marts.png",
+      "sha256": "036237f9b6aa71f946b62ba0ae3a59d7a96c00b800f8ba43581b1e3ef8e6e77c",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services-detail.png",
+      "status": "current-native-preview",
+      "sha256": "54d0f63b5fbc23a9fe2fd95bdbe8764ecb14cbd15a1fca9e4da957838c4fb2ab"
+    },
+    {
+      "path": "docs/screenshots/pokemon-services-options.png",
+      "status": "current-native-preview",
+      "sha256": "c6301480e50f8af3b292fe888bfdbc2a349319b3a174e5383a30e05035e19a10"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-bag-before.png",
+      "sha256": "0bdb68b43e659c72ef5996acfa18b83fd5fc535c16fc811f1b7a82a26a900cca",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-bag-sorted.png",
+      "sha256": "be3e36979bc0c236f5143da0502129b83c2520d7ecad4181625992379774eb7d",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-battle-hints.png",
+      "sha256": "18033537a58dc627c1e621f67798e2575b86d6398a235ceff20a23e83d6a5bd0",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-party-items.png",
+      "sha256": "726e3449462d848408ac77dbd575bd45f673b2260086080d621afe49db0f59bf",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-party-nickname.png",
+      "sha256": "d4b7b2397b6d9ca0d8d50b48d516a74c88ede671f974ef112adac020c3b52f4f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-party-reminder-tiny-warning.png",
+      "sha256": "f15a0d615c7f2bd69036eb4463d8170188f41060a6fa3a6df7d5430c45c92c82",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-party-reminder.png",
+      "sha256": "91c35bd64dc2dcd88c3e2b1407f9d9484d004cba1f5b4a3d65860aa3ae47e172",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-repel-reuse.png",
+      "sha256": "22b02ec22bac140b0cf7c2a19f8e28f61e1e85c94bbea17db3a3eafe3a060a3c",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-shop-count.png",
+      "sha256": "3aa88e010168368c9b7d62651da9680d379d767a662eeebfa7e9e115fd31f93f",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-effect-firered-vs-seeker.png",
+      "sha256": "a66840732ac04523b1861416e71b9f60a1c8e6b53db6cd785dbc51358ba50ac2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-dex.png",
+      "sha256": "0279de4c2a0112e2baaf8c410967e3104c96ab18d97b49d3ed33a67bc523b9f5",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-evolution.png",
+      "sha256": "ca98c58d140afeb8dd0a66f68b232aa97fee9484dec19e29e0aedb40872c1813",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-key-help.png",
+      "sha256": "d39730b7a846888f1d2c0608a6234e808fde2bbe46ba8356bc9b1db224f9f402",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-moves.png",
+      "sha256": "17287bdaa70c310aeba239bb708ddf612b510780ea35488e20a920abe40e9663",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-start-menu.png",
+      "sha256": "03cd4a7c99172ca65e418a42efb910d739b232d9c1cbcfb529a28e25e522a019",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-summary-page2.png",
+      "sha256": "60c6e3a1cf7ef48b556f3fd831b1ef69982043ca31f4ed5b6f2825368a1e14e2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-firered-summary.png",
+      "sha256": "98decd865b61baa5217be86be946be223a1e420e2e1e0367432e4dff1d25fe22",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-dex.png",
+      "sha256": "68c0fff9d4c17eaf5400a71c0494abd821ba4b8d52d1bc588afbe04db5fc6445",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-evolution.png",
+      "sha256": "ef78459ce351d8c39781ef879e1944f09a5b8fcbe04474d085985f5bac733efa",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-key-help.png",
+      "sha256": "b2d6cb97de62e2ac2e17fe0e2690c3ec6e023e6108b85ec84984c4ea048b8a7f",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-moves.png",
+      "sha256": "17287bdaa70c310aeba239bb708ddf612b510780ea35488e20a920abe40e9663",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-start-menu.png",
+      "sha256": "03cd4a7c99172ca65e418a42efb910d739b232d9c1cbcfb529a28e25e522a019",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-summary-page2.png",
+      "sha256": "60c6e3a1cf7ef48b556f3fd831b1ef69982043ca31f4ed5b6f2825368a1e14e2",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-leafgreen-summary.png",
+      "sha256": "98decd865b61baa5217be86be946be223a1e420e2e1e0367432e4dff1d25fe22",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/qol-suite-menu.png",
+      "sha256": "5bf24296bce791509e91a61f4f0885d8e84de05a4ccfc21a851c58ad5f5e73c2",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-suite-options.png",
+      "sha256": "4b265ac42e28eebd1328bdd16e1c1338a074d2e8091dca90c16703ffa7d54d9b",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-suite-shortcut-context.png",
+      "sha256": "733f80cada1ac204098278f42a05f3a5e8bef9338efb1ea8823f295f92c2b9f9",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/qol-suite-shortcuts.png",
+      "sha256": "4c0604afb0960cac814a9cee432c0276e1aefc4b3a5d4ceab4504dccd3057dfb",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party/quick-heal-home.png",
+      "sha256": "0819e83bc5eb6cb79f42e15913795f930215ad32b6dce14f98185d9bdbd63f65",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party/quick-heal-items.png",
+      "sha256": "d2f07f1f92de9e04b3a52c15b675188af4389a1aa07e96549deffe285e2e15b4",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party/quick-heal-options.png",
+      "sha256": "b9311a96a19913e9849224afc3e5121fd160762f507cc0f8c2e7e9e40d2c995c",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party/quick-heal-results.png",
+      "sha256": "5df4995db748eb019913dfb1509a4b3bf0c948de27380fce265f720705c0c18b",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party/quick-heal-review.png",
+      "sha256": "2e407dc9a0bbe1bdaf1052f6ece9196f7f18522d60bf8ce28b3814ace6360e72",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party-detail.png",
+      "status": "current-native-preview",
+      "sha256": "2df254c46fecdc52dd2772512e60a6ed1cda981800c1dbd094d6f683eed939ca"
+    },
+    {
+      "path": "docs/screenshots/quick-heal-party-options.png",
+      "status": "current-native-preview",
+      "sha256": "059d2b842ee0c9c74251fc527d6813e15ce17c3a7bdb0c1e7b48b3272efa0366"
+    },
+    {
+      "path": "docs/screenshots/shiny-hunter-filters.png",
+      "sha256": "ca05a5a9d1493e41e23f8feeae7969c24b04e6f0bd9f6488dc89cfb8486ac83d",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/shiny-hunter-found.png",
+      "sha256": "2d9f060a2d631979bc3d4d3d3f61f395486d5a77a0ca36994ffdef1ad608bcaf",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/shiny-hunter-home.png",
+      "sha256": "08bd98710eb347b13b5d7d2429af74c5c758af132d1dbdad6f46163f3666f95d",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/shiny-hunter-modes.png",
+      "sha256": "89125dd69178cd1724467771b7310e265a1f27d4a8381b831af7b7c89049aa62",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/shiny-hunter-settings.png",
+      "sha256": "1d4fd047b6ea1c3425ced9e26a658fd6ec1fa9fe763771ccd291fb0f9a1f9180",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/shiny-hunter-speeds.png",
+      "sha256": "2d2fcfb5f6f78061a7afe41e78c6fe7f232dad8a6aff02f35e71cbb2e567ccac",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/start-appearance.png",
+      "sha256": "19a24d7776c39bcecbe796c888ac7143603b55a5f015711893e32805e4ebd97e",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/start-folder.png",
+      "sha256": "2c5061e75d4173d8fc86f527ff91b38e03f0b70c87c47fb8b9fb56669df5651a",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/start-menu-1.png",
+      "sha256": "26e906519feb3ffc9334e787886059c67302a54e3ec1fc3e71eb03448e755cc3",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/start-menu-14.png",
+      "sha256": "53454923478e18968e67ed49e05db6ab687d50be0497f1260d4a773e4577f66d",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/start-menu-appearance.png",
+      "sha256": "19a24d7776c39bcecbe796c888ac7143603b55a5f015711893e32805e4ebd97e",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/start-order-moving.png",
+      "sha256": "1c054cf3c77f34efc657bfdda92ff390454b9732622767b7a278028d92c8dd7e",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/start-order.png",
+      "sha256": "555de8fc709f0b800c08def454053643c1c6adc85540c06ddc2329d8ac490061",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/start-organized-root.png",
+      "sha256": "f81c0f0012c8b1db80b331a85e250bf8b7135138dd80c9ccfff58ca65dc9a3ed",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/start-organizer-preview.png",
+      "sha256": "ea3cd7142c6946e38d19c44536b47d23c86e785f6c0e13bff10ecb01b205d37d",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/start-organizer.png",
+      "sha256": "7936c8ac3f19fefd50f62203a581360f905edbc9a297bc3d96079841fa73699d",
+      "status": "current-native-preview"
+    },
+    {
+      "path": "docs/screenshots/summary-ivs/firered.png",
+      "sha256": "33a8e4ce8e775e7efe38dfd945250f0781ac1e512362d256a7a21dc47c86890e",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/summary-ivs/leafgreen.png",
+      "sha256": "33a8e4ce8e775e7efe38dfd945250f0781ac1e512362d256a7a21dc47c86890e",
+      "status": "historical-example"
+    },
+    {
+      "path": "docs/screenshots/summary-ivs-detail.png",
+      "status": "current-native-preview",
+      "sha256": "57505292c38aa717fb38b889818b3f403436c93bf713ad45b28b4f26407408c0"
+    },
+    {
+      "path": "docs/screenshots/summary-ivs-options.png",
+      "status": "current-native-preview",
+      "sha256": "9f69c0d7dfe0034c06b04c02e088b850e43f118f2c2c07ca17de98bf2ea6a0c5"
+    },
+    {
+      "path": "docs/screenshots/teleport-emerald-unlock-bottom-thor.png",
+      "sha256": "1c4b0da04153e9eb8b0a7297be25b3d62395d38cf24c6b3f006140b9324f74e3",
+      "status": "historical-example"
+    }
+  ]
+}

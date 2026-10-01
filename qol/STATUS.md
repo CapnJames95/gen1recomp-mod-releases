@@ -1,4 +1,6 @@
-Current release status: see [FIXES.md](FIXES.md) for the September 27 cleanup, fixes and new validation. Older validation/checklist entries below are historical.
+> **Historical development record.** Version counts, compatibility and pending-work statements below describe the original FRLG work. Current three-game scope is in the [suite README](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) and [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
+Current release status: see [FIXES.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/qol/FIXES.md) for the September 27 cleanup, fixes and new validation. Older validation/checklist entries below are historical.
 
 Current update: 24 core packages; PC Box Tools removed; Quiet EXP added; Battle Hints and Move Inspector removed. Ball, shop and Start integration fixed; controller hold added. Historical scope checklist follows.
 

@@ -1,4 +1,6 @@
 # Pokémon legality fixes — 27 September 2026
+> **Historical report.** Version numbers and test results below describe their recorded development snapshots. Current versions and installation status are in [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md); screenshot freshness is recorded in [the image audit](SCREENSHOTS.md).
+
 
 **All 438 sampled Pokémon now pass PKHeX, including all 18 previously rejected records.** FireRed and LeafGreen were tested separately. Complete cartridge-save exports also pass: **46 saves, 50 Pokémon, zero legality or checksum failures**.
 
@@ -6,12 +8,12 @@
 
 | Mod | Version | Download |
 | --- | --- | --- |
-| FRLG Dual Screen | 0.3.13 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip) |
-| Shiny Hunter | 0.1.5 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/shiny-hunter-0.1.5.zip) |
-| Encounter Reset | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-reset-0.2.0.zip) |
-| Encounter Tour | 0.1.3 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/encounter-tour-0.1.3.zip) |
-| Day Care Viewer | 0.2.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/daycare-viewer-0.2.1.zip) |
-| Pokémon Services | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/pokemon-services-0.1.3.zip) |
+| Gen3DualScreen | 0.3.13 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-dual-screen-0.4.14.zip) |
+| Shiny Hunter | 0.1.5 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/shiny-hunter-0.2.1.zip) |
+| Encounter Reset | 0.1.1 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/encounter-reset-0.4.0.zip) |
+| Encounter Tour | 0.1.3 | [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/encounter-tour-0.3.0.zip) |
+| Day Care Viewer | 0.2.1 | [QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip) |
+| Pokémon Services | 0.1.1 | [QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip) |
 
 These packages carry the same shared engine compatibility corrections, so each works independently. Loading several installs one shared set of wrappers; disabling all participating mods restores native behaviour. Encounter Tour also carries the fixes because its travel routes reach the affected native generation paths.
 
@@ -40,9 +42,9 @@ A fresh desktop launcher's export runs without these in-game compatibility wrapp
 
 This is an automated pass against engine commit `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf` and PKHeX.Core 26.8.26.0. It does not establish compatibility with every host release or replace physical-device playtesting.
 
-[Original failure details](LEGALITY-PASS.md) · [Test tools](../tools/native-legality/README.md) · [Record results](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Save results](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Regression results](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
+[Original failure details](LEGALITY-PASS.md) · Test tools · Record results · Save results · Regression results
 
-The six new ZIPs pass integrity and complete source-parity checks. The broader collection packaging audit currently stops on an unrelated, already modified Ball Shortcut source/ZIP mismatch (`downloads/QOL/frlg_qol_ball_shortcut-0.2.1.zip`, `main.lua`). That package was not rebuilt as part of these legality fixes.
+The six new ZIPs pass integrity and complete source-parity checks. The broader collection packaging audit currently stops on an unrelated, already modified Ball Shortcut source/ZIP mismatch (`downloads/frlg_qol_ball_shortcut-0.2.1.zip`, `main.lua`). That package was not rebuilt as part of these legality fixes.
 
 The later battle-tools update packages Ball Shortcut 0.2.2 and Dual Screen 0.3.6; it resolves the Ball Shortcut source/ZIP mismatch noted above.
 

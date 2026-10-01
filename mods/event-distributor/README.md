@@ -1,8 +1,22 @@
-# Event Distributions 1.3.0
+# Event Distributions 1.4.1
 
-A standalone **EVENTS** entry beside LegalMon in the FireRed/LeafGreen START menu. Includes **87 campaign menus, 322 Pokémon choices and 670 selectable variants**. No LegalMon dependency, ROM download, PKHeX installation or network connection is needed to play.
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
-## What's new in 1.3.0
+![Current event-distributor menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-event-distributor.png)
+
+
+**Frontier safeguard:** receiving generated Pokémon (including improved breeding parents) is blocked during an active Emerald Battle Frontier challenge. Pending results and event receipts are left unchanged.
+
+A standalone **EVENTS** entry beside LegalMon in the FireRed/LeafGreen/Emerald START menu. Includes **87 campaign menus, 322 Pokémon choices and 670 selectable variants**. No LegalMon dependency, ROM download, PKHeX installation or network connection is needed to play.
+
+## What's new in 1.4.0
+
+- Emerald support on gen1recomp 0.3.39, including the active Emerald save-export codec.
+- Native Emerald Aurora, Mystic and Eon Ticket journeys using Lilycove's ferry and Emerald flags. The Southern Island Pokémon follows the opposite of your TV-choice roamer.
+- FRLG-only event eggs retain their original distribution provenance when received or hatched in Emerald. They are not relabelled as Emerald events.
+- Existing claim IDs and fixed event records are retained. Emerald validation includes 670 byte-exact records, 2,608 personalised exports and 4,144 egg/hatch exports passing PKHeX.Core 26.8.26. Manual Emerald device verification is still pending.
+
+## Previous additions in 1.3.0
 
 Compared with 1.2.0, coverage grows from **80 to 87 campaign menus**, **305 to 322 Pokémon choices**, and **375 to 670 selectable variants**. The variant total includes city OTs and language rewards, not just different species or shiny choices.
 
@@ -24,15 +38,15 @@ Compared with 1.2.0, coverage grows from **80 to 87 campaign menus**, **305 to 3
 | **Unevolved JEREMY Machoke and Haunter** | The original trades evolved them, so the mod supplies Machamp and Gengar. Devolved reconstructions are excluded. |
 | **Pokémon Stamp Pichu and Absol** | Original identity or complete distribution data remains insufficiently verified for faithful reproduction. Newer Stamp Pichu research does not by itself provide a fully verified original specimen. |
 | **Altering Cave distributions** | The audit did not establish a released campaign to reproduce. Unused game support is not treated as a historical release. |
-| **Eon Ticket / Old Sea Map island travel** | These journeys require Ruby/Sapphire/Emerald maps and scripts that FRLG does not have. Their caught Pokémon replicas are included; Old Sea Map Mew keeps Japanese Emerald provenance. Aurora and Mystic Ticket journeys are implemented. |
+| **Old Sea Map island travel; Eon travel in FRLG** | Eon travel is available in Emerald, but FRLG has no Southern Island. Old Sea Map Mew requires Japanese Emerald provenance; the supported English Emerald import must not produce an English-origin island Mew. The verified Japanese caught replica remains available, with its original provenance and trainer-name restrictions. |
 | **e-Reader berries, decorations and Trainer Hill / Trainer Tower cards** | Their original delivery and gameplay systems are not implemented here. They are not converted into invented FRLG Pokémon gifts. |
 | **Every regional Wonder Card and original distribution screen** | The mod recreates supported rewards and journeys through themed native menus. It does not run distribution ROMs, reproduce every historical operator screen, or overwrite your Wonder Cards. |
 
-**Passing PKHeX checks does not prove historical authenticity.** These are the known gaps identified by the audit, not a claim that every historical regional variant has been accounted for. See the [fidelity audit and research sources](FIDELITY.md) and [full campaign list](COVERAGE.md).
+**Passing PKHeX checks does not prove historical authenticity.** These are the known gaps identified by the audit, not a claim that every historical regional variant has been accounted for. See the [fidelity audit and research sources](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/event-distributor/FIDELITY.md) and [full campaign list](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/event-distributor/COVERAGE.md).
 
 ## Install or upgrade
 
-Extract the release ZIP into `mods/event-distributor` in gen1recomp's mod directory, so that `mods/event-distributor/manifest.json` exists. Replace the previous mod folder, enable **Event Distributions**, and restart the game session. It uses the same `engine_internals` permission as LegalMon. Import your own supported clean US FireRed or LeafGreen ROM normally.
+Extract the release ZIP into `mods/event-distributor` in gen1recomp's mod directory, so that `mods/event-distributor/manifest.json` exists. Replace the previous mod folder, enable **Event Distributions**, and restart the game session. It uses the same `engine_internals` permission as LegalMon. Import your own supported clean US FireRed, LeafGreen or Emerald ROM normally.
 
 **All 305 existing claim IDs are preserved.** Earlier USED markers and Pokémon remain unchanged. Native saves keep the journal, receipts and pending ticket encounters. Cartridge `.sav` exports cannot carry mod history or pending encounter selections. Save normally after receiving a gift or ticket; loading an older save restores its earlier history.
 
@@ -70,7 +84,7 @@ Ticket delivery reserves each linked Pokémon's claim immediately, preventing a 
 
 ## OT and legality
 
-Direct distributions and bonus-disc gifts retain their fixed event OTs and IDs. Hatched eggs and ticket replicas use your trainer identity. Native island captures use your identity and the current FireRed/LeafGreen origin. The alternate Wishing Star Jirachi retains its fixed OT name and IDs while matching only your OT gender. The mod emulates distribution results; it does not execute distribution ROMs.
+Direct distributions and bonus-disc gifts retain their fixed event OTs and IDs. Hatched eggs and ticket replicas use your trainer identity. Native island captures use your identity and the current FireRed, LeafGreen or Emerald origin. The alternate Wishing Star Jirachi retains its fixed OT name and IDs while matching only your OT gender. The mod emulates distribution results; it does not execute distribution ROMs.
 
 Some requests cannot be satisfied for every identity:
 
@@ -87,7 +101,7 @@ These generated replicas satisfy the pinned PKHeX checks in the test matrix. Thi
 
 ## Coverage and presentation
 
-See [COVERAGE.md](COVERAGE.md) for all campaigns and choices. Coverage follows the pinned PKHeX Gen III event tables, bonus gifts and ticket encounters. It is not a claim to reproduce every historical regional machine or unreleased distribution. PCJP city selectors include all permitted city OTs; the Sixth campaign excludes Sapporo. The nine preserved JEREMY gifts have fixed records, including their original unused nickname bytes, and no speculative shiny rerolls. See [FIDELITY.md](FIDELITY.md) for additions, provenance and deliberately excluded uncertain events.
+See [COVERAGE.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/event-distributor/COVERAGE.md) for all campaigns and choices. Coverage follows the pinned PKHeX Gen III event tables, bonus gifts and ticket encounters. It is not a claim to reproduce every historical regional machine or unreleased distribution. PCJP city selectors include all permitted city OTs; the Sixth campaign excludes Sapporo. The nine preserved JEREMY gifts have fixed records, including their original unused nickname bytes, and no speculative shiny rerolls. See [FIDELITY.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/event-distributor/FIDELITY.md) for additions, provenance and deliberately excluded uncertain events.
 
 The native pixel menus use ROM-derived sprites, campaign palettes, status and counters. Layouts are inspired by distribution operator screens, not pixel-perfect copies of each historical cartridge.
 
@@ -133,44 +147,44 @@ Native UI renders from development, using fixture/demo state. Some images predat
 
 ### Anniversary
 
-![events-anniversary](../../docs/screenshots/events-anniversary.png)
+Historical preview (older build): [events-anniversary](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-anniversary.png).
 
 ### Details
 
-![events-details](../../docs/screenshots/events-details.png)
+Historical preview (older build): [events-details](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-details.png).
 
 ### Filters
 
-![events-filters](../../docs/screenshots/events-filters.png)
+Historical preview (older build): [events-filters](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-filters.png).
 
 ### Home
 
-![events-home](../../docs/screenshots/events-home.png)
+Historical preview (older build): [events-home](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-home.png).
 
 ### Journal
 
-![events-journal](../../docs/screenshots/events-journal.png)
+Historical preview (older build): [events-journal](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-journal.png).
 
 ### Personal
 
-![events-personal](../../docs/screenshots/events-personal.png)
+Historical preview (older build): [events-personal](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-personal.png).
 
 ### Pikachu
 
-![events-pikachu](../../docs/screenshots/events-pikachu.png)
+Historical preview (older build): [events-pikachu](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-pikachu.png).
 
 ### Receive
 
-![events-receive](../../docs/screenshots/events-receive.png)
+Historical preview (older build): [events-receive](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-receive.png).
 
 ### Shiny
 
-![events-shiny](../../docs/screenshots/events-shiny.png)
+Historical preview (older build): [events-shiny](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-shiny.png).
 
 ### Ticket
 
-![events-ticket](../../docs/screenshots/events-ticket.png)
+Historical preview (older build): [events-ticket](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-ticket.png).
 
 ### Used
 
-![events-used](../../docs/screenshots/events-used.png)
+Historical preview (older build): [events-used](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/events-used.png).

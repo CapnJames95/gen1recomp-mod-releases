@@ -1,3 +1,5 @@
+> **Historical development record.** Version counts, compatibility and pending-work statements below describe the original FRLG work. Current three-game scope is in the [suite README](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) and [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
 # Upstream and community review
 
 ## Official project inspected

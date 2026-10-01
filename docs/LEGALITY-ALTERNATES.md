@@ -22,4 +22,4 @@ Initial test-fixture attempts needed cleanup between roamer battles and restorat
 
 Engine: `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`. Validator: PKHeX.Core 26.8.26.0. This is representative automated coverage, not an exhaustive test of every possible Pokémon or RNG result. Player saves were not modified.
 
-[Reproduction script](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Generation runs](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [PKHeX records](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Complete saves](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Sample hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
+Reproduction script · Generation runs · PKHeX records · Complete saves · Sample hashes

@@ -1,10 +1,39 @@
-# Encounter Reset 0.2.0
+# Encounter Reset 0.4.0
+
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
+
+![Current encounter-reset menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-encounter_reset.png)
+
+
+## Original starter repeats
+
+In Encounter Reset, choose **Starters → Pokémon → Prepare repeat starter** after earning the Pokédex. Return to **Oak’s lab in FR/LG** or **Route 101 in Emerald**, then choose **Collect prepared starter** in the same menu with a free party slot. Each preparation permits one native level-5 gift; preparation persists when saved. Existing Pokémon and the original starter/rival/roamer selection are preserved. This does not replay the rescue or rival battle.
+
+## Emerald support
+
+0.4.0 supports FireRed, LeafGreen and Emerald on gen1recomp 0.3.39. Emerald has 33 entries (including both TV-choice roamer records; only your unlocked roamer can be reset).
+
+- Existing legends, event-island encounters, static battles and Beldum remain supported.
+- **New gifts:** Wynaut egg and Castform. Castform requires the Weather Institute quest to be completed; only its gift receipt is reset.
+- **New NPC trades:** Seedot for Ralts, Plusle for Volbeat, Horsea for Bagon and Meowth for Skitty. Native scripts retain the offered-Pokémon requirement and fixed trade identity.
+- **New fossils:** Lileep and Anorith. Reset supplies one missing Root/Claw Fossil, without replacing an unfinished revival. Hand it to the Devon scientist, leave and return to collect it.
+- **New Johto starters:** Chikorita, Cyndaquil and Totodile. Reset reopens the **shared choice of one**, only after Birch's Johto reward has already been earned and collected. Original Hoenn starter and main story variables are not changed.
+
+Native English Faraway Island Mew remains excluded because there was no official English Old Sea Map distribution. Encounter Tour includes the original Treecko/Torchic/Mudkip rescue destinations. Encounter Reset offers repeat starter gifts in all three games without rewinding the opening story, rival team or original starter choice.
+
+Active Frontier challenges, battle transitions, dialogue and movement block travel/reset. Underwater return travel preserves the original map, position and underwater state. Changing the loaded save cancels old tour state and invalidates reset confirmations.
+
+Imported-data tests verify all landing points, reward scripts, both Eon/roamer TV choices, native fossil handover/collection, all four trades and all three Johto reward scripts. These use synthetic saves; the new entries still need hardware gameplay testing.
+
+Native menu previews below use synthetic fixture state, not live gameplay captures:
+
+![Emerald Johto starter choices](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/encounter-reset-emerald-johto-starters.png)
 
 **START → ENCOUNTER RESET** — restore one encounter, gift or NPC trade at a time, using the same native FRLG menus, frames and Pokémon sprites as Encounter Tour. Standalone; no other mod is required.
 
 ## Install and use
 
-Import `encounter-reset-0.2.0.zip` through **MODS → Import mod .zip**, enable it and restart. Supports FireRed and LeafGreen, mod API 2, with `engine_internals` permission.
+Import `encounter-reset-0.4.0.zip` through **MODS → Import mod .zip**, enable it and restart. Supports FireRed, LeafGreen and Emerald, mod API 2, with `engine_internals` permission.
 
 1. Pause Shiny Hunter / Encounter Tour automation. Keep a backup of your save.
 2. Leave the map containing the encounter you want to restore.
@@ -13,7 +42,7 @@ Import `encounter-reset-0.2.0.zip` through **MODS → Import mod .zip**, enable 
 
 Each reset is independent. Both Snorlax locations and both Electrode item balls have separate entries. Your caught Pokémon, Pokédex, money, badges and other encounter flags are retained. Fossil resets add the required fossil item only if it is missing. The mod does not force a shiny, guarantee capture or grant island access. Resetting an already available static encounter is harmless, but Deoxys returns to its unsolved puzzle state.
 
-## Coverage
+## FireRed / LeafGreen coverage
 
 | Category | Individual entries |
 | --- | --- |
@@ -39,7 +68,7 @@ Each reset is independent. Both Snorlax locations and both Electrode item balls 
 
 **NPC trades:** all nine traders reset separately and still require the normal offered Pokémon. Species swaps between FireRed and LeafGreen are retained. The native trade’s fixed identity is preserved.
 
-Starters and Game Corner purchases are excluded. The Pokémon Tower Marowak ghost remains uncatchable and is excluded. Mew, Celebi and Jirachi have no native FRLG map encounter.
+Game Corner purchases are excluded. Starter repeats use the separate prepared-gift workflow described above. The Pokémon Tower Marowak ghost remains uncatchable and is excluded. Mew, Celebi and Jirachi have no native FRLG map encounter.
 
 `Used / hidden` describes native encounter flags; it does not distinguish catching from defeating. Resets do not clear Event Distributions claim receipts or recreate a previously consumed guaranteed event result. Subsequent encounters follow native generation unless another enabled mod intervenes.
 
@@ -47,19 +76,19 @@ Starters and Game Corner purchases are excluded. The Pokémon Tower Marowak ghos
 
 A selects; B, L or START returns; Left/Right moves six rows. The menu pauses field updates. Resets are blocked during battles, scripts, movement, fades, warps, Safari games and linked activities. Static resets require leaving the encounter's entire map, even if the Pokémon is out of sight.
 
-FRLG Dual Screen can display this through its native-menu fallback. It does not opt into live editing. Physical Android/Thor gameplay has not been tested.
+Gen3DualScreen can display this through its native-menu fallback. It does not opt into live editing. Physical Android/Thor gameplay has not been tested.
 
 ## Validation
 
-Real engine tests pass with both imported FireRed and LeafGreen caches: all 30 stationary encounter/gift/trade reset recipes and map transitions, individual isolation, all three starter-dependent roamer resets, guards, cancel/confirm, menu hooks and a native Zapdos battle after reset. Additional tests complete native gift claims, both Dojo prizes and all three fossil handover/collection sequences, plus duplicate-pending, full-bag and unfinished-revival guards. Native menu renders were visually inspected. See [VALIDATION.md](VALIDATION.md) for scope and reproduction.
+Real engine tests pass with both imported FireRed and LeafGreen caches: all 30 stationary encounter/gift/trade reset recipes and map transitions, individual isolation, all three starter-dependent roamer resets, guards, cancel/confirm, menu hooks and a native Zapdos battle after reset. Additional tests complete native gift claims, both Dojo prizes and all three fossil handover/collection sequences, plus duplicate-pending, full-bag and unfinished-revival guards. Native menu renders were visually inspected. See [VALIDATION.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/encounter-reset/VALIDATION.md) for scope and reproduction.
 
-![Native menu preview](../../docs/screenshots/encounter-reset-home.png)
+Historical preview (older build): [Native menu preview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-reset-home.png).
 
-![Gifts menu preview](../../docs/screenshots/encounter-reset-gifts.png)
+Historical preview (older build): [Gifts menu preview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-reset-gifts.png).
 
-![Fossil detail preview](../../docs/screenshots/encounter-reset-fossil.png)
+Historical preview (older build): [Fossil detail preview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-reset-fossil.png).
 
-![Deoxys detail preview](../../docs/screenshots/encounter-reset-deoxys.png)
+Historical preview (older build): [Deoxys detail preview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-reset-deoxys.png).
 
 These images render the actual menu draw code using fixture state; they are not live-play captures. No ROM or save data is bundled.
 
@@ -73,3 +102,11 @@ The same helper is bundled independently with Dual Screen, Shiny Hunter, Encount
 **For a cartridge save, use MODS → this mod → SAVE + EXPORT while in the field.** This first saves the active game and then exports with the egg-name correction loaded. The log gives the output path under `exports/<edition>/`. A fresh launcher export can still use the host's unpatched egg-name encoder; copy the in-game export directly. Restart after installing updates.
 
 See the collection's `docs/LEGALITY-FIXES.md` for the regression results and limits. This corrects the identified defects; a passing sample matrix does not certify every possible modified ROM, species combination or future host release.
+
+## Current starter menus
+
+Native UI previews with synthetic state; these do not represent a completed gift or a fresh legality check.
+
+![Emerald starter menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/encounter-reset-emerald-starters-detail.png)
+
+![FRLG starter menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/encounter-reset-firered-starters-detail.png)

@@ -1,4 +1,14 @@
-# Day Care Viewer 0.2.0
+# Day Care Viewer 0.2.1
+
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
+
+![Current daycare-viewer menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-daycare-viewer.png)
+
+
+**Emerald support (QoL Suite 0.3.7):** Shows Route 117's two-parent Day Care, uses native deposit/withdraw handlers and fees, and lands safely inside its building. No Route 5/Four Island options appear in Emerald. Egg information distinguishes the already chosen PID/nature/shininess from pickup IVs; hatch estimates account for Flame Body/Magma Armor. Pending eggs protect parents from remote replacement. Native actions, hatching estimates and landing checks pass; manual device testing remains pending.
+
+
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
 
 **START → DAY CARE** shows the real Route 5 and Four Island Day Cares from anywhere you can open the START menu in FireRed or LeafGreen.
 
@@ -6,11 +16,11 @@ Uses the same native FR/LG fonts, blue title bar, six-row scrolling menus and pl
 
 ## Install
 
-Import [daycare-viewer-0.2.1.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/daycare-viewer-0.2.1.zip) using **MODS → Import mod .zip**, enable **Day Care Viewer** for your edition, and restart. Requires mod API 2, FR/LG engine internals and Gen1Recomp >=0.3.21 <0.4.0. Later engine changes within that range are not guaranteed compatible.
+Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
 ## Manage or travel
 
-Open **START → DAY CARE → Manage / teleport**, then choose **Four Island** or **Route 5**. Four Island's overview also has a direct controls link.
+Open **START → QOL → DAY CARE → Manage / teleport**, then choose **Four Island** or **Route 5** in FRLG, or **Route 117** in Emerald. Four Island's overview also has a direct controls link.
 
 - **Deposit a party Pokemon:** select a party member and confirm. Uses the native deposit routine, including PP restoration, held-mail handling, party compaction and the daycare-use statistic.
 - **Withdraw a Pokemon:** select a deposited Pokémon, review the fee and confirm payment. Uses the native withdrawal, experience, move-learning, stat, mail and money routines. Make room in your party first.
@@ -37,21 +47,21 @@ Pending egg IVs, nature and shininess are not fully generated until collection, 
 
 ## Verification
 
-110 native-data checks pass per edition (220 total), covering read-only state/RNG behavior, both storage representations, engine withdrawal agreement, level caps, egg countdown boundaries, split offspring, incense, incompatible pairs, party eggs, UI navigation, START registration, native deposits/withdrawals, fees, rejected actions, confirmations, real map warps and original attendant dialogue. Runtime validation, Gen III compatibility checks and distribution lint also pass. See [test report](TEST-REPORT.md).
+110 native-data checks pass per edition (220 total), covering read-only state/RNG behavior, both storage representations, engine withdrawal agreement, level caps, egg countdown boundaries, split offspring, incense, incompatible pairs, party eggs, UI navigation, START registration, native deposits/withdrawals, fees, rejected actions, confirmations, real map warps and original attendant dialogue. Runtime validation, Gen III compatibility checks and distribution lint also pass. See [test report](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/daycare-viewer/TEST-REPORT.md).
 
 Screens below are native drawing-code renders with isolated demo state and locally imported fonts, not captures of a live playthrough. No player save was loaded or modified. Full interactive/controller and device testing remains outstanding.
 
 | Overview | Breeding |
 | --- | --- |
-| ![Overview](../../docs/screenshots/daycare-viewer/daycare-home.png) | ![Breeding](../../docs/screenshots/daycare-viewer/daycare-breeding.png) |
+| Historical preview (older build): [Overview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/daycare-viewer/daycare-home.png). | Historical preview (older build): [Breeding](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/daycare-viewer/daycare-breeding.png). |
 
 | Training | Pokémon |
 | --- | --- |
-| ![Training](../../docs/screenshots/daycare-viewer/daycare-training.png) | ![Pokémon](../../docs/screenshots/daycare-viewer/daycare-pokemon.png) |
+| Historical preview (older build): [Training](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/daycare-viewer/daycare-training.png). | Historical preview (older build): [Pokémon](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/daycare-viewer/daycare-pokemon.png). |
 
 | Controls | Withdrawal confirmation |
 | --- | --- |
-| ![Controls](../../docs/screenshots/daycare-viewer/daycare-controls.png) | ![Withdrawal](../../docs/screenshots/daycare-viewer/daycare-withdraw-confirm.png) |
+| Historical preview (older build): [Controls](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/daycare-viewer/daycare-controls.png). | Historical preview (older build): [Withdrawal](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/daycare-viewer/daycare-withdraw-confirm.png). |
 
 
 ## Native Pokémon legality corrections — 0.2.1

@@ -1,12 +1,22 @@
 # Pokemon Services 0.1.3
 
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
+
+![Current pokemon-services menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-pokemon-services.png)
+
+
+**Emerald support (QoL Suite 0.3.7):** Uses native Hoenn PC/healing, Name Rater, Move Deleter and Move Reminder services. Lilycove has six item counters and rooftop drinks; decorative furniture counters are not included. Two Island's shop is FRLG-only. Emerald daycare is Route 117. The free reminder consumes no Heart Scale; the separate party reminder still uses normal payment. Native scripts, purchases, naming ownership, move deletion/relearning and daycare fees pass automated tests. Remote services are unavailable during active Frontier challenges. Manual device testing remains pending.
+
+
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
+
 Native FireRed / LeafGreen services from **START → MODS → Pokemon Services → OPEN SERVICES**, or **START → SERVICES**. Matches the collection's blue headers, native user-selected frames and scrolling controller menus.
 
 ## Install
 
-Import [pokemon-services-0.1.3.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/pokemon-services-0.1.3.zip) through the launcher's **MODS → Import mod .zip**, enable it and restart. Requires Gen1Recomp >=0.3.21 <0.4.0, mod API 2 and `engine_internals`. No other mod is required.
+Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
-With [FRLG Dual Screen 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip), the **SERVICES** Home tile opens the same menu and replaces the duplicate START entry. The Mods-menu action remains available. Earlier companion versions can use the Mods-menu action or START entry.
+With [Gen3DualScreen 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-dual-screen-0.4.14.zip), the **SERVICES** Home tile opens the same menu and replaces the duplicate START entry. The Mods-menu action remains available. Earlier companion versions can use the Mods-menu action or START entry.
 
 ## Included services
 
@@ -33,17 +43,17 @@ Services run only in an idle field session, outside battles, movement, dialogue,
 
 ## Verification
 
-**402 automated checks passed:** 194 native-data checks plus 7 Dual Screen integration checks per edition. Actual imported scripts exercise shop progression, drink purchases, name ownership, HM deletion, free move relearning with no mushrooms, preservation of owned mushrooms, eligibility and cancellation. Native shop transactions, healing, Day Care charges, menu registration and busy-state checks also pass. Modkit lint, validation and Gen III compatibility checks pass. See [VALIDATION.md](VALIDATION.md).
+**402 automated checks passed:** 194 native-data checks plus 7 Dual Screen integration checks per edition. Actual imported scripts exercise shop progression, drink purchases, name ownership, HM deletion, free move relearning with no mushrooms, preservation of owned mushrooms, eligibility and cancellation. Native shop transactions, healing, Day Care charges, menu registration and busy-state checks also pass. Modkit lint, validation and Gen III compatibility checks pass. See [VALIDATION.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/pokemon-services/VALIDATION.md).
 
 Screenshots below render the actual menu drawing code with isolated fixture state and locally imported fonts. They are not live-play captures. Physical controller and Android playtesting remain outstanding. No ROM assets or player saves are distributed in the ZIP.
 
 | Services | Department store |
 | --- | --- |
-| ![Services](../../docs/screenshots/pokemon-services/services-home.png) | ![Department store](../../docs/screenshots/pokemon-services/services-department.png) |
+| Historical preview (older build): [Services](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/pokemon-services/services-home.png). | Historical preview (older build): [Department store](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/pokemon-services/services-department.png). |
 
 | Party healing | Day Care |
 | --- | --- |
-| ![Healing](../../docs/screenshots/pokemon-services/services-heal.png) | ![Day Care](../../docs/screenshots/pokemon-services/services-daycare.png) |
+| Historical preview (older build): [Healing](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/pokemon-services/services-heal.png). | Historical preview (older build): [Day Care](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/pokemon-services/services-daycare.png). |
 
 
 ## Native Pokémon legality corrections — 0.1.1

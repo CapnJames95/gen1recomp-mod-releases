@@ -1,12 +1,16 @@
-# Summary IVs 0.2.3 — FireRed / LeafGreen
+# Summary IVs 0.2.4 — Emerald / FireRed / LeafGreen
+
+**Emerald (QoL Suite 0.3.2):** the Skills page now shows a six-stat **IV/EV table immediately**, for owned Pokémon and the read-only wild inspector. **A** toggles native calculated stats; **B** first returns to native stats, then closes normally. Page and Pokémon navigation remain available. Gen3DualScreen 0.4.4 renders the same panel during wild battles. FR/LG retains its inline IV column.
+
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
 
 Adds **IV 0–31** beside HP, Attack, Defense, Sp. Atk, Sp. Def and Speed on the native **Pokémon Skills** summary page, in the orange gap between the labels and stat totals. Uses the game's small font and normal text colours, matching native FRLG/LegalMon styling. The original right-hand numbers are calculated stats, not EVs; they remain unchanged.
 
-![IVs beside the native stat labels](../../docs/screenshots/summary-ivs/firered.png)
+Historical preview (older build): [IVs beside the native stat labels](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/summary-ivs/firered.png).
 
 ## Install and configuration
 
-Import `summary-ivs-0.2.3.zip` using **MODS → Import mod .zip**, enable **Summary IVs** for your edition and restart the session. Alternatively, copy this folder into the game's mod directory so `summary-ivs/manifest.json` is directly inside it. Do not install two copies.
+Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
 Open a Pokémon's Summary and switch to **Pokémon Skills**. No extra button or submenu is needed. **SHOW IVS** in this mod's settings turns the mod on/off; it defaults to on. Works for party and PC summaries using the native renderer. Eggs and unrelated enemy summaries are excluded. Missing/invalid IV data displays `--`, never a guessed zero. The column hides during page animations and refreshes when changing Pokémon.
 
@@ -16,7 +20,7 @@ Press keyboard **I** or controller **X / West** at the ordinary wild-battle **FI
 
 The native summary opens on **POKéMON PREVIEW** (the Skills layout): all six IVs and calculated stats, HP, nature and ability. The top-right blue area displays the same nature name as Pokémon Info instead of the D-pad/PAGE hint. The title changes only in this wild inspector; party and PC Skills titles remain unchanged. Left/right changes native pages for species, typing, gender/shiny presentation, held item, experience, moves, PP, power, accuracy and descriptions. **Select toggles IV/EV values** on Preview. **B** backs out of move details, then closes the summary; pressing the configured inspector hotkey again also closes it. The battle pauses while inspecting; closing does not select a battle action. All Pokémon data is a detached snapshot, with move reordering disabled. Reopen to refresh it.
 
-**INSPECT KEY** is now a text setting: select it in MODS → Summary IVs → Options and enter a single LÖVE keyboard key name. Examples: `k`, `space`, `tab`, `return`, `escape`, `f1`–`f24`, `lctrl`, `rshift`, `kp1` or `;`. Names are case-insensitive and surrounding whitespace is ignored. `enter`, `esc`, `ctrl`, `shift`, `alt` and `cmd` are accepted aliases (unqualified modifiers mean the left key). Enter `off` to disable; I is the default. Existing saved bindings are preserved when upgrading; set INSPECT KEY to `i` and INSPECT BUTTON to X / West or reset this mod’s settings to adopt the new default. This is a key-name entry field, not a press-to-record dialog; multi-key chords and mouse buttons are not supported.
+**INSPECT KEY** is now a text setting: select it in QOL → QOL SHORTCUTS → WILD INSPECTOR and enter a single LÖVE keyboard key name. Examples: `k`, `space`, `tab`, `return`, `escape`, `f1`–`f24`, `lctrl`, `rshift`, `kp1` or `;`. Names are case-insensitive and surrounding whitespace is ignored. `enter`, `esc`, `ctrl`, `shift`, `alt` and `cmd` are accepted aliases (unqualified modifiers mean the left key). Enter `off` to disable; I is the default. Existing saved bindings are preserved when upgrading; set INSPECT KEY to `i` and INSPECT BUTTON to X / West or reset this mod’s settings to adopt the new default. This is a key-name entry field, not a press-to-record dialog; multi-key chords and mouse buttons are not supported.
 
 **INSPECT BUTTON** defaults to X / West and now offers every standard SDL gamepad button: A/B/X/Y, both shoulders, both stick clicks, all four D-pad directions, Back/Share, Start/Menu and Guide/Home, plus LT/L2 and RT/R2 triggers, or OFF. Triggers fire once above 60% travel and rearm below 30%; holding or jittering does not repeatedly toggle the preview. Existing controller settings are preserved. Raw numbered joystick buttons and stick-axis directions are not exposed as bindable buttons by this mod.
 
@@ -28,7 +32,7 @@ This is read-only: no stat recalculation, EV/IV editing, save changes or encount
 
 ## Dual Screen
 
-Use **FRLG Dual Screen 0.3.13 or newer**. With this mod enabled, its Skills page uses the native orange summary on the companion screen rather than Dual Screen's custom stat panel. Physical controls navigate it; the native fallback does not add touch hit targets. Disabling SHOW IVS restores the companion adapter. Older Dual Screen versions replace this page and do not show the inline column; update Dual Screen or disable it.
+Use **Gen3DualScreen 0.3.13 or newer**. With this mod enabled, its Skills page uses the native orange summary on the companion screen rather than Dual Screen's custom stat panel. Physical controls navigate it; the native fallback does not add touch hit targets. Disabling SHOW IVS restores the companion adapter. Older Dual Screen versions replace this page and do not show the inline column; update Dual Screen or disable it.
 
 ## Compatibility and validation
 

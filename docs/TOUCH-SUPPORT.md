@@ -1,6 +1,15 @@
-# Touchscreen support with FRLG Dual Screen
+# Touchscreen support with Gen3DualScreen
 
-All 38 current collection mods have a touch access path with **FRLG Dual Screen 0.3.16**. Install the [Dual Screen update](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-dual-screen-0.3.16.zip) and [Hold Fast Forward 0.2.1](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg_qol_hold_fast_forward-0.2.1.zip), or the [updated manual-install bundle](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/gen1recomp-all-mods-manual-install.zip). Restart after replacing installed packages. This work targets the Dual Screen setup requested, not independent touch controls in every standalone package.
+## Current controls — Gen3DualScreen 0.4.14
+
+Paged collection tools use **PREV PAGE / NEXT PAGE / BACK**; Back returns through the tool’s normal parent chain. Specialised native screens retain the Actions palette for directional input, Choose and Back. In Emerald, the Home **POKENAV** tile opens native PokéNav after acquisition. Native Town Map **MOD ACTIONS** opens location/service information. The native map occupies its own viewport below the toolbar, while the upper screen is black. Start-menu organization and scrolling remain; resize/move controls have been removed.
+
+## Earlier touch-support evidence
+
+> **Historical report.** Version numbers and test results below describe their recorded development snapshots. Current versions and installation status are in [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md); screenshot freshness is recorded in [the image audit](SCREENSHOTS.md).
+
+
+The eight current packages, including all 31 bundled QoL features, have a touch access path with **Gen3DualScreen 0.3.21**. Install the [Dual Screen update](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-dual-screen-0.4.14.zip) and [QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip), or the [updated manual-install bundle](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/gen1recomp-all-mods-manual-install.zip). Restart after replacing installed packages. This work targets the Dual Screen setup requested, not independent touch controls in every standalone package.
 
 ## Touch controls
 
@@ -23,7 +32,7 @@ Background QoL mods do not need an extra action button. Their enabled setting is
 | Shiny Hunter | Home tile → row taps, paging, Back and Actions. |
 | Auto Breeder | Home tile → row taps, paging, Back and Actions. |
 | Encounter Tour | Home tile → row taps, paging, Back and Actions. |
-| FRLG Dual Screen | Existing Home, settings, map, party, bag, battle and native-menu touch adapters; expanded mod panels. |
+| Gen3DualScreen | Existing Home, settings, map, party, bag, battle and native-menu touch adapters; expanded mod panels. |
 | Day Care Viewer | Home tile → row taps, paging, Back and Actions. |
 | Encounter Reset | Home tile → row taps, paging, Back and Actions. |
 | FRLG Scrollable Start Menu | Native Start list; organizer uses Actions → Up/Down/Choose/Back. |
@@ -66,8 +75,8 @@ Background QoL mods do not need an extra action button. Their enabled setting is
 
 Tests use engine commit `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf` and the user's existing imported caches. No player saves were loaded or changed.
 
-![Touch menu layout checks](../tools/touch-support/results/preview.png)
+Touch menu layout checks
 
-[Touch suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Runner](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest) · [Results](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
+Touch suite · Runner · Results
 
-The two updated packages pass source-parity and archive-integrity checks, and the rebuilt bundle matches all 38 individual ZIPs. A separate collection-wide source audit observed Fly Teleport being updated concurrently (its new source and download links had not yet been packaged); this task did not overwrite that work. See the [audit snapshot](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest).
+The two updated packages pass source-parity and archive-integrity checks, and the rebuilt bundle matches all 38 individual ZIPs. A separate collection-wide source audit observed Fly Teleport being updated concurrently (its new source and download links had not yet been packaged); this task did not overwrite that work. See the audit snapshot.

@@ -47,11 +47,11 @@ These are test findings, not fixes. Mod implementation, host implementation, ins
 
 Tests used local engine commit `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`, LuaJIT, existing imported FireRed/LeafGreen data and isolated synthetic sessions. Native encounter records were stored with the host capture routine and exported through normal save conversion; no PID/IV/ability repair was applied to make failed samples pass. Direct generators used their own normal export support. Native trade/gift and daycare helpers were exercised directly using synthetic, valid acquisition contexts.
 
-- [Machine-readable summary](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
-- [Every sample, generation family, SHA-256 and verdict](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
-- [Raw final PKHeX output](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
-- [LegalMon generation-family manifest](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
-- [Event generation-family manifest](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
-- [Test helpers and checker source](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest)
+- Machine-readable summary
+- Every sample, generation family, SHA-256 and verdict
+- Raw final PKHeX output
+- LegalMon generation-family manifest
+- Event generation-family manifest
+- Test helpers and checker source
 
 The encrypted `.pk3` samples and synthetic `.sav` files remain outside the release repository at `/tmp/mod-legality-pass/samples`. No ROM assets or PKHeX binary were added to the repository.

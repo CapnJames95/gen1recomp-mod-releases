@@ -1,6 +1,21 @@
-# LegalMon
+# LegalMon 0.18.1
 
-LegalMon adds a native-style FireRed/LeafGreen start-menu screen with generating paths for **all 386 Gen III species**. Configure a build, validate its acquisition-specific RNG constraints, review its sprite and exact result, then explicitly send it to party or PC. Version 0.4.0 adds breeding, special evolutions, roamers, Unown A and restricted event origins. All species does not mean every conceivable origin, form or exact build.
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
+
+![Current legalmon menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-legalmon.png)
+
+
+**Frontier safeguard:** receiving generated Pokémon (including improved breeding parents) is blocked during an active Emerald Battle Frontier challenge. Pending results and event receipts are left unchanged.
+
+## New in 0.18.0
+
+Adds active Emerald support alongside FireRed and LeafGreen on gen1recomp 0.3.39. Emerald uses its native species mapping, all 30 tutor compatibility bits, game-specific encounter profiles and a separate Emerald egg RNG/inheritance proof. Light Ball / Volt Tackle breeding is available where the proof supports it. Imported or historical FireRed/LeafGreen origins remain those games' origins; they are not relabelled as Emerald. Unown forms in Emerald use proven FireRed transfer origins.
+
+Emerald validation: 17,798 native-data checks across all 386 species, 512 native egg replay checks, and 10,143 exported samples accepted by PKHeX. These are synthetic automated tests, not a guarantee that every requested build is possible or a substitute for manual playtesting. Bounded searches and incomplete ancestry proofs still fail closed. Thorough manual gameplay validation remains pending.
+
+The current download includes this three-game port. The older change history below describes earlier FRLG releases.
+
+LegalMon adds a native-style FireRed/LeafGreen/Emerald start-menu screen with generating paths for **all 386 Gen III species**. Configure a build, validate its acquisition-specific RNG constraints, review its sprite and exact result, then explicitly send it to party or PC. Version 0.4.0 adds breeding, special evolutions, roamers, Unown A and restricted event origins. All species does not mean every conceivable origin, form or exact build.
 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC.
 
@@ -34,7 +49,7 @@ With **Configure → Pokemon → Acquisition → egg**, the move picker also off
 
 Nidoran male and Volbeat can now inherit through their female counterparts. Direct-source Ditto breeding is supported with a breedable male/genderless parent from the offspring's own evolution family; for example, Tyrogue can inherit a move directly learned by a compatible Hitmon evolution. Existing offspring PID constraints remain enforced. Incense routes retain their existing item requirements.
 
-Reports identify both parent slots and explain maternal move sources. Delivery reconstructs both parents' sources before accepting a result. Version 0.15.0 extends this with bounded chains, supported pre-evolution parental moves and witnessed Sketch. Parents remain hypothetical; recursive PID/IV ancestry and non-FRLG breeding variants are not yet proven. Unsupported cases stay **incomplete**, never silently relaxed.
+Reports identify both parent slots and explain maternal move sources. Delivery reconstructs both parents' sources before accepting a result. Version 0.15.0 extends this with bounded chains, supported pre-evolution parental moves and witnessed Sketch. Parents remain hypothetical; recursive PID/IV ancestry and breeding variants beyond the implemented FRLG/Emerald models are not yet proven. Unsupported cases stay **incomplete**, never silently relaxed.
 
 ### 0.13.0: compatible egg-move combinations
 
@@ -64,7 +79,7 @@ For Unown, **Configure → Pokemon → Unown form** selects Any, A–Z, ! or ?. 
 
 Previews now select Unown artwork from the actual result PID, with matching form names. The form picker also previews the highlighted letter. All 28 forms have been exported from both FRLG hosts and independently checked.
 
-Frenzy Plant, Blast Burn and Hydro Cannon are available for their compatible fully evolved Kanto starters using the host's Cape Brink rules. These results have friendship/happiness 255 and explicit tutor provenance. No tutor-use flags are consumed. Remaining egg-move and pre-evolution history gaps, other games' tutors and broader unfinished work are listed in [COVERAGE.md](COVERAGE.md).
+Frenzy Plant, Blast Burn and Hydro Cannon are available for their compatible fully evolved Kanto starters using the host's Cape Brink rules. These results have friendship/happiness 255 and explicit tutor provenance. No tutor-use flags are consumed. Remaining egg-move and pre-evolution history gaps, other games' tutors and broader unfinished work are listed in [COVERAGE.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/legalmon/COVERAGE.md).
 
 ### 0.9.0: more wild spreads and standard tutor moves
 
@@ -78,13 +93,13 @@ Validate now searches all eligible implemented acquisition profiles instead of c
 
 Choose **Configure → Pokemon → Acquisition → egg** for an explicit FRLG breeding route, including species already obtainable as starters, gifts or wild encounters. Minimum levels include the egg/evolution path. Marill and Wobbuffet also have non-incense level-5 routes. Direct-father egg moves are now supported; recursive parent ancestry remains outside scope.
 
-Before injection, the selected profile is reconstructed from the trusted current ROM catalog and checked against the unchanged request. An unsupported profile prevents an exhaustive negative conclusion; an impossible early profile no longer rejects a later valid route. See [the coverage audit](COVERAGE.md) for remaining work.
+Before injection, the selected profile is reconstructed from the trusted current ROM catalog and checked against the unchanged request. An unsupported profile prevents an exhaustive negative conclusion; an impossible early profile no longer rejects a later valid route. See [the coverage audit](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/legalmon/COVERAGE.md) for remaining work.
 
 ### 0.7.1: search completeness work
 
 Poké Spot validation now runs its PID stage incrementally: pause and resume retain its cursor instead of failing after a synchronous million-seed scan. Shiny requests enumerate the complete 524,288-PID shiny domain for the selected trainer, using exact GameCube PID reversal and activation checks. The ordinary PID stage can resume across the entire 32-bit RNG period. The screen identifies PID versus IV/level stages, and reports include PID trial counts.
 
-This does **not** make all Gen III spreads covered. IV searches still use one proven Poké Spot PID; exhausting its IV anchors now reports incomplete instead of implying global impossibility. See [the coverage audit](COVERAGE.md) for the remaining encounter, move, breeding, GameCube and cross-profile gaps. Search checkpoints are in-memory, not saved across application restarts.
+This does **not** make all Gen III spreads covered. IV searches still use one proven Poké Spot PID; exhausting its IV anchors now reports incomplete instead of implying global impossibility. See [the coverage audit](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/legalmon/COVERAGE.md) for the remaining encounter, move, breeding, GameCube and cross-profile gaps. Search checkpoints are in-memory, not saved across application restarts.
 
 ## Install and use
 
@@ -308,62 +323,62 @@ Native UI renders from development, using fixture/demo state. Some images predat
 
 ### Compare
 
-![legalmon-compare](../../docs/screenshots/legalmon-compare.png)
+Historical preview (older build): [legalmon-compare](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-compare.png).
 
 ### Ereader Confirm
 
-![legalmon-ereader-confirm](../../docs/screenshots/legalmon-ereader-confirm.png)
+Historical preview (older build): [legalmon-ereader-confirm](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-ereader-confirm.png).
 
 ### Ereader
 
-![legalmon-ereader](../../docs/screenshots/legalmon-ereader.png)
+Historical preview (older build): [legalmon-ereader](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-ereader.png).
 
 ### Gamecube
 
-![legalmon-gamecube](../../docs/screenshots/legalmon-gamecube.png)
+Historical preview (older build): [legalmon-gamecube](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-gamecube.png).
 
 ### Home
 
-![legalmon-home](../../docs/screenshots/legalmon-home.png)
+Historical preview (older build): [legalmon-home](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-home.png).
 
 ### Perfect
 
-![legalmon-perfect](../../docs/screenshots/legalmon-perfect.png)
+Historical preview (older build): [legalmon-perfect](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-perfect.png).
 
 ### Preview
 
-![legalmon-preview](../../docs/screenshots/legalmon-preview.png)
+Historical preview (older build): [legalmon-preview](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-preview.png).
 
 ### Search
 
-![legalmon-search](../../docs/screenshots/legalmon-search.png)
+Historical preview (older build): [legalmon-search](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-search.png).
 
 ### Settings
 
-![legalmon-settings](../../docs/screenshots/legalmon-settings.png)
+Historical preview (older build): [legalmon-settings](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-settings.png).
 
 ### Species
 
-![legalmon-species](../../docs/screenshots/legalmon-species.png)
+Historical preview (older build): [legalmon-species](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-species.png).
 
 ### Spreads
 
-![legalmon-spreads](../../docs/screenshots/legalmon-spreads.png)
+Historical preview (older build): [legalmon-spreads](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-spreads.png).
 
 ### Style
 
-![legalmon-style](../../docs/screenshots/legalmon-style.png)
+Historical preview (older build): [legalmon-style](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-style.png).
 
 ### Trade
 
-![legalmon-trade](../../docs/screenshots/legalmon-trade.png)
+Historical preview (older build): [legalmon-trade](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-trade.png).
 
 ### Trainer
 
-![legalmon-trainer](../../docs/screenshots/legalmon-trainer.png)
+Historical preview (older build): [legalmon-trainer](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-trainer.png).
 
 ### Later release examples
 
-![Imported NPC trade](../../docs/screenshots/legalmon-npc-trade.png)
+Historical preview (older build): [Imported NPC trade](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-npc-trade.png).
 
-![Unown form picker](../../docs/screenshots/legalmon-unown-picker.png)
+Historical preview (older build): [Unown form picker](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/legalmon-unown-picker.png).

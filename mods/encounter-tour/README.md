@@ -1,10 +1,39 @@
-# Encounter Tour 0.1.2
+# Encounter Tour 0.3.0
+
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
+
+![Current encounter-tour menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-encounter_tour.png)
+
+
+## Original starter repeats
+
+In Encounter Reset, choose **Starters → Pokémon → Prepare repeat starter** after earning the Pokédex. Return to **Oak’s lab in FR/LG** or **Route 101 in Emerald**, then choose **Collect prepared starter** in the same menu with a free party slot. Each preparation permits one native level-5 gift; preparation persists when saved. Existing Pokémon and the original starter/rival/roamer selection are preserved. This does not replay the rescue or rival battle.
+
+## Emerald support
+
+0.3.0 supports FireRed, LeafGreen and Emerald on gen1recomp 0.3.39. Emerald has 31 entries.
+
+- Existing legends, event-island encounters, static battles and Beldum remain supported.
+- **New gifts:** Wynaut egg and Castform. Castform requires the Weather Institute quest to be completed; only its gift receipt is reset.
+- **New NPC trades:** Seedot for Ralts, Plusle for Volbeat, Horsea for Bagon and Meowth for Skitty. Native scripts retain the offered-Pokémon requirement and fixed trade identity.
+- **New fossils:** Lileep and Anorith. Reset supplies one missing Root/Claw Fossil, without replacing an unfinished revival. Hand it to the Devon scientist, leave and return to collect it.
+- **New Johto starters:** Chikorita, Cyndaquil and Totodile. Reset reopens the **shared choice of one**, only after Birch's Johto reward has already been earned and collected. Original Hoenn starter and main story variables are not changed.
+
+Native English Faraway Island Mew remains excluded because there was no official English Old Sea Map distribution. Encounter Tour includes the original Treecko/Torchic/Mudkip rescue destinations. Encounter Reset offers repeat starter gifts in all three games without rewinding the opening story, rival team or original starter choice.
+
+Active Frontier challenges, battle transitions, dialogue and movement block travel/reset. Underwater return travel preserves the original map, position and underwater state. Changing the loaded save cancels old tour state and invalidates reset confirmations.
+
+Imported-data tests verify all landing points, reward scripts, both Eon/roamer TV choices, native fossil handover/collection, all four trades and all three Johto reward scripts. These use synthetic saves; the new entries still need hardware gameplay testing.
+
+Native menu previews below use synthetic fixture state, not live gameplay captures:
+
+![Emerald NPC trade detail](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/encounter-tour-emerald-npc-trades-detail.png)
 
 A standalone gen1recomp FireRed/LeafGreen teleport mod with the same native blue header, patterned background, window frames, bitmap font and Pokemon portrait layout as LegalMon. LegalMon is not required.
 
 ## Install
 
-Import `encounter-tour-0.1.2.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed or LeafGreen, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
+Import `encounter-tour-0.3.0.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed, LeafGreen or Emerald, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
 
 Tested against an isolated copy of the installed **0.3.21** engine payload using both games' imported data. This uses engine internals; future releases may need an adapter update. It does not modify installed game files or live saves during installation. Pokemon art and UI assets load from your own imported game; the mod ZIP contains no ROM data.
 
@@ -20,7 +49,7 @@ Tested against an isolated copy of the installed **0.3.21** engine payload using
 
 The tour and return point are kept in memory and reset when the loaded session changes. Save normally to keep game progress. Pause Shiny Hunter or any other input/reset automation before using an automatic tour; simultaneous automation has not been verified.
 
-## Complete fixed-encounter catalogue
+## FireRed / LeafGreen fixed-encounter catalogue
 
 40 menu entries across both versions, with 39 version-compatible entries per game. The other version's prize is marked `[X]` and cannot be selected for teleporting.
 
@@ -58,23 +87,23 @@ Locations and acquisition scope were checked against [pret/pokefirered](https://
 
 Native UI previews from development, using fixture state rather than live gameplay captures.
 
-![encounter-tour-categories](../../docs/screenshots/encounter-tour-categories.png)
+Historical preview (older build): [encounter-tour-categories](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-tour-categories.png).
 
-![encounter-tour-deoxys](../../docs/screenshots/encounter-tour-deoxys.png)
+Historical preview (older build): [encounter-tour-deoxys](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-tour-deoxys.png).
 
-![encounter-tour-events](../../docs/screenshots/encounter-tour-events.png)
+Historical preview (older build): [encounter-tour-events](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-tour-events.png).
 
-![encounter-tour-home](../../docs/screenshots/encounter-tour-home.png)
+Historical preview (older build): [encounter-tour-home](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-tour-home.png).
 
-![encounter-tour-notes](../../docs/screenshots/encounter-tour-notes.png)
+Historical preview (older build): [encounter-tour-notes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/encounter-tour-notes.png).
 
 ## 0.1.1 compatibility update
 
-Uses the shared `src.core.CollPermissions` predicates instead of importing the Gen 2 wrapper. This preserves landing checks and fixes rejection by the current host’s cross-generation mod guard. Required alongside the FRLG Dual Screen collection build.
+Uses the shared `src.core.CollPermissions` predicates instead of importing the Gen 2 wrapper. This preserves landing checks and fixes rejection by the current host’s cross-generation mod guard. Required alongside the Gen3DualScreen collection build.
 
 ## 0.1.2 dual-screen integration
 
-Adds explicit detached editor ownership for FRLG Dual Screen 0.2.0 and reports active tours to its encounter browser. Live browsing forwards field updates; running tours keep their own controls. Includes the 0.1.1 shared collision-helper fix.
+Adds explicit detached editor ownership for Gen3DualScreen 0.2.0 and reports active tours to its encounter browser. Live browsing forwards field updates; running tours keep their own controls. Includes the 0.1.1 shared collision-helper fix.
 
 
 ## Native Pokémon legality corrections — 0.1.3
@@ -86,3 +115,11 @@ The same helper is bundled independently with Dual Screen, Shiny Hunter, Encount
 **For a cartridge save, use MODS → this mod → SAVE + EXPORT while in the field.** This first saves the active game and then exports with the egg-name correction loaded. The log gives the output path under `exports/<edition>/`. A fresh launcher export can still use the host's unpatched egg-name encoder; copy the in-game export directly. Restart after installing updates.
 
 See the collection's `docs/LEGALITY-FIXES.md` for the regression results and limits. This corrects the identified defects; a passing sample matrix does not certify every possible modified ROM, species combination or future host release.
+
+## Current starter menus
+
+Native UI previews with synthetic state; these do not represent a completed gift or a fresh legality check.
+
+![Emerald starter menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/encounter-tour-emerald-starters-detail.png)
+
+![FRLG starter menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/encounter-tour-firered-starters-detail.png)

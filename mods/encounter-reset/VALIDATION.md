@@ -1,5 +1,8 @@
 # Validation — 0.1.0
 
+> **Historical validation record.** Counts, versions and pending-work statements below refer to the recorded test runs. For current package versions, installation status and latest checks, see [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
+
 Test host: gen1recomp `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`, local `/tmp/frlg-dual-upstream`, LuaJIT; separate imported FireRed and LeafGreen caches. No player saves are loaded or modified.
 
 Passed for both editions:

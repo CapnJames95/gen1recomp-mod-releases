@@ -1,78 +1,83 @@
-# Screenshot provenance
+# Screenshots and preview provenance
 
-These images are **renders of real native drawing code with test/demo state**, not live gameplay captures or AI-generated mockups. They use the user's locally imported FRLG fonts, frames and sprites. Raw ROMs, texture caches and trace files containing local paths are not distributed.
+[Every main mod and all 32 suite components](RELEASE-SCREENSHOTS.md) have current screenshot coverage.
 
-| Filename prefix | Origin |
+## Current gallery status
+
+The gallery contains **171 current native previews**, checked against the released versions: Gen3DualScreen **0.4.14**, QoL Suite **0.3.9** and the other versions listed in [release metadata](releases.json). The renderer hosts are gen1recomp **0.3.39 and 0.3.42**. These images were visually reviewed in contact sheets.
+
+These are **native renderer previews with synthetic test state**, not AI-generated mockups or new hardware gameplay captures. They use locally imported fonts/sprites; ROMs, caches, player saves and traces containing local paths are not distributed. Empty inventories, zero records, test Pokémon and Unknown Area labels reflect the fixtures.
+
+**114 older images are retained as historical examples**, not presented as current-build screenshots in the active READMEs. Their image embeds were replaced with explicitly labelled historical links. They may illustrate unchanged behaviour, but must not be used to infer current labels, version numbers, layouts or feature availability. The older Thor teleport capture is a hardware screenshot; the new previews do not extend hardware-validation claims.
+
+The [image audit](screenshot-audit.json) records every retained PNG's SHA-256 and whether it represents the current UI (including unchanged earlier captures) or is retained as historical evidence. It also records package versions. A complete hardware gallery and exhaustive gameplay validation remain deferred.
+
+## Shared Home layout
+
+Emerald, pages 1–4:
+
+![Emerald Home layout](screenshots/current/emerald-home.png)
+
+FireRed, pages 1–4; the same shared defaults apply to LeafGreen:
+
+![FireRed Home layout](screenshots/current/firered-home.png)
+
+These previews use the current shared preset. Game-specific unavailable shortcuts are omitted; other tiles retain their coordinates. Squirt Bottle and Headbutt are hidden. Rods/bike actions and field shortcuts use compact rows.
+
+## Emerald navigation
+
+These refreshed captures show the full native screen below the companion toolbar. The Emerald Home tile opens PokéNav; FR/LG keep MAP. Both are synthetic render previews, not Thor gameplay recordings.
+
+| PokéNav | Town Map |
 | --- | --- |
-| `legalmon-` | Existing LegalMon development outputs, including 0.7.0 e-Reader previews and confirmation. Some general menu images were retained from earlier versions. |
-| `events-` | Existing Event Distributions development outputs, including 1.2.0 egg delivery, journal and native-ticket UI. |
-| `shiny-hunter-` | Existing Shiny Hunter development outputs, including 0.1.3 speed settings. The found result uses demo state, not a claimed real capture. |
-| `autobreeder-` | Existing Auto Breeder development outputs. These demonstrate targets/results; some menu images predate 1.0.2's export/help entry. |
-| `qol-firered-`, `qol-leafgreen-` | Existing QoL real-cache render tests for summary, moves, Dex, key-item help and paged start menu. |
-| `frlg_qol_*` | Newly captured detail/options screens for all 26 packages, using upstream's unchanged native FRLG mod-manager drawing code and actual loaded mod option schemas. |
+| ![Native PokéNav](screenshots/current/emerald-pokenav.png) | ![Native Town Map](screenshots/current/emerald-town-map.png) |
 
-The QoL detail screen truncates long names to the engine's native 24-character limit. Options screens use the engine's four-row viewport. Some QoL mods only alter behavior and have no separate custom gameplay screen; their manager screens are shown explicitly as such.
+## Current mod menus
 
-## Reproduce the QoL manager images
+The companion renders the actual native mod menu. The paged footer shows **PREV PAGE / NEXT PAGE / BACK**. Each tool also works through its ordinary game menu without Dual Screen.
 
-Requires LuaJIT, Python with Pillow, an upstream gen1recomp source checkout containing `tests/modkit/sdk.lua`, and an already imported FRLG cache. The capture target is upstream dev commit `84e076b2d1e2dda36073ff55ec7c311a6b97519c`.
+| Mod | Emerald | FireRed |
+| --- | --- | --- |
+| LegalMon | [Preview](screenshots/current/emerald-legalmon.png) | [Preview](screenshots/current/firered-legalmon.png) |
+| Event Distributions | [Preview](screenshots/current/emerald-event-distributor.png) | [Preview](screenshots/current/firered-event-distributor.png) |
+| Shiny Hunter | [Preview](screenshots/current/emerald-shiny_hunter.png) | [Preview](screenshots/current/firered-shiny_hunter.png) |
+| Auto Breeder | [Preview](screenshots/current/emerald-autobreeder.png) | [Preview](screenshots/current/firered-autobreeder.png) |
+| Encounter Tour | [Preview](screenshots/current/emerald-encounter_tour.png) | [Preview](screenshots/current/firered-encounter_tour.png) |
+| Encounter Reset | [Preview](screenshots/current/emerald-encounter_reset.png) | [Preview](screenshots/current/firered-encounter_reset.png) |
+| Pokémon Services | [Preview](screenshots/current/emerald-pokemon-services.png) | [Preview](screenshots/current/firered-pokemon-services.png) |
+| Day Care | [Preview](screenshots/current/emerald-daycare-viewer.png) | [Preview](screenshots/current/firered-daycare-viewer.png) |
+| Teleport | [Preview](screenshots/current/emerald-fly-teleport.png) | [Preview](screenshots/current/firered-fly-teleport.png) |
 
-Run from the upstream checkout. Pass a **relative** path to this collection's `qol/mods` directory because the upstream test filesystem resolves paths relative to its checkout:
+![Current mod-tool footer](screenshots/current/emerald-legalmon.png)
 
-```sh
-mkdir -p /tmp/qol-manager-traces
-luajit /path/to/collection/tools/capture-qol-manager.lua \
-  ../../relative/path/to/collection/qol/mods firered \
-  '/path/to/firered/data/generated/gba' /tmp/qol-manager-traces
-python3 /path/to/collection/tools/render-manager-traces.py /tmp/qol-manager-traces
-```
+## QoL, starters and Hoenn
 
-The Lua helper loads the mods through the upstream test SDK, creates an in-memory manager state, and records its native draw calls. It never enters a player save or persists settings. The Python renderer composites the referenced local textures at native coordinates and enlarges the result with nearest-neighbor sampling. Its negative-scale handling supports the manager's down-arrow sprite.
+- All **32 suite component detail pages and their available options pages** were regenerated. These show actual component names, versions and option schemas in the native manager. The installed distribution remains the combined suite; they do not imply standalone downloads. The manager truncates long labels and uses a four-row options viewport.
+- The suite's [31 applicable feature switches](screenshots/qol-suite-menu.png), [Field Kit options](screenshots/qol-suite-options.png), [shortcut list](screenshots/qol-suite-shortcuts.png) and [binding context](screenshots/qol-suite-shortcut-context.png) were refreshed.
+- [Quick Field Actions](screenshots/frlg_qol_auto_surf-detail.png) now shows the current name instead of Auto Surf Prompt.
+- [Emerald starter-repeat menu](screenshots/encounter-reset-emerald-starters-detail.png) and [FRLG starter-repeat menu](screenshots/encounter-reset-firered-starters-detail.png) show Prepare repeat starter / Collect prepared starter. These demonstrate the menu, not a completed collection or a new PKHeX result.
+- Hoenn Tools: [Match Call](screenshots/hoenn-tools-match-call.png), [berry patches](screenshots/hoenn-tools-berries.png), [berry teleport/details](screenshots/hoenn-tools-berry-detail.png), [Frontier](screenshots/hoenn-tools-frontier.png), [Feebas](screenshots/hoenn-tools-feebas.png), [contest](screenshots/hoenn-tools-contest.png), [inline bike switch](screenshots/hoenn-tools-bike.png), [daily events](screenshots/hoenn-tools-daily-events.png), [Secret Bases](screenshots/hoenn-tools-secret-bases.png). Empty-party/base/rematch examples are intentional synthetic states.
+- Start-menu ordering and folders remain current. Size/position editor images are historical: that feature was removed in Suite 0.3.9.
+- Dual Screen Home pages, collection panels, startup and options were refreshed for 0.4.14. New Emerald PokéNav and Town Map captures show the isolated companion viewport.
+- QoL effect previews were regenerated for Summary values, Dex/evolution, item help, held items, nickname entry, move reminder, Repel reuse, shop owned counts, bag sorting and VS Seeker charge.
 
-The main four mods retain their original rendering/testing helpers where supplied; see their README and test documentation. The existing QoL UI harness is `qol/tests/real_cache.lua`.
+## Reproduction
 
-## Added Encounter Tour and QoL effect examples
+`tools/docs-preview/` renders shared Home pages and collection menus through LÖVE using the current combined suite. Set `KANTO_GEAR_HOST_PATH`, `KANTO_GEAR_MOD_PATH`, `KANTO_GEAR_PREVIEW_OUTPUT` (output filename prefix), `FRLG_COLLECTION_PATH`, `FRLG_QOL_COMBINED=1`, `FRLG_QOL_SUITE_ROOT` (absolute collection path without its leading slash), `POKEPORT_VERSION` and `POKEPORT_GBA_CACHE`. Run the preview folder with LÖVE from the host checkout. The preview creates synthetic sessions and never loads a player save.
 
-`encounter-tour-*` images come from Encounter Tour 0.1.0's original development outputs. They show its native home, categories, event destinations, Deoxys details and special-Pokémon notes.
+Other retained current capture helpers:
 
-`qol-effect-firered-*` images were captured with `tools/capture-qol-effects.lua`. This extends the existing real-cache fixture harness and calls the actual mod-wrapped party, bag, shop, PC, Repel and battle UI methods. It loads no player save and changes no installed mod. Synthetic inventory, party, battle and storage state makes the displayed effect reproducible. Bag before/after images use the same inventory with the sort option disabled/enabled. The native battle example is an isolated UI fixture, not a complete battle-playthrough capture.
+| Helper | Coverage |
+| --- | --- |
+| `tools/capture-qol-manager.lua` | Component detail/options schemas |
+| `mods/frlg-qol-suite/tests/capture.lua` | Combined suite settings and shortcuts |
+| `tools/capture-qol-effects.lua` | Native QoL effects; retired move-details/battle-hints captures removed |
+| `tools/capture-scrollable-start.lua` | Current native Start organiser, ordering and folders |
+| `tools/emerald-port/capture-hoenn.lua` | Eight Hoenn entry panels and berry patch detail |
+| `tools/emerald-port/capture-encounters.lua` | Current Tour/Reset menus, including native starter-row definitions |
+| `tools/frlg-dual-screen/startup_preview/` | Current startup branding |
+| `tools/frlg-dual-screen/portable_preview/` | Compact actions and Emerald owned/wild IV display |
+| `tools/frlg-dual-screen/tile_settings_preview/` | Current Home visibility options |
+| `tools/start-menu/preview/` | Historical size/position editor (removed) |
 
-Run it from the same upstream checkout and with the same relative-mod-path convention as the manager capture:
-
-```sh
-mkdir -p /tmp/qol-effect-traces
-luajit /path/to/collection/tools/capture-qol-effects.lua \
-  ../../relative/path/to/collection/qol/mods firered \
-  '/path/to/firered/data/generated/gba' /tmp/qol-effect-traces
-python3 /path/to/collection/tools/render-manager-traces.py /tmp/qol-effect-traces
-```
-
-The renderer also supports outlined rectangles and negative sprite scaling. Screenshot scripts do not modify shipped mod behavior. The Tiny Mushroom warning is retained as evidence of the issue documented in [the update check](UPDATE-CHECK.md); the move-reminder feature image shows the working Big Mushroom route.
-
-## FRLG Dual Screen 0.2.0
-
-`frlg-dual-screen/collection.png` and `frlg-dual-screen/native-ui.png` are contact sheets from the mod's actual LÖVE GPU preview harnesses, using isolated native-data test sessions. They show the new encounter browser, collection editors, controls, native-menu fallback, and light/dark companion pages. They are not captures from physical Thor hardware. See the mod's [validation report](../mods/frlg_dual_screen/VALIDATION.md) for the retained generation commands and coverage.
-
-### Home mod tiles — 0.2.1
-
-All five main mods enabled (left), and disabled (right). Same Home app renderer and theme.
-
-![Home mod tiles](screenshots/frlg-dual-screen/home-mods.png)
-
-## September 27 update examples
-
-Day Care Viewer images use the native rendering fixture described in its test report. Encounter Reset images are supplied native UI fixtures from that mod's development. New LegalMon NPC-trade, Unown and profile-progress images come from its completed release workspace.
-
-`start-menu-1.png` and `start-menu-14.png` use `tools/capture-scrollable-start.lua` and `tools/render-manager-traces.py`. Run the capture from the upstream checkout with a relative mod-folder path, edition, imported cache path and scratch trace directory, just like the QoL capture above. It loads the actual Start Menu mod and renders 14 synthetic entries at the first and last selection. The neutral background is a fixture; no gameplay scene or player save is used. Intermediate cache traces are not distributed.
-
-Dual Screen 0.2.4 adds the battery percentage example; its updated collection sheet reflects removal of the virtual control deck. Screenshots do not establish physical-device compatibility.
-
-### Scrollable Start Menu 0.2.0
-
-`start-organizer-preview.png` combines four native-font/frame renders from `tools/capture-scrollable-start.lua`: organized main menu, folder, organizer and entry ordering. The capture loads the actual mod through the host SDK, uses synthetic folder settings and mod entries, and forbids storage writes. These are render fixtures, not live gameplay or device captures.
-
-## Dual Screen startup branding
-
-`frlg-dual-screen/startup.png` shows the 0.3.10 startup screen in light and dark themes, rendered by the retained LÖVE/GPU fixture in `tools/frlg-dual-screen/startup_preview/`. It preserves the Kanto Gear credit. This is a renderer preview, not a new device test.
-
-Scrollable Start Menu 0.2.1 updates the ordering preview to show a picked-up entry and the A/Up/Down placement controls. Captured by the same isolated harness.
+The trace helpers take source root, edition, imported cache directory and output trace directory; use `tools/render-manager-traces.py` to composite their draw operations. Manager/effects helpers expect the canonical `qol/mods` path; the suite helper expects the collection path without its leading slash; Hoenn/encounter helpers expect the collection root. All caches remain local.

@@ -1,6 +1,6 @@
 # Included campaigns
 
-322 choices; 670 variants, including city OTs and regional language rewards. Eggs can arrive unhatched or hatched. Shiny availability is checked for your IDs. Native journeys support Aurora and Mystic Tickets; other source games retain caught replicas. See [fidelity audit](FIDELITY.md) for sources and exclusions.
+322 choices; 670 variants, including city OTs and regional language rewards. Eggs can arrive unhatched or hatched. Shiny availability is checked for your IDs. Native journeys support Aurora and Mystic Tickets; other source games retain caught replicas. See [fidelity audit](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/event-distributor/FIDELITY.md) for sources and exclusions.
 
 | Family | Campaign | Pokémon choices | Shiny choices |
 |---|---|---|---|

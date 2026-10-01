@@ -1,13 +1,19 @@
-# FRLG Scrollable Start Menu 0.2.2
+# Scrollable Start Menu 0.3.1
 
-A standalone FireRed / LeafGreen mod for gen1recomp, mod API 2.
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
 
-[Download the installable ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/frlg-scrollable-start-0.2.2.zip).
-Import through **MODS → Import mod .zip**, enable **FRLG Scrollable Start Menu** for your edition, and restart. This replaces 0.1.x using the same mod ID.
+A FireRed / LeafGreen / Emerald component for gen1recomp, mod API 2.
+
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip).
+Import the suite through **MODS → Import mod .zip**, enable it for your edition and restart. The Scrollable Start Menu component is enabled by default.
+
+## Current menu layout
+
+Manual resize and move controls have been removed in 0.3.1. The native popup uses automatic sizing and its normal position; previously saved size/position values are ignored. Saved folders and ordering are retained.
 
 ## Scrolling
 
-The native Start menu grows vertically to fit its entries. On the game's 240×160 canvas, up to nine rows fit with the normal font, spacing and frame. Larger menus scroll as Up/Down moves the selection. Wrapping from the first entry to the last (or back) scrolls to that entry. A scrollbar indicates your position. The panel also widens for mod labels, up to the available screen width. Enlarging the desktop window scales the game canvas; it does not add logical menu rows.
+The native Start menu grows vertically to fit its entries. The visible row count respects the edition’s native limit, spacing and available 240×160 canvas. Larger menus scroll as Up/Down moves the selection. Wrapping from the first entry to the last (or back) scrolls to that entry. A scrollbar indicates your position. The panel also widens for mod labels, up to the available screen width. Enlarging the desktop window scales the game canvas; it does not add logical menu rows.
 
 ## Folders and sorting
 
@@ -26,7 +32,7 @@ Core game entries (Pokédex, Pokémon, Bag, trainer, Save, Option, Mods and Exit
 
 Reordering saves when you place the item with A; Start discards an unfinished move and exits the editor. Other changes save immediately in this mod's private storage, separately for each edition and playthrough. A failed write displays an error and leaves the previous layout in effect. This does not rewrite Pokémon, inventory, or story progress. The **ENABLED** setting disables both organization and the scrolling fix.
 
-Native callbacks, wraparound, exit confirmation and Safari statistics remain supported. Safari, link and Union Room menus retain their native entry layout and do not offer the organizer. Designed to coexist with the collection's QoL menu wrappers regardless of startup order. FRLG Dual Screen has its own touch layout; shortcuts it removes from the native Start menu cannot be organized here. Other third-party mods that completely replace the renderer may conflict.
+Native callbacks, wraparound, exit confirmation and Safari statistics remain supported. Safari, link and Union Room menus retain their native entry layout and do not offer the organizer. Designed to coexist with the collection's QoL menu wrappers regardless of startup order. Gen3DualScreen has its own touch layout; shortcuts it removes from the native Start menu cannot be organized here. Other third-party mods that completely replace the renderer may conflict.
 
 ## Validation
 
@@ -49,7 +55,7 @@ Live gameplay and physical-device testing remain unverified. Requires `engine_in
 
 Native render fixtures: organized main menu, folder, organizer and ordering controls. These are isolated UI examples, not gameplay captures.
 
-![Start menu organizer](../../docs/screenshots/start-organizer-preview.png)
+Historical preview (older build): [Start menu organizer](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/start-organizer-preview.png).
 
 ## Changes
 
@@ -59,4 +65,8 @@ Native render fixtures: organized main menu, folder, organizer and ordering cont
 
 **0.1.1:** advertises active Start-menu renderer ownership so QoL helpers delegate rather than drawing a second paged menu.
 
-**0.2.2:** respects FRLG Dual Screen 0.3.14’s **Display → HIDE MAIN START** setting, including suppressing the scrollbar. The setting defaults ON only taking effect when a separate companion display is detected and ready.
+**0.2.2:** respects Gen3DualScreen 0.3.14’s **Display → HIDE MAIN START** setting, including suppressing the scrollbar. The setting defaults ON only taking effect when a separate companion display is detected and ready.
+
+## 0.2.3 scrolling fix
+
+The renderer clears the native scroll offset while drawing its already-scrolled window and restores it afterwards. Its row capacity also respects the host renderer limit. This fixes missing rows/cursor jumps near the ends of long menus. Both-edition native HUD tests now walk the complete menu in both directions and wrap at the ends.

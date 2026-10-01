@@ -1,5 +1,7 @@
 # Dex Companion
 
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
+
 Search seen species by name; read imported evolutions and wild locations; count owned species in the current area's encounter tables.
 
 Experimental FRLG beta tool for players. Install its ZIP through launcher MODS > Import mod .zip, enable, and restart. Or copy the folder to `mods/frlg_qol_dex_companion/`. No dependency required. START > QOL > DEX COMPANION opens the tool. Directions navigate; A chooses; B closes; left/right page. Uses the original naming keyboard for search (10 characters, literal substring matching).
@@ -14,23 +16,23 @@ These are native UI renders from real mod hooks with isolated fixture data, not 
 
 Selecting a seen species shows its imported evolution rule and available wild-location records.
 
-![Dex Companion in use](../../../docs/screenshots/qol-firered-evolution.png)
+![Dex Companion in use](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/qol-firered-evolution.png)
 
 ## Screenshots
 
-Native FRLG mod-manager renders from the loaded 0.1.0 package in an isolated test session. These show the real detail/options UI; they are not live gameplay captures.
+Current component-manager previews rendered from this source in an isolated FireRed test session. These are component configuration examples; install the combined suite. These show the real detail/options UI; they are not live gameplay captures.
 
-![Dex Companion details](../../../docs/screenshots/frlg_qol_dex_companion-detail.png)
+![Dex Companion details](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/frlg_qol_dex_companion-detail.png)
 
-![Dex Companion options](../../../docs/screenshots/frlg_qol_dex_companion-options.png)
+![Dex Companion options](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/frlg_qol_dex_companion-options.png)
 
 Native UI example from the development render harness:
 
-![Dex Companion UI](../../../docs/screenshots/qol-firered-dex.png)
+![Dex Companion UI](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/qol-firered-dex.png)
 
 ## Compatibility update (0.1.1)
 
-Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Independently installable; restart after replacement.
+Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Update the QoL Suite and restart.
 ## Start menu fix (0.1.2)
 
 Without Scrollable Start Menu, more than nine entries now use a compact right-hand scrolling sidebar instead of a full-screen panel. Native selection and callbacks are preserved. Update both HM Field Kit and Dex Companion if installed, then restart the game. No configuration changes are required.

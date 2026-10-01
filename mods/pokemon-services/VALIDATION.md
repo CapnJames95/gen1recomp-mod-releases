@@ -1,5 +1,8 @@
 # Pokemon Services validation
 
+> **Historical validation record.** Counts, versions and pending-work statements below refer to the recorded test runs. For current package versions, installation status and latest checks, see [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
+
 Validated 27 September 2026 against Gen1Recomp commit `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`, using separately imported FireRed and LeafGreen data. No player saves were loaded or written.
 
 - **194/194 per edition:** real mod loader, original script discovery and service entry; 14 town/island inventories and 5 department-store counters; native shop buying, insufficient funds and cancellation; exact native healing agreement; Day Care deposit/paid withdrawal/stale selection; original Pokemon PC and item PC screens; field/movement/linked-activity/modal/session guards; START and Mods launch actions and native menu handoffs.

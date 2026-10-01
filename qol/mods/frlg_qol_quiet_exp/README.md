@@ -1,5 +1,7 @@
 # Quiet EXP
 
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
+
 Skip individual Pokémon EXP-gain announcements in FireRed and LeafGreen. Level-up messages, stat-growth windows, move learning, evolution and actual EXP/EV awards stay native. Instant EXP bars are enabled by default and independently configurable. Disable that option to retain bar animations without the gain messages.
 
 Import this package in MODS, enable it for your edition and restart. Settings: ENABLED and INSTANT EXP BARS. Works independently of Battle Bar Speed; if both are installed, either mod can request instant EXP bars. No ROM data included. Back up saves before beta testing.
@@ -10,6 +12,6 @@ All UI remains native: this mod adds no replacement windows.
 
 ## Compatibility update (0.1.0)
 
-Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Independently installable; restart after replacement.
+Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Update the QoL Suite and restart.
 
-![Quiet EXP settings](../../../docs/screenshots/frlg_qol_quiet_exp-options.png)
+![Quiet EXP settings](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/frlg_qol_quiet_exp-options.png)

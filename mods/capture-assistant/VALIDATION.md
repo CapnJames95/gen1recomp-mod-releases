@@ -1,5 +1,8 @@
 # Validation — 0.1.1
 
+> **Historical validation record.** Counts, versions and pending-work statements below refer to the recorded test runs. For current package versions, installation status and latest checks, see [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
+
 Tested against upstream `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`, LuaJIT, and locally imported FireRed and LeafGreen data. No player saves were loaded.
 
 The shared assistant suite passes **140 checks per edition (280 total)**. These include:

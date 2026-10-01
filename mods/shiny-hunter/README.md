@@ -1,13 +1,26 @@
-# Shiny Hunter 0.1.4 — FireRed / LeafGreen
+# Shiny Hunter 0.2.1
+
+Current companion preview (synthetic Emerald session; Dual Screen is optional):
+
+![Current shiny-hunter menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-shiny_hunter.png)
+
 
 An automatic encounter hunter for gen1recomp, with the same blue header, native FRLG frames, sprite panel, six-entry home menu and controller navigation as LegalMon. This is an initial tested build, not a claim that every story encounter has been individually certified.
 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
+## Three-game development update
+
+Requires gen1recomp 0.3.39 or newer. Emerald uses its native encounters and preserves underwater state and Mach/Acro Bike type across attempt resets. Active Battle Frontier challenges are blocked. Existing FRLG roaming-Pokémon legality corrections remain restricted to FRLG; Emerald keeps its full native IVs.
+
+Automated tests exercise native encounter generation, recorded routes, fishing, Surf/Safari recovery, menu integration and normal ball capture. Manual Emerald device testing is still pending; this source update is not yet a published release.
+
+0.2.1 adds a direct menu entrypoint for Hoenn Tools’ Feebas assistant. It opens the hunter without starting automation or altering your configuration. Requires gen1recomp 0.3.39. The older FR/LG-specific test descriptions below are historical coverage; current native integration tests run in all three games.
+
 ## Install and start
 
-Import `shiny-hunter-0.1.4.zip` using gen1recomp's mod manager, enable **Shiny Hunter** for FireRed or LeafGreen, and restart the game if requested. Alternatively, place the extracted `shiny_hunter` directory containing `manifest.json` inside your gen1recomp mods directory. No ROM data is included; the UI reads your game's existing imported assets. LegalMon is not a dependency.
+Import `shiny-hunter-0.2.1.zip` using gen1recomp's mod manager, enable **Shiny Hunter** for FireRed, LeafGreen or Emerald, and restart the game if requested. Alternatively, place the extracted `shiny_hunter` directory containing `manifest.json` inside your gen1recomp mods directory. No ROM data is included; the UI reads your game's existing imported assets. LegalMon is not a dependency.
 
 Open **START → SHINY HUNTER**. Choose **Encounter modes**, then **Configure hunt** if you want additional filters. Stand at your starting position and choose **Start hunt → Start selected mode**.
 
@@ -90,31 +103,31 @@ Native UI renders from development, using fixture/demo state. Some images predat
 
 ### Filters
 
-![shiny-hunter-filters](../../docs/screenshots/shiny-hunter-filters.png)
+Historical preview (older build): [shiny-hunter-filters](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/shiny-hunter-filters.png).
 
 ### Found
 
-![shiny-hunter-found](../../docs/screenshots/shiny-hunter-found.png)
+Historical preview (older build): [shiny-hunter-found](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/shiny-hunter-found.png).
 
 ### Home
 
-![shiny-hunter-home](../../docs/screenshots/shiny-hunter-home.png)
+Historical preview (older build): [shiny-hunter-home](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/shiny-hunter-home.png).
 
 ### Modes
 
-![shiny-hunter-modes](../../docs/screenshots/shiny-hunter-modes.png)
+Historical preview (older build): [shiny-hunter-modes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/shiny-hunter-modes.png).
 
 ### Settings
 
-![shiny-hunter-settings](../../docs/screenshots/shiny-hunter-settings.png)
+Historical preview (older build): [shiny-hunter-settings](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/shiny-hunter-settings.png).
 
 ### Speeds
 
-![shiny-hunter-speeds](../../docs/screenshots/shiny-hunter-speeds.png)
+Historical preview (older build): [shiny-hunter-speeds](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/shiny-hunter-speeds.png).
 
 ## 0.1.4 dual-screen integration
 
-Adds explicit detached editor ownership for FRLG Dual Screen 0.2.0. While its live editor is active, native field updates and controller input continue; menu input comes from companion touch. Active automation retains its own rules. Exposes busy state so the companion refuses targeted encounters while a hunt snapshot or automation is active. Standalone behavior is unchanged.
+Adds explicit detached editor ownership for Gen3DualScreen 0.2.0. While its live editor is active, native field updates and controller input continue; menu input comes from companion touch. Active automation retains its own rules. Exposes busy state so the companion refuses targeted encounters while a hunt snapshot or automation is active. Standalone behavior is unchanged.
 
 
 ## Native Pokémon legality corrections — 0.1.5

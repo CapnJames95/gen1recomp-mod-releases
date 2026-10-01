@@ -1,5 +1,8 @@
 # Disable L/R Help 0.1.0 validation
 
+> **Historical validation record.** Counts, versions and pending-work statements below refer to the recorded test runs. For current package versions, installation status and latest checks, see [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
+
 Target: official upstream `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`.
 
 76 checks pass per edition (152 total), using the real Input, Help update and Game3 L=A code with a stubbed Help presenter. Tests cover keyboard and controller L/R edges and held states in boot/field/battle phases, direct Help requests, closing already-open Help, reset, previous-handler chaining, other-mod handled results, saved option preservation, L=A suppression/restoration, wrapper reload, inactive loader ownership and unsupported editions.

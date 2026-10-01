@@ -1,3 +1,5 @@
+> **Historical development record.** Version counts, compatibility and pending-work statements below describe the original FRLG work. Current three-game scope is in the [suite README](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) and [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).
+
 # QoL cleanup and fixes — 27 September 2026
 
 ## Result
@@ -14,7 +16,7 @@
 
 Remove installed `frlg_qol_battle_hints` and `frlg_qol_move_info` through the game's MODS manager. Import the replacement ZIPs for mods you use, replacing rather than duplicating each ID; install Quiet EXP if desired. Update **both** Dual Screen and Ball Shortcut together. Restart the game after replacing packages. Source/download cleanup does not uninstall mods from your game automatically.
 
-See [current packages](PACKAGES.md). The update bundle contains individual importable ZIPs; unpack it first, then import the desired ZIPs. No ROM or extracted assets are included. Back up your saves before beta testing.
+See [current packages](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/qol/PACKAGES.md). The update bundle contains individual importable ZIPs; unpack it first, then import the desired ZIPs. No ROM or extracted assets are included. Back up your saves before beta testing.
 
 ## Validation
 
@@ -31,4 +33,4 @@ During implementation, two test-harness issues (a missing fixture species name a
 
 The earlier DUAL_SCREEN_AUDIT.md is a historical pre-fix audit, not current release status.
 
-![Ball popup, owned-ball picker and shop counts](../docs/screenshots/frlg-dual-screen/qol-compatibility.png)
+![Ball popup, owned-ball picker and shop counts](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/frlg-dual-screen/qol-compatibility.png)

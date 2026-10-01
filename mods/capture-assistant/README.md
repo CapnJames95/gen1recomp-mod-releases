@@ -1,12 +1,14 @@
 # Capture Assistant 0.1.1 — FireRed / LeafGreen
 
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
+
 **Press R at the main wild battle command menu** to compare owned balls, inspect capture estimates and read moveset risks. **START → CAPTURE HELP** explains the controls outside battle.
 
 Uses the same native FRLG fonts, blue header, striped background, six-row scrolling menus and player-selected window frames as the other collection tools. Independently installable.
 
 ## Install and use
 
-Import [capture-assistant-0.1.1.zip](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.2.0/capture-assistant-0.1.1.zip) through **MODS → Import mod .zip**, enable it and restart.
+Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
 1. Reach **FIGHT / BAG / POKEMON / RUN** in an ordinary wild single battle.
 2. Press the **R shoulder button**, using its current controller/keyboard binding.
@@ -18,11 +20,11 @@ Up/Down scrolls; Left/Right skips five rows; A opens; B/L goes back. R or START 
 
 ## Dual Screen
 
-With **FRLG Dual Screen 0.3.12 or newer** active and displaying its companion screen, pressing R opens Capture Assistant **on the bottom screen over the Dual Screen interface**. The top screen keeps showing the battle. Tap visible rows to open them and **< BACK** to go back or close; physical controls also work. Closing restores the normal companion content.
+With **Gen3DualScreen 0.3.12 or newer** active and displaying its companion screen, pressing R opens Capture Assistant **on the bottom screen over the Dual Screen interface**. The top screen keeps showing the battle. Tap visible rows to open them and **< BACK** to go back or close; physical controls also work. Closing restores the normal companion content.
 
 The battle remains paused while reading. If the companion is disabled or its display is unavailable, the assistant falls back to the normal game screen. Update both packages for this handoff; older Dual Screen releases retain the standalone display.
 
-![Capture Assistant on the bottom screen](../../docs/screenshots/capture-assistant/dual-screen.png)
+Historical preview (older build): [Capture Assistant on the bottom screen](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/capture-assistant/dual-screen.png).
 
 ## Estimates and risks
 
@@ -38,20 +40,20 @@ Trainer, Safari, double, linked, spectator, tutorial and ghost battles are exclu
 
 ## Compatibility and validation
 
-Mod API 2, FRLG only, `engine_internals`. Tested with upstream `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`. The declared engine range does not verify every intervening release. Other mods owning R or replacing battle UI/update methods may conflict. No imported game data or save files are shipped.
+Mod API 2, FireRed/LeafGreen/Emerald, `engine_internals`. Tested with upstream `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf`. The declared engine range does not verify every intervening release. Other mods owning R or replacing battle UI/update methods may conflict. No imported game data or save files are shipped.
 
-See [VALIDATION.md](VALIDATION.md). Automated native-data, loader, calculation, ownership and control checks pass in both editions; physical controller/Android device testing remains outstanding.
+See [VALIDATION.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/capture-assistant/VALIDATION.md). Automated native-data, loader, calculation, ownership and control checks pass in both editions; physical controller/Android device testing remains outstanding.
 
 ## Screenshots
 
 Native font/frame drawing traces from synthetic test sessions, not live-play captures.
 
-![Capture Assistant home](../../docs/screenshots/capture-assistant/capture-home.png)
+Historical preview (older build): [Capture Assistant home](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/capture-assistant/capture-home.png).
 
-![Owned ball comparison](../../docs/screenshots/capture-assistant/capture-balls.png)
+Historical preview (older build): [Owned ball comparison](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/capture-assistant/capture-balls.png).
 
-![Ball detail and hypothetical improvements](../../docs/screenshots/capture-assistant/capture-detail.png)
+Historical preview (older build): [Ball detail and hypothetical improvements](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/capture-assistant/capture-detail.png).
 
-![Capture risk notes](../../docs/screenshots/capture-assistant/capture-risks.png)
+Historical preview (older build): [Capture risk notes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/screenshots/capture-assistant/capture-risks.png).
 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC. Menu styling follows the collection's Day Care Viewer and LegalMon conventions.

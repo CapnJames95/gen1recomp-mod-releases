@@ -1,22 +1,24 @@
 # Hold Fast Forward
 
+**Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
+
 Temporarily speed up gameplay while holding a spare keyboard key.
 
-Experimental FRLG beta mod for players. Source-tested against upstream commit `84e076b2d1e2dda36073ff55ec7c311a6b97519c`; not ROM-playtested.
+Three-game suite component. Current automated checks use gen1recomp 0.3.39; complete gameplay validation remains deferred. Older validation reports describe their original FRLG snapshots.
 
 ## Install
 
-Import this mod's ZIP through the launcher's MODS > Import mod .zip, enable it, and restart the game. Alternatively place this entire folder under `mods/frlg_qol_hold_fast_forward/`. Install each desired mod separately; no common mod is required. Restart after enabling/disabling or updating. Keep a backup of your save when testing beta mods.
+Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
 ## Use and configuration
 
-Hold Right Ctrl by default; choose Left Ctrl/F6 and 2x/4x/8x. Releasing restores native category speed immediately, without changing settings. Respects the engine's speed locks. Controller speed up/down and touch hold are already native.
+Hold F9 or L3 by default; choose 2x/4x/8x. Legacy keyboard/controller choices remain available. Releasing restores native category speed immediately, without changing settings. Respects the engine's speed locks. Controller speed up/down and touch hold are already native.
 
 Options are in this mod's manager entry. ENABLED turns its behavior off. Mods with tools share one START > QOL menu automatically; there is no required central package.
 
 ## Compatibility
 
-FireRed and LeafGreen only, using the shared FRLG engine. Declares `engine_internals` because the public API lacks the necessary narrow extension point. Other mods replacing the same functions may conflict. Inactive wrappers fall through after the loader changes; restart fully after a load error. Online/arena play is outside this package's scope. No ROM, graphics, audio or extracted data included.
+FireRed, LeafGreen and Emerald through the current QoL Suite on gen1recomp 0.3.39. Declares `engine_internals` because the public API lacks the necessary narrow extension point. Other mods replacing the same functions may conflict. Inactive wrappers fall through after the loader changes; restart fully after a load error. Online/arena play is outside this package's scope. No ROM, graphics, audio or extracted data included.
 
 ## Validation
 
@@ -24,17 +26,17 @@ See VALIDATION.md and the collection's tests/ for the ROM-free checks and the ex
 
 ## Screenshots
 
-Native FRLG mod-manager renders from the loaded 0.1.0 package in an isolated test session. These show the real detail/options UI; they are not live gameplay captures.
+Current component-manager previews rendered from this source in an isolated FireRed test session. These are component configuration examples; install the combined suite. These show the real detail/options UI; they are not live gameplay captures.
 
-![Hold Fast Forward details](../../../docs/screenshots/frlg_qol_hold_fast_forward-detail.png)
+![Hold Fast Forward details](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/frlg_qol_hold_fast_forward-detail.png)
 
-![Hold Fast Forward options](../../../docs/screenshots/frlg_qol_hold_fast_forward-options.png)
+![Hold Fast Forward options](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/frlg_qol_hold_fast_forward-options.png)
 
 ## Compatibility update (0.2.0)
 
-Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Independently installable; restart after replacement.
+Shared Start-menu rendering yields to the dedicated Scrollable Start Menu when enabled. Update the QoL Suite and restart.
 HOLD BUTTON adds L3/R3 or shoulder choices, OFF by default. Uses connected SDL gamepad state, stops on release/disconnect/focus loss, and preserves native speed locks. Choose an otherwise-unused button; other button actions are not remapped.
 
 ## Touch hold — 0.2.1
 
-With FRLG Dual Screen 0.3.16, open LIVE QOL SETTINGS and hold HOLD TO FAST FORWARD. Release or slide off to return to normal speed. Focus loss, page changes and session changes also end the hold. Existing keyboard/controller bindings and speed-lock restrictions still apply.
+With Gen3DualScreen 0.3.16, open LIVE QOL SETTINGS and hold HOLD TO FAST FORWARD. Release or slide off to return to normal speed. Focus loss, page changes and session changes also end the hold. Existing keyboard/controller bindings and speed-lock restrictions still apply.

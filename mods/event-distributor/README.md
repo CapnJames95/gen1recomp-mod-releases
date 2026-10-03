@@ -1,4 +1,4 @@
-# Event Distributions 1.4.1
+# Event Distributions 1.4.5
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
@@ -8,6 +8,26 @@ Current companion preview (synthetic Emerald session; Dual Screen is optional):
 **Frontier safeguard:** receiving generated Pokémon (including improved breeding parents) is blocked during an active Emerald Battle Frontier challenge. Pending results and event receipts are left unchanged.
 
 A standalone **EVENTS** entry beside LegalMon in the FireRed/LeafGreen/Emerald START menu. Includes **87 campaign menus, 322 Pokémon choices and 670 selectable variants**. No LegalMon dependency, ROM download, PKHeX installation or network connection is needed to play.
+
+## What's new in 1.4.5 — fresh results for event-OT gifts
+
+- Fixes repeated identical Aura Mew and other distribution-OT gifts, including repeated selections without closing EVENTS. The previous fix only advanced recipient-OT eggs and ticket replicas.
+- All 313 non-preserved Pokémon choices now use their event's generation rules: ordinary and anti-shiny BACD, restricted/table seeds, MYSTRY Mew, WISHMKR, CHANNEL and Colosseum gifts. Original event identity, language, moves and provenance rules remain in force; event-specific OT gender, held item and CHANNEL SID/origin follow their required RNG rules.
+- Each successful generated redemption advances the saved per-variant search cursor and excludes the immediately previous PID. Failed delivery or cancellation does not consume a result. A finite seed set can eventually cycle, and nature or individual IV values can naturally recur. If no different legal result exists, delivery is refused rather than copying the previous Pokémon.
+- The nine preserved **JEREMY** specimens intentionally remain identical and are labelled as fixed archive specimens.
+- Automated coverage: Aura Mew ENG repeated within the same open menu in FR/LG/Emerald; save/reload and delivery protections; **5,943/5,943 generated exports accepted by PKHeX** across all three games. Strict modkit validation and lint pass. This is automated coverage, not a claim of manual gameplay validation.
+
+## What's new in 1.4.4 — fresh repeat results
+
+Personalized events now discard a successfully redeemed preview and start the next search one RNG step after the accepted seed (or the next candidate seed for restricted event seed sets). The search still enforces the event's generation and shiny rules. Each event variant's next seed is saved with your game. Failed or cancelled deliveries do not advance it. This produces fresh results where the event permits them; finite event seed sets can eventually cycle, and fixed historical specimens remain identical.
+
+## What's new in 1.4.3 — repeat redemptions
+
+In **START → EVENTS**, toggle **Repeat redemptions: OFF/ON**. It defaults to OFF and is saved per game save when you save normally. ON allows repeat Pokémon gifts and eggs, including caught replicas, using the same generation and export checks. Fixed archive specimens remain fixed; this is not a new random reroll.
+
+USED markers, campaign counts and the original receipt remain intact. Each successful repeat is added to the redemption journal. Turning OFF restores the usual one-claim restriction. Disable **Hide USED** in Search / filters to find previously redeemed gifts.
+
+Native ticket journeys, key items and story flags are not reset or duplicated. Pending native encounters remain reserved; after capture, their Pokémon replica can be received again with repeats enabled. Existing capacity, active-save and Battle Frontier safeguards still apply.
 
 ## What's new in 1.4.0
 

@@ -45,3 +45,9 @@ Against gen1recomp `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf` and PKHeX `17157eb
 - Regression checks cover partial Mystic claims in either direction, failed delivery, stale selections, old LeafGreen native receipts, Soul Dew, distinct city OT previews, fixed specimen export/renaming, all 670 menu paths and save serialization.
 
 These are automated headless engine tests, not a claim of manual live gameplay or proof of original attendance.
+
+## Repeat-generation audit (1.4.5)
+
+The catalogue's stored records remain reference templates. Runtime generation now covers every non-preserved choice (313 of 322), with only the nine JEREMY archive specimens retaining fixed PID/IVs. Event-OT generation follows the documented correlations and gender rules in [PKHeX's Gen III event implementation](https://github.com/kwsch/PKHeX/tree/542111fc8584ff29c9d1455553b8acd0e1f8a59a/PKHeX.Core/Legality), including CommonEvent3, EncounterGift3, the NY/JPN/Colosseum gifts, ChannelJirachi, MYSTRY Mew's released seed set and Wishmkr's held-item rule. Credit: kwsch and PKHeX contributors (GPL-3.0; see LICENSE).
+
+`tools/event-distributor/build-policies.py <EncountersWC3.cs> <MystryMew.cs>` regenerates claim-specific policies and the released MYSTRY seed set from that revision. The two regression drivers beside it exercise repeated menu redemption and export three consecutive results per available variant in each game. Restricted personalised variants without a different legal result remain unavailable. The independent PKHeX checker accepted all 5,943 exported records. Original templates and claim IDs are unchanged.

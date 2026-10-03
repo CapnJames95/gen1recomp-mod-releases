@@ -2,49 +2,49 @@
   {
     "mod": "legalmon",
     "version": "0.18.1",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/legalmon-0.18.1.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/legalmon-0.18.1.zip",
     "sha256": "48737a73199cb58bf0a31e366caaca2b14c1bc0178440fd826be3f00c3ff5418"
   },
   {
     "mod": "event-distributor",
     "version": "1.4.5",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/event-distributor-1.4.5.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/event-distributor-1.4.5.zip",
     "sha256": "228ebff8837db27eb21e4d99df7764648b72c4a7433f08cfde406f261233e138"
   },
   {
     "mod": "shiny-hunter",
-    "version": "0.2.1",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/shiny-hunter-0.2.1.zip",
-    "sha256": "1a4ee32382bd2d9377c8d2a9529468b06a4a211425c869c58c2871a323efccc0"
+    "version": "0.3.0",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/shiny-hunter-0.3.0.zip",
+    "sha256": "d7f047ac6259e373cc75e7e63703f5f4ab98c6ba25079a6548b6d363f8e153f6"
   },
   {
     "mod": "autobreeder",
     "version": "1.1.2",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/autobreeder-1.1.2.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/autobreeder-1.1.2.zip",
     "sha256": "6dc6ace334de70b2732663989c190475538396236b69ff33f9136a1ba1142888"
   },
   {
     "mod": "encounter-tour",
     "version": "0.3.0",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/encounter-tour-0.3.0.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/encounter-tour-0.3.0.zip",
     "sha256": "d6c3e0474728276274c5ff4c449b930ee9cb90c98feab1d696cb8dfdaf8aab80"
   },
   {
     "mod": "frlg-dual-screen",
     "version": "0.4.14",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/frlg-dual-screen-0.4.14.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/frlg-dual-screen-0.4.14.zip",
     "sha256": "1675f9a3ce9328146f0e92e67e4f5cc5d7b4ae25ee8cdd97f5935f8451c7e14b"
   },
   {
     "mod": "encounter-reset",
     "version": "0.4.0",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/encounter-reset-0.4.0.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/encounter-reset-0.4.0.zip",
     "sha256": "5490c753cbb1dee9cebe390c789f59631ab7dae83f4f8d223ac76b9e4f4ae508"
   },
   {
     "mod": "frlg-qol-suite",
     "version": "0.3.9",
-    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.1/frlg-qol-suite-0.3.9.zip",
+    "archive": "https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3.2/frlg-qol-suite-0.3.9.zip",
     "sha256": "850d3d7b7f74264296ffe8b703f9df05cfe669f3e4a82c43bf5616bc3b68e27a"
   }
 ]

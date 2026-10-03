@@ -1,26 +1,51 @@
-# Shiny Hunter 0.2.1
+# Shiny Hunter 0.3.0
 
-Current companion preview (synthetic Emerald session; Dual Screen is optional):
+[Download latest release](https://github.com/CapnJames95/gen1recomp-shiny-hunter/releases/latest) · [Report an issue](https://github.com/CapnJames95/gen1recomp-shiny-hunter/issues)
+
+> **AI development disclaimer:** Developed with OpenAI Codex assistance. Automated tests do not guarantee correctness; keep save backups.
+
+## New in 0.3.0
+
+- Optional wild shiny odds from 1/4096 down to 1/2, plus 1/1 for supported encounters. Vanilla 1/8192 remains the default.
+- Continuous walking/fishing catches: enable **On match: Auto-catch** and **After catch: Keep hunting** in Settings. Each catch is kept before returning to the starting spot.
+- Native engine repeat-capture tests pass in FR/LG/Emerald. Generated shiny samples passed PKHeX; see scope and limitations below.
+
+
+Previous public-build preview (does not show the new Wild shiny odds option; Dual Screen is optional):
 
 ![Current shiny-hunter menu](https://github.com/CapnJames95/gen1recomp-mod-releases/raw/refs/heads/main/docs/screenshots/current/emerald-shiny_hunter.png)
 
 
-An automatic encounter hunter for gen1recomp, with the same blue header, native FRLG frames, sprite panel, six-entry home menu and controller navigation as LegalMon. This is an initial tested build, not a claim that every story encounter has been individually certified.
+An automatic encounter hunter for gen1recomp, with the same blue header, native FRLG frames, sprite panel, home menu and controller navigation as LegalMon. This is an initial tested build, not a claim that every story encounter has been individually certified.
 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
+## Wild shiny odds
+
+Requires **gen1recomp 0.3.42+**. Open **START → SHINY HUNTER → Shiny odds**. Default: **Vanilla (1/8192)**. Optional approximate rates: **1/4096, 1/2048, 1/1024, 1/512, 1/256, 1/128, 1/64, 1/32, 1/16, 1/8, 1/4, 1/2**. **1/1** searches until it finds a naturally shiny candidate for a supported encounter. Save normally to remember the setting for that save. Automatic hunting does not need to be running. Stop an active hunt before changing odds.
+
+The original encounter still selects the species and level. Extra complete personality/IV candidates are generated before battle; the first shiny is kept, or the original candidate if none succeeds. The shiny threshold, trainer IDs and existing Pokémon are unchanged. Rates are approximate because the setting is a bounded number of correlated RNG trials, not an independent exact-probability switch. The approximate settings use up to 5,678 candidates per encounter at 1/2. The 1/1 setting has no attempt cap and stops only on a shiny candidate. Higher rates can cause a short pause before battle, especially 1/1; they do not speed up the search by editing a Pokémon’s PID or IVs. Emerald candidates use the native nature/Cute Charm/Synchronize path.
+
+**Scope:** ordinary grass/cave/surf encounters, fishing, Rock Smash and Sweet Scent. **Excluded:** statics, starters, gifts, eggs, event distributions, roamers, Unown, Safari and Battle Frontier, prebuilt encounters, and encounters replaced through another mod's encounter-roll/species hook. This is a first prototype, not full encounter coverage or a cartridge-RNG-history guarantee. It skips excluded cases rather than forcing their shininess.
+
+**Validation:** 50,000 synthetic encounter attempts through the generation code, including normal FR/LG/Emerald and Emerald Synchronize/Cute Charm leads, at the ~1/64 setting. Each group of 10,000 produced 154–170 shinies. All **807 exported shiny catches passed PKHeX**, using the real battle constructor and capture path. Save/reload of settings, no-op vanilla mode, exclusions, wrapper nesting/reload/disable and failure cleanup have regression coverage. Measured generation maxima were under 3 ms on this Mac in the headless fixture; this is not a Thor gameplay-performance measurement. This sample covers Route 1 Pidgey and Route 101 Zigzagoon and does not prove every encounter slot or species legal.
+
+**Lower-rate validation:** 7,680 additional attempts across all six new settings, FR/LG/Emerald and Emerald Synchronize/Cute Charm leads. All 1,280 attempts at 1/1 were shiny. All 2,465 exported shiny catches passed PKHeX. The longest measured generation call was 0.221 seconds on this Mac (1/1 with Cute Charm); this is not a maximum-time guarantee or a Thor performance measurement. The same species/route coverage limits apply. Menu selection, finite search budgets and a guaranteed search beyond the largest finite budget also passed regression checks.
+
+Inspired by [KiraPatch](https://github.com/eightmouse/KiraPatch)'s approach of retaining genuine shiny generation rather than changing the shiny threshold. Implemented in Lua for gen1recomp; no ROM patch is applied.
+
 ## Three-game development update
 
-Requires gen1recomp 0.3.39 or newer. Emerald uses its native encounters and preserves underwater state and Mach/Acro Bike type across attempt resets. Active Battle Frontier challenges are blocked. Existing FRLG roaming-Pokémon legality corrections remain restricted to FRLG; Emerald keeps its full native IVs.
+The previous public build required gen1recomp 0.3.39 or newer. Shiny Hunter 0.3.0 requires 0.3.42+. Emerald uses its native encounters and preserves underwater state and Mach/Acro Bike type across attempt resets. Active Battle Frontier challenges are blocked. Existing FRLG roaming-Pokémon legality corrections remain restricted to FRLG; Emerald keeps its full native IVs.
 
-Automated tests exercise native encounter generation, recorded routes, fishing, Surf/Safari recovery, menu integration and normal ball capture. Manual Emerald device testing is still pending; this source update is not yet a published release.
+Automated tests exercise native encounter generation, recorded routes, fishing, Surf/Safari recovery, menu integration and normal ball capture. Manual Emerald device testing is still pending; automated coverage does not replace hardware gameplay validation.
 
 0.2.1 adds a direct menu entrypoint for Hoenn Tools’ Feebas assistant. It opens the hunter without starting automation or altering your configuration. Requires gen1recomp 0.3.39. The older FR/LG-specific test descriptions below are historical coverage; current native integration tests run in all three games.
 
 ## Install and start
 
-Import `shiny-hunter-0.2.1.zip` using gen1recomp's mod manager, enable **Shiny Hunter** for FireRed, LeafGreen or Emerald, and restart the game if requested. Alternatively, place the extracted `shiny_hunter` directory containing `manifest.json` inside your gen1recomp mods directory. No ROM data is included; the UI reads your game's existing imported assets. LegalMon is not a dependency.
+Import `shiny_hunter-0.3.0.zip` using gen1recomp's mod manager, enable **Shiny Hunter** for FireRed, LeafGreen or Emerald, and restart the game if requested. Alternatively, place the extracted `shiny_hunter` directory containing `manifest.json` inside your gen1recomp mods directory. No ROM data is included; the UI reads your game's existing imported assets. LegalMon is not a dependency.
 
 Open **START → SHINY HUNTER**. Choose **Encounter modes**, then **Configure hunt** if you want additional filters. Stand at your starting position and choose **Start hunt → Start selected mode**.
 
@@ -31,11 +56,19 @@ Open **START → SHINY HUNTER**. Choose **Encounter modes**, then **Configure hu
 
 **START or F10 pauses automation.** B/L goes back inside the hunter. Closing the screen leaves a paused hunt paused. Choose Resume hunt to continue, or **Hunt controls → Keep result & stop** to finish. Normal game saving remains your responsibility after keeping a result.
 
+## Continuous shiny catching
+
+Set **Settings → On match: Auto-catch**, choose your ball, then set **After catch: Keep hunting**. Select walking or fishing and start from the spot you want to reuse. Fishing stays at the same spot; walking uses the configured short stride and returns to its starting tile after each catch. This also works with the optional shiny-odds settings.
+
+After a successful capture, the hunter waits for field control, refreshes its recovery checkpoint with the caught Pokémon, remaining balls, HP and current progress, then returns to the original position on the same map. Later rejected encounters reset to this refreshed checkpoint, preserving previous catches. It stops if storage is full, balls are depleted, the lead faints, the map changes, field control fails to return, or checkpoint creation fails. Protected shinies outside your filters still stop for your attention. START/F10 pauses; stop and save normally to keep your catches in your ordinary save file. There is no automatic normal-save overwrite.
+
+Controller regression tests cover consecutive catches, preserving catches and ball usage through subsequent resets, pause/resume, unsupported modes, and checkpoint/storage/map/timeout failures. Native engine integration tests also passed in FireRed, LeafGreen and Emerald: two consecutive catches survived checkpoint restores and balls remained consumed. Hardware gameplay validation is pending.
+
 ## How it works
 
 The hunter snapshots your current settled overworld state and stores a recovery copy in its playthrough-specific mod storage. Each rejected attempt uses the engine's soft-reset and continue paths to restore that state in memory. Party, PC, money, items and story flags rewind with it. Surf/bicycle state and Safari balls, steps and flags are also restored. The current RNG stream carries forward and the engine applies its normal continue perturbation; it does not reload an identical RNG seed every attempt.
 
-The hunter does not alter generated PIDs or IVs, force shiny results, bypass encounter tables, or inject a found Pokemon into storage. It follows this recompilation's generation logic and current mods; it does not claim cartridge-perfect RNG behaviour or perform a separate legality proof. Other enabled mods can affect odds and encounters.
+With **Shiny odds: Vanilla**, the automatic hunter does not alter generated PIDs or IVs, force shiny results, bypass encounter tables, or inject a found Pokemon into storage. The optional odds prototype generates extra complete wild candidates before battle, as described above. It follows this recompilation's generation logic and current mods; it does not claim cartridge-perfect RNG behaviour or perform a separate legality proof. Other enabled mods can affect odds and encounters.
 
 For wild battles it checks the PID against your trainer IDs, which the engine uses on capture. Missing OT fields on a wild battler are filled with those same IDs so the native sprite agrees with the check. Gifts and eggs use their own OT fields. Fixed or foreign-trainer gifts pause the run.
 
@@ -45,7 +78,7 @@ Automatic attempts reset rather than fighting or fleeing from each unwanted enco
 
 By default **any shiny stops the hunt**, including one that fails your species/nature/IV filters. Keep this protection enabled unless you deliberately want to discard other shinies. Settings requires an explicit choice before turning protection off.
 
-The optional auto-catch mode submits normal ball-use actions with your selected ball; Safari encounters use Safari Balls. It consumes inventory and obeys normal capture results. It does not attack, heal, switch, prevent fleeing, or guarantee a capture. Depleted balls, full storage, a fainted lead, unexpected menus or a capture timeout return control to you. After a catch or failed capture, it never starts another hunt automatically.
+The optional auto-catch mode submits normal ball-use actions with your selected ball; Safari encounters use Safari Balls. It consumes inventory and obeys normal capture results. It does not attack, heal, switch, prevent fleeing, or guarantee a capture. Depleted balls, full storage, a fainted lead, unexpected menus or a capture timeout return control to you. By default it stops after a catch. With **Settings → On match: Auto-catch** and **After catch: Keep hunting**, walking and fishing hunts resume automatically after successful catches. Repeat catching is off by default and does not support recorded routes, interactions, Safari or roamers. Failed captures and unexpected battle endings always stop.
 
 The hunter freezes the game while its menu is open. It releases its input holds when paused/stopped. Hunt speed is temporarily applied only inside an active update, preserving your game speed settings. Normal SAVE is blocked while automation is running, so a failed attempt cannot accidentally become your ordinary save.
 

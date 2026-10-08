@@ -1,4 +1,17 @@
-# Event Distributions 1.4.5
+# Event Distributions 1.4.6
+
+## Changes since public v1.4.5
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Adds Ruby/Sapphire event compatibility and edition-correct Eon Ticket journeys. Unsupported island journeys remain unavailable; repeat-redemption settings and claim history are preserved.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire now support native Eon Ticket delivery and Southern Island encounters: Latias in Ruby, Latios in Sapphire. Delivery preserves existing ticket, island and roamer progress, and is blocked inside the Battle Tower. Aurora and Mystic Ticket destinations are absent from these games and are not offered as native journeys; compatible event replicas remain separate options.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 

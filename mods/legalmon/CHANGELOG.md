@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.18.2 — five-game acquisition coverage
+
+- Add a verified transferred Ditto fallback and native RS roaming/Southern Island Latias/Latios profiles.
+- Expand source-game acquisitions from locally imported, verified ROM caches without redistributing those caches.
+- Preserve fixed NPC-trade zero padding and Japanese e-Reader trainer termination in generated records.
+- Mark unsupported origin choices and explain missing source imports.
+
+
 ## [0.17.1] - 2026-09-27
 
 - Trainer ID and Secret ID now open a controller-friendly numeric keypad with digits, DEL and OK. Letters, spaces and punctuation are ignored; entry is limited to five digits and retains the 0–65535 range check.

@@ -1,4 +1,17 @@
-# LegalMon 0.18.1
+# LegalMon 0.18.3
+
+## Changes since public v0.18.2
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. All 386 species have supported acquisition routes across the five games, including transferred Ditto in Ruby/Sapphire. Expands imported source-game profiles and fixes roaming, NPC-trade and e-Reader export details.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire use their own native wild, static and egg acquisition profiles, including their original PID/IV and inheritance rules. Existing encounter prerequisites remain in force.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
@@ -7,15 +20,23 @@ Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
 **Frontier safeguard:** receiving generated Pokémon (including improved breeding parents) is blocked during an active Emerald Battle Frontier challenge. Pending results and event receipts are left unchanged.
 
+## New in 0.18.2
+
+- All 386 species have a supported route on FireRed, LeafGreen, Emerald, Ruby and Sapphire, including a verified transferred Ditto route that does not require importing another game.
+- Additional imported source games contribute their native wild, egg and NPC-trade routes. Their original game, encounter data and generation rules are retained. Only verified supported ROM caches are read; ROM data is never bundled in this mod.
+- Ruby Latios / Sapphire Latias roamers use the original truncated-IV rule. The opposite Southern Island encounter uses the correct level-50 Eon Ticket route and RS encounter flags.
+- Corrected fixed NPC-trade name padding and Japanese e-Reader OT termination for cartridge export.
+- Unavailable origins are marked and explained without changing your current request. Full foreign-origin catalogue expansion requires that source game's supported ROM to be imported locally; built-in transfer/event/GameCube routes remain usable without it.
+
 ## New in 0.18.0
 
 Adds active Emerald support alongside FireRed and LeafGreen on gen1recomp 0.3.39. Emerald uses its native species mapping, all 30 tutor compatibility bits, game-specific encounter profiles and a separate Emerald egg RNG/inheritance proof. Light Ball / Volt Tackle breeding is available where the proof supports it. Imported or historical FireRed/LeafGreen origins remain those games' origins; they are not relabelled as Emerald. Unown forms in Emerald use proven FireRed transfer origins.
 
 Emerald validation: 17,798 native-data checks across all 386 species, 512 native egg replay checks, and 10,143 exported samples accepted by PKHeX. These are synthetic automated tests, not a guarantee that every requested build is possible or a substitute for manual playtesting. Bounded searches and incomplete ancestry proofs still fail closed. Thorough manual gameplay validation remains pending.
 
-The current download includes this three-game port. The older change history below describes earlier FRLG releases.
+The current local build supports all five games. The older change history below describes earlier releases.
 
-LegalMon adds a native-style FireRed/LeafGreen/Emerald start-menu screen with generating paths for **all 386 Gen III species**. Configure a build, validate its acquisition-specific RNG constraints, review its sprite and exact result, then explicitly send it to party or PC. Version 0.4.0 adds breeding, special evolutions, roamers, Unown A and restricted event origins. All species does not mean every conceivable origin, form or exact build.
+LegalMon adds a native-style FireRed/LeafGreen/Emerald/Ruby/Sapphire start-menu screen with generating paths for **all 386 Gen III species**. Configure a build, validate its acquisition-specific RNG constraints, review its sprite and exact result, then explicitly send it to party or PC. Version 0.4.0 adds breeding, special evolutions, roamers, Unown A and restricted event origins. All species does not mean every conceivable origin, form or exact build.
 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC.
 
@@ -134,7 +155,7 @@ The species picker lists all 386 Gen III species in National Dex order, using na
 
 Coverage means at least one implemented legitimate acquisition route per species, not every distribution or trade chain. Original static/wild paths are preferred; breeding fills remaining breedable species. Event-only species use the specific distributions below. Exact requests outside these implemented paths still fail rather than fabricating an acquisition. For example, Aura Mew and 10 ANIV Celebi cannot be shiny, and FRLG roaming beasts cannot have all-31 IVs. Other legal origins for the same species may exist outside this release's scope.
 
-Under **Configure Pokemon → Pokemon → Origin**, choose Any supported or an exact source game: FireRed, LeafGreen, Ruby, Sapphire, Emerald, Colosseum or XD. Exact origins are preserved through validation and both finders. Unsupported species/origin pairs fail rather than silently changing games. The preview/report shows the actual selected acquisition. Source games model a legitimate transfer into FRLG, not a requirement to run another game or import its ROM.
+Under **Configure Pokemon → Pokemon → Origin**, choose Any supported or an exact source game: FireRed, LeafGreen, Ruby, Sapphire, Emerald, Colosseum or XD. Exact origins are preserved through validation and both finders. Unsupported species/origin pairs fail rather than silently changing games. The preview/report shows the actual selected acquisition. Source games model a legitimate transfer into the active game. Built-in transfer profiles do not require another ROM; the full native catalogue for an additional source game requires its supported ROM to be imported locally.
 
 ### Colosseum / XD and original trainers (0.7.0)
 

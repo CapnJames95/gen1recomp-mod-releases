@@ -1,5 +1,13 @@
 # Legality coverage audit
 
+## 0.18.2 five-game coverage
+
+All 386 species now have a supported route on each of FireRed, LeafGreen, Emerald, Ruby and Sapphire. Built-in Ditto transfer support also works without another imported ROM. Locally imported and identity-verified source games contribute their own native wild, egg and trade routes; absent source caches are reported and never replaced by relabelled host encounters. No imported cache or ROM data is packaged.
+
+Ruby/Sapphire roamer IV restrictions and Southern Island origins are explicit. NPC trade padding and Japanese e-Reader trainer termination are retained in cartridge records. Exact IV, nature, origin and OT constraints still apply; all-species coverage is not all-build coverage.
+
+The historical 0.17.0 details below describe the earlier FRLG audit. Current five-game results are recorded separately in the local acquisition audit.
+
 Version 0.17.0 is **not exhaustive Gen III legality coverage**. All 386 species have at least one implemented route; this is different from implementing every legal build, origin, move combination, or spread. External analyzer acceptance of regression samples is not a completeness proof.
 
 ## Search domains

@@ -1,6 +1,23 @@
-# Gen3DualScreen 0.4.14
+> **0.4.16 — Hold L for shiny:** With Shiny Hunter 0.3.4+ enabled, hold the mapped L shoulder button while tapping a Wild Pokémon encounter to request one shiny encounter. Saved odds stay unchanged.
 
-Companion-screen mod for **Emerald, FireRed and LeafGreen** on gen1recomp **0.3.39**. Built on **Kanto Gear 3.4.0**, with a shared visual style and integrations for this mod collection. The internal ID remains `frlg_dual_screen` for upgrades. Do not enable the original Kanto Gear alongside this mod.
+> **0.4.15 — Wild Pokémon shiny-odds integration:** With Shiny Hunter 0.3.3+ loaded, enable **Dual Screen odds** in its menu to apply the selected odds to Wild Pokémon button/tile encounters. The toggle defaults to OFF. Species, level, encounter availability and normal battle/capture flow remain unchanged.
+
+# Gen3DualScreen 0.4.16
+
+## Changes since public v0.4.15
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Adds Ruby/Sapphire PokéNav, bag, summary and PC integration. Fixes text, Fly, fishing and touch controls; integrates Shiny Hunter odds and the hold-L shiny shortcut.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire now use native PokéNav, summary, bag and PC paths, with edition-specific route objectives and bike controls. Bag touch actions follow the native column order; move-selection touch controls preserve empty move slots and Cancel. The opening caption covers R / S / E / FR / LG. Native-state tests passed; rendered layouts and hardware touch still need checking.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
+
+Companion-screen mod for **Ruby, Sapphire, Emerald, FireRed and LeafGreen**; use gen1recomp **0.3.56+**. Built on **Kanto Gear 3.4.0**, with a shared visual style and integrations for this mod collection. The internal ID remains `frlg_dual_screen` for upgrades. Do not enable the original Kanto Gear alongside this mod.
 
 ## New in 0.4.14
 
@@ -30,7 +47,7 @@ Emerald’s **POKENAV** tile opens the native PokéNav rather than the themed ma
 
 1. Import the current [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-dual-screen-0.4.14.zip), enable Gen3DualScreen for the desired game, then restart.
 2. Update the other collection packages and **QoL Suite 0.3.9** together. Disable older standalone QoL components to avoid duplicate hooks.
-3. Open a save. Home appears on the companion display, or in the selected desktop layout. The same arrangement is used for all three games; Hoenn Tools is Emerald-only.
+3. Open a save. Home appears on the companion display, or in the selected desktop layout. The same arrangement is used for all three games; Hoenn Tools is Hoenn-only, with game-specific facilities.
 4. Open **Options → Display** for Separate Window/Screen or combined layouts, including Side by Side. Device detection and output settings determine where the companion appears.
 5. Use **Options → Home Tiles** to show/hide tiles, or long-press Home to rearrange them. Unavailable direct actions are dimmed and do not fall back to the Tools page.
 
@@ -50,7 +67,7 @@ All other collection mods work without Gen3DualScreen. Their native Start/QoL me
 
 **AYN Thor is the only physical dual-screen device tested.** Other dual-screen devices are untested. Desktop controls/layouts are implemented; fuller interactive Mac/Windows validation remains outstanding. Ruby and Sapphire are not supported.
 
-All eight current collection packages support the three target games. The suite has 32 components, 31 applicable per game: Hoenn Tools is Emerald-only, Disable L/R Help is FRLG-only. HM Field Kit requires an owned HM plus normal badge/terrain eligibility, with any non-egg party member; it does not teach moves or change PP.
+All eight current collection packages support the three target games. The suite has 32 components, 31 applicable per game: Hoenn Tools is Hoenn-only, with game-specific facilities, Disable L/R Help is FRLG-only. HM Field Kit requires an owned HM plus normal badge/terrain eligibility, with any non-egg party member; it does not teach moves or change PP.
 
 Automated checks cover imported native data, UI controls, layout migration, menu Back handling and collection integration. They use isolated sessions and do not establish an exhaustive playthrough or compatibility with unrelated creators' mods. See [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md) and [historical validation reports](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg_dual_screen/VALIDATION.md).
 

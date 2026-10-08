@@ -1,4 +1,17 @@
-# Auto Breeder 1.1.2
+# Auto Breeder 1.1.4
+
+## Changes since public v1.1.3
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Adds native Ruby/Sapphire Route 117 daycare, egg generation and inheritance. Keeps Emerald-only breeding bonuses restricted to Emerald.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire use Route 117 daycare and their native egg inheritance and pending-egg personality rules. Automated comparisons cover 128 native eggs per game across all five supported games.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
@@ -11,19 +24,19 @@ Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
 Version 1.0.0 could also export an invalid ability slot for single-ability species such as Charmander. To repair an existing bred result, open **AUTO BREEDER → Export / repair / help → Repair old result's ability slot**, select it from your party or PC, confirm, then use **Save + export for PKHeX**. This preserves PID, IVs, moves and trainer identity; it does not fix unrelated legality problems in externally edited Pokémon.
 
-A FireRed / LeafGreen / Emerald Gen1Recomp mod that searches generated eggs for your chosen IVs, shininess, nature, gender and ability. It uses the current engine's breeding routines and the same visual conventions as LegalMon 0.2.1: native FR/LG fonts, player-selected window frames, blue title bar, six-row menus and a sprite-based result screen.
+A Ruby / Sapphire / Emerald / FireRed / LeafGreen Gen1Recomp mod that searches generated eggs for your chosen IVs, shininess, nature, gender and ability. It uses the current engine's breeding routines and the same visual conventions as LegalMon 0.2.1: native FR/LG fonts, player-selected window frames, blue title bar, six-row menus and a sprite-based result screen.
 
 ## Install
 
-1. Use Gen1Recomp **0.3.39** with an imported FireRed, LeafGreen or Emerald game.
-2. Import **autobreeder-1.1.2.zip** through the launcher's mod manager, replacing the old Auto Breeder version, then enable **Auto Breeder** for the edition you play. Allow the declared `engine_internals` permission if the manager asks; the mod needs the game-specific breeding and native menu APIs.
+1. Use Gen1Recomp **0.3.56+** with an imported Ruby, Sapphire, Emerald, FireRed or LeafGreen game.
+2. Import **autobreeder-1.1.4.zip** through the launcher's mod manager, replacing the old Auto Breeder version, then enable **Auto Breeder** for the edition you play. Allow the declared `engine_internals` permission if the manager asks; the mod needs the game-specific breeding and native menu APIs.
 3. Load your playthrough and open **START → AUTO BREEDER**.
 
 If installing manually, place the `autobreeder` folder under the mod directory shown by the launcher. `manifest.json` must be directly inside that folder. The mod contains all its Lua source; no compilation, ROM distribution or LegalMon dependency is required. It can be enabled alongside LegalMon.
 
 ## Use
 
-1. **Choose parents:** select two distinct hatched Pokémon from your party, Four Island Day Care (FR/LG) or Route 117 Day Care (Emerald). Alternatively select **Use both Day Care parents**. Route 5's single-parent training Day Care is not a breeding source.
+1. **Choose parents:** select two distinct hatched Pokémon from your party, Four Island Day Care (FR/LG) or Route 117 Day Care (Ruby/Sapphire/Emerald). Alternatively select **Use both Day Care parents**. Route 5's single-parent training Day Care is not a breeding source.
 2. **Offspring targets:** choose **all six IVs = 31**, or toggle individual IVs between 31 and Any. Set Shiny to Any/Yes/No, any of the 25 natures, gender, and a named ability available to the offspring. Every selected target must match the same generated egg.
 3. **Search settings:** choose an attempt limit and enable or disable parent improvement. Default: six perfect IVs, other traits Any, 1,000,000 attempts, improvement enabled.
 4. **Start breeding.** A pauses/resumes; B, L or START returns and pauses; R inspects the working parents. SELECT opens a stop/discard confirmation. At the limit, A adds another budget without resetting the count or parents.

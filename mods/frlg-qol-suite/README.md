@@ -1,4 +1,17 @@
-# QoL Suite 0.3.9
+# QoL Suite 0.3.11
+
+## Changes since public v0.3.10
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Updates all 32 components for game-appropriate five-game support. Fixes daycare deposits, native text, bag touch actions, bike swapping and Repel handling; Hoenn tools use Ruby/Sapphire’s native facilities.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+All 32 components now recognize Ruby and Sapphire where applicable. Native HM shortcuts require the owned HM and normal badge permissions, but do not require a compatible party species. Hoenn tools use Trainer’s Eyes, Battle Tower records and native Level 50/100 party-entry checks in Ruby/Sapphire; Emerald-only facilities and weather-cave features stay restricted to Emerald. Teleport offers 16 native Ruby/Sapphire Fly destinations with progression locks enabled by default. Route 117 daycare, Pokémon services and summary IV/EV integration use native Ruby/Sapphire paths.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 **New in 0.3.9:** HM Field Kit adds untaught Sweet Scent on engine **0.3.42+**, using any non-egg party member and native encounter generation. Available from the Field Kit menu and the existing Dual Screen tile, only on encounter terrain. Moves/PP are unchanged.
 
@@ -18,9 +31,9 @@
 
 0.2.1: Fly Teleport lists destinations first, then the inline Unlock All toggle, followed by Help and Close.
 
-**32 QoL components in one importable mod**, with individual on/off switches and their original options. FireRed, LeafGreen and Emerald source support on gen1recomp 0.3.42+ recommended for all features. Each game shows 31 applicable tools: Disable L/R Help is FRLG-only and Hoenn Tools is Emerald-only. Gameplay-changing options such as reusable TMs and the wild inspector retain their existing defaults.
+**32 QoL components in one importable mod**, with individual on/off switches and their original options. Ruby, Sapphire, Emerald, FireRed and LeafGreen support; gen1recomp 0.3.56+ recommended. Each game shows 31 applicable tools: Disable L/R Help is FRLG-only and Hoenn Tools is Hoenn-only, with game-specific facilities. Gameplay-changing options such as reusable TMs and the wild inspector retain their existing defaults.
 
-[Download the suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip) · [Validation and limitations](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) · [Included components and source hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/components.json)
+[Download the suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.11.zip) · [Validation and limitations](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) · [Included components and source hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/components.json)
 
 ## New in 0.3.0
 

@@ -1,4 +1,17 @@
-# Encounter Tour 0.3.0
+# Encounter Tour 0.3.2
+
+## Changes since public v0.3.1
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Adds Ruby/Sapphire destinations, starters, gifts, fossils and NPC trades, with native progression checks and prepared Groudon/Kyogre repeat encounters.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire have 26 native destinations covering legendary/static encounters, ordinary Kecleon encounters, Beldum, Wynaut, Castform, fossils, NPC trades and Southern Island. Story prerequisites apply. Steven’s first Kecleon scene, Fortree’s fleeing roadblock and the mascot story scenes are not replayed.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
@@ -33,7 +46,7 @@ A standalone gen1recomp FireRed/LeafGreen teleport mod with the same native blue
 
 ## Install
 
-Import `encounter-tour-0.3.0.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed, LeafGreen or Emerald, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
+Import `encounter-tour-0.3.2.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed, LeafGreen or Emerald, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
 
 Tested against an isolated copy of the installed **0.3.21** engine payload using both games' imported data. This uses engine internals; future releases may need an adapter update. It does not modify installed game files or live saves during installation. Pokemon art and UI assets load from your own imported game; the mod ZIP contains no ROM data.
 

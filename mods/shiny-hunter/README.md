@@ -1,8 +1,39 @@
-# Shiny Hunter 0.3.0
+# Shiny Hunter 0.3.4
+
+## Changes since public v0.3.0
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Extends shiny odds to static encounters, new starters, gifts, eggs and roamers. Adds an optional Dual Screen odds toggle and hold-L shiny shortcut for Wild Pokémon encounters. Fixed events and existing Pokémon remain unchanged.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire use their native encounter-generation path for shiny odds and hunting, preserving native PID/IV generation instead of rolling IVs a second time. Automated export legality checks passed for the tested specimens; hardware gameplay still needs verification.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 [Download latest release](https://github.com/CapnJames95/gen1recomp-shiny-hunter/releases/latest) · [Report an issue](https://github.com/CapnJames95/gen1recomp-shiny-hunter/issues)
 
 > **AI development disclaimer:** Developed with OpenAI Codex assistance. Automated tests do not guarantee correctness; keep save backups.
+
+## New in 0.3.4
+
+**Hold L while starting an encounter in Dual Screen’s Wild Pokémon screen** to request a shiny for that encounter. This works even with Dual Screen odds OFF or normal odds set to Vanilla. Release L for the usual behavior; your saved odds and toggle are never changed. Requires Gen3DualScreen 0.4.16+ and Shiny Hunter enabled. Uses complete encounter rerolls and retains the normal encounter exclusions.
+
+## New in 0.3.3
+
+When Gen3DualScreen is loaded, **START → SHINY HUNTER → Dual Screen odds** appears. Toggle it **ON** to apply your selected **Shiny odds** to the Wild Pokémon button and its individual encounter tiles. It defaults to **OFF**, changes inline, and is remembered when you save normally. It does not start an automatic hunt or change the selected species/level. Stop an active hunt before changing it. Requires Gen3DualScreen 0.4.15 or newer; older versions lack this integration.
+
+At 1/1, 500 generated/captured button-style encounters across FR/LG/E/R/S were all shiny and passed PKHeX. Other encounter-generation mods retain their exclusions.
+
+## New in 0.3.2
+
+The odds setting now also covers newly generated starters, ordinary gifts, gift eggs, daycare eggs and roamers across FR/LG/E/R/S. Fixed NPC trades, fixed event specimens and shiny locks are not overridden. Event Distributions and LegalMon retain their own explicit shiny controls.
+
+Set the odds **before receiving a gift or starting a roamer’s story event**. Existing roamers retain their identity; meeting one again does not reroll it. For eggs, set odds **before breeding**: Emerald chooses the PID when the daycare produces the egg; FR/LG/R/S finish it at pickup. Existing eggs are unchanged, and hatching never rerolls them. Parent IV/move inheritance and native Emerald Everstone generation remain in use. The guaranteed setting can briefly pause while searching.
+
+Automated checks: 500 shiny starter/gift/roamer/hatched-egg exports across all five games passed PKHeX, alongside the 520 stationary samples below. Finite odds still use approximate extra-roll rates; analyzer acceptance is not a proof of every possible build or cartridge RNG history.
 
 ## New in 0.3.0
 
@@ -21,13 +52,17 @@ An automatic encounter hunter for gen1recomp, with the same blue header, native 
 Based on the Pokemon Gen 1 Recompilation Project by BOIS CLUB GAMES, LLC
 (https://github.com/bryanthaboi/gen1recomp).
 
-## Wild shiny odds
+## New in 0.3.1
+
+Shiny odds now apply to standard scripted stationary encounters across FR/LG/E/R/S. Automated battle/capture tests generated 520 guaranteed-shiny legendary/static samples; all 520 passed PKHeX, including Rayquaza in Ruby. This is automated verification, not manual hardware testing. Existing Pokémon are not changed; new roamer support was added in 0.3.2.
+
+## Shiny odds — wild and stationary
 
 Requires **gen1recomp 0.3.42+**. Open **START → SHINY HUNTER → Shiny odds**. Default: **Vanilla (1/8192)**. Optional approximate rates: **1/4096, 1/2048, 1/1024, 1/512, 1/256, 1/128, 1/64, 1/32, 1/16, 1/8, 1/4, 1/2**. **1/1** searches until it finds a naturally shiny candidate for a supported encounter. Save normally to remember the setting for that save. Automatic hunting does not need to be running. Stop an active hunt before changing odds.
 
 The original encounter still selects the species and level. Extra complete personality/IV candidates are generated before battle; the first shiny is kept, or the original candidate if none succeeds. The shiny threshold, trainer IDs and existing Pokémon are unchanged. Rates are approximate because the setting is a bounded number of correlated RNG trials, not an independent exact-probability switch. The approximate settings use up to 5,678 candidates per encounter at 1/2. The 1/1 setting has no attempt cap and stops only on a shiny candidate. Higher rates can cause a short pause before battle, especially 1/1; they do not speed up the search by editing a Pokémon’s PID or IVs. Emerald candidates use the native nature/Cute Charm/Synchronize path.
 
-**Scope:** ordinary grass/cave/surf encounters, fishing, Rock Smash and Sweet Scent. **Excluded:** statics, starters, gifts, eggs, event distributions, roamers, Unown, Safari and Battle Frontier, prebuilt encounters, and encounters replaced through another mod's encounter-roll/species hook. This is a first prototype, not full encounter coverage or a cartridge-RNG-history guarantee. It skips excluded cases rather than forcing their shininess.
+**Scope:** ordinary grass/cave/surf encounters, fishing, Rock Smash, Sweet Scent and fresh standard stationary encounters, including Ruby’s Rayquaza. Static encounters reroll complete Method 1 PID/IV pairs; their species, level and held item remain unchanged. Set the odds before interacting with the Pokémon. Newly generated starters, gifts, eggs and roamers are also supported as described above. **Excluded:** fixed event distributions, fixed NPC trades, Unown wild encounters, Safari and Battle Frontier, prebuilt encounters, and encounters replaced through another mod's encounter-roll/species hook. This is a first prototype, not full encounter coverage or a cartridge-RNG-history guarantee. It skips excluded cases rather than forcing their shininess.
 
 **Validation:** 50,000 synthetic encounter attempts through the generation code, including normal FR/LG/Emerald and Emerald Synchronize/Cute Charm leads, at the ~1/64 setting. Each group of 10,000 produced 154–170 shinies. All **807 exported shiny catches passed PKHeX**, using the real battle constructor and capture path. Save/reload of settings, no-op vanilla mode, exclusions, wrapper nesting/reload/disable and failure cleanup have regression coverage. Measured generation maxima were under 3 ms on this Mac in the headless fixture; this is not a Thor gameplay-performance measurement. This sample covers Route 1 Pidgey and Route 101 Zigzagoon and does not prove every encounter slot or species legal.
 

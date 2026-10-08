@@ -1,4 +1,17 @@
-# Encounter Reset 0.4.0
+# Encounter Reset 0.4.2
+
+## Changes since public v0.4.1
+
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Adds Ruby/Sapphire encounter, starter, gift, fossil, trade and roamer resets. Groudon/Kyogre can be battled again without replaying their story cutscenes or changing starter choices.
+
+
+<!-- RS-COMPATIBILITY -->
+## Ruby and Sapphire compatibility
+
+Ruby and Sapphire have 28 native reset entries plus the three repeat starter choices. Gifts and NPC trades reset their receipt only; trades still require the offered Pokémon. Fossils preserve pending revivals. Southern Island requires the Eon Ticket; roaming Latios/Latias can only be restored after its original unlock and capture or defeat. Groudon (Ruby) and Kyogre (Sapphire) support prepared level-45 repeat battles after the original encounter. Choose **Prepare repeat battle**, return to **Cave of Origin B4F**, then choose **Start prepared battle**. Preparation persists when saved; each successful battle start consumes one preparation. The original cutscene, weather and NPC story changes do not replay. Steven’s first Kecleon and Fortree’s fleeing roadblock remain excluded.
+
+Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
+<!-- /RS-COMPATIBILITY -->
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 
@@ -33,7 +46,7 @@ Native menu previews below use synthetic fixture state, not live gameplay captur
 
 ## Install and use
 
-Import `encounter-reset-0.4.0.zip` through **MODS → Import mod .zip**, enable it and restart. Supports FireRed, LeafGreen and Emerald, mod API 2, with `engine_internals` permission.
+Import `encounter-reset-0.4.2.zip` through **MODS → Import mod .zip**, enable it and restart. Supports FireRed, LeafGreen and Emerald, mod API 2, with `engine_internals` permission.
 
 1. Pause Shiny Hunter / Encounter Tour automation. Keep a backup of your save.
 2. Leave the map containing the encounter you want to restore.

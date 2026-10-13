@@ -1,10 +1,12 @@
+> **New in 0.3.14:** Fixes Reusable TMs being consumed when taught from the Bag in FireRed, LeafGreen, Ruby, Sapphire and Emerald, including move replacement. Cancelling and disabling the feature retain normal behaviour.
+
 > **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
 
 **Walk Through Walls:** disabled by default. Enable in QOL SETTINGS; hold keyboard R or controller R/RB to pass through solid obstacles. SELECT opens configurable bindings. Releasing restores collision.
 
 **Zoom Controls:** configurable keyboard/controller hotkey; cycle available levels or toggle two chosen levels. Optional independent indoor/outdoor zoom. Open the Suite settings and select Zoom Controls; defaults are F10, cycle mode and automatic area zoom OFF.
 
-# QoL Suite 0.3.13
+# QoL Suite 0.3.14
 
 ## Features introduced in 0.3.12
 
@@ -45,7 +47,7 @@ Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks 
 
 **35 QoL components in one importable mod**, with individual on/off switches and their original options. Ruby, Sapphire, Emerald, FireRed and LeafGreen support; gen1recomp 0.3.56+ recommended. Each game shows 34 applicable tools: Disable L/R Help is FRLG-only and Hoenn Tools is Hoenn-only, with game-specific facilities. Gameplay-changing options such as reusable TMs and the wild inspector retain their existing defaults.
 
-[Download the suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Validation and limitations](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) · [Included components and source hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/components.json)
+[Download the suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.1/frlg-qol-suite-0.3.14.zip) · [Validation and limitations](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) · [Included components and source hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/components.json)
 
 ## New in 0.3.0
 

@@ -18,7 +18,7 @@ Native FireRed / LeafGreen services from **START → MODS → Pokemon Services �
 
 Import the QoL Suite and enable this feature in **START → QOL → QOL SETTINGS**. Disable any older standalone copy and restart.
 
-With [Gen3DualScreen 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-dual-screen-0.4.18.zip), the **SERVICES** Home tile opens the same menu and replaces the duplicate START entry. The Mods-menu action remains available. Earlier companion versions can use the Mods-menu action or START entry.
+With [Gen3DualScreen 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.1/frlg-dual-screen-0.4.18.zip), the **SERVICES** Home tile opens the same menu and replaces the duplicate START entry. The Mods-menu action remains available. Earlier companion versions can use the Mods-menu action or START entry.
 
 ## Included services
 

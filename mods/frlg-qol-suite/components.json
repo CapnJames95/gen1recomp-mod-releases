@@ -294,11 +294,11 @@
   {
     "id": "frlg_qol_reusable_tms",
     "name": "Reusable TMs",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "entry": "main.lua",
     "source": "qol/mods/frlg_qol_reusable_tms",
     "files": {
-      "main.lua": "87c8e86fa5ae800576d8650fee8996e656271f8f9d51f0e84f219bc6005a8f40",
+      "main.lua": "aabfe39ff74f45269015dd3aaeb7140adc36f26ddbf0c8051afae82346b7a30e",
       "mod.card": "4c51229039f4643da5f9a20ab13af880edbeef6d72c2d08ecd8d8685a74e5c2d",
       "support.lua": "7a7b8f6407350c76b3f46a710828080a4ffb0110ffd9d71a433a4507c7091ab6"
     }

@@ -1,3 +1,5 @@
+> **Fixed in QoL Suite 0.3.14:** Fixes Reusable TMs being consumed when taught from the Bag in FireRed, LeafGreen, Ruby, Sapphire and Emerald, including move replacement. Cancelling and disabling the feature retain normal behaviour.
+
 # Reusable TMs
 
 **Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.

@@ -37,3 +37,8 @@ All eight packages passed strict modkit validation and lint. ZIP contents exclud
 Automated analyzer acceptance is not exhaustive legality or gameplay validation. Existing Pokémon are not rewritten by shiny odds; select odds before generation (before egg production in Emerald). Fixed events remain controlled by their own distributions.
 
 Dual Screen odds produced 500/500 shiny encounters across the five games at 1/1; the hold-L override produced 100/100 with saved odds Vanilla and the toggle OFF. All 600 exports passed PKHeX. Menu visibility, inline toggling, disabled defaults and saved-setting preservation were checked.
+
+
+## Reusable TM fix (0.3.14)
+
+Reproduced consumption with the released 0.3.13 component in all five games. Native-data automated regressions on engine 0.3.56 cover party-menu immediate teaching, replacement completion callbacks, cancellation, ordinary item removal and feature OFF; the fixed component passed all five games. Engine 0.3.85 source retains the same bypassing party-menu path. Presentation/choice UI is stubbed; this is not a full manual gameplay pass on 0.3.85.

@@ -49,7 +49,7 @@ Emerald’s **POKENAV** tile opens the native PokéNav rather than the themed ma
 
 ## Install and use
 
-1. Import the current [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-dual-screen-0.4.18.zip), enable Gen3DualScreen for the desired game, then restart.
+1. Import the current [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.1/frlg-dual-screen-0.4.18.zip), enable Gen3DualScreen for the desired game, then restart.
 2. Update the other collection packages and **QoL Suite 0.3.9** together. Disable older standalone QoL components to avoid duplicate hooks.
 3. Open a save. Home appears on the companion display, or in the selected desktop layout. The same arrangement is used for all three games; Hoenn Tools is Hoenn-only, with game-specific facilities.
 4. Open **Options → Display** for Separate Window/Screen or combined layouts, including Side by Side. Device detection and output settings determine where the companion appears.

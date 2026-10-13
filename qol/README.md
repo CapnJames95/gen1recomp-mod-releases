@@ -1,6 +1,6 @@
 # FRLG QoL Suite
 
-The [QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) is the only installable QoL package, containing 35 individually configurable components in the local 0.3.12 build, with 34 applicable in each of Ruby, Sapphire, Emerald, FireRed and LeafGreen. [Download and installation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/qol/PACKAGES.md). Disable older standalone packages and restart before using it.
+The [QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) is the only installable QoL package, containing 35 individually configurable components in QoL Suite 0.3.14, with 34 applicable in each of Ruby, Sapphire, Emerald, FireRed and LeafGreen. [Download and installation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/qol/PACKAGES.md). Disable older standalone packages and restart before using it.
 
 Use **START → QOL → QOL SETTINGS** for feature toggles/options and **QOL SHORTCUTS** for configurable bindings with context descriptions. Dual Screen requires 0.3.21+.
 
@@ -39,7 +39,7 @@ Read [VALIDATION.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob
 
 The source and packages contain no ROMs, extracted game graphics, audio, map data or species tables. No existing save was opened or modified by validation. New game progress made while using a mod is not undone by uninstalling it.
 
-Source is in `mods/`, reproducible checks in `tests/`, machine-readable modkit results in `check-results.json`, and the single installable [QoL Suite ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip).
+Source is in `mods/`, reproducible checks in `tests/`, machine-readable modkit results in `check-results.json`, and the single installable [QoL Suite ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.1/frlg-qol-suite-0.3.14.zip).
 
 ## Screenshot gallery
 

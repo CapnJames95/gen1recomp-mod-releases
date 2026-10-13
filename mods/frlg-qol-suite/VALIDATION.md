@@ -105,3 +105,8 @@ All 56 suites passed against the engine payload copied from the Thor (0.3.36). R
 Fast Forward defaults to F9 (keyboard) and L3 (controller). Dual Screen screen swap uses F6 only; Y is reserved for its ball picker. Overlay visibility defaults to R3 in overlay mode. Ball picker remains F7/Y, Capture Help remains R, and Trigger Tabs remains off. Existing saved overrides are preserved unless explicitly changed.
 
 Regression checks cover F9/L3 defaults, Right Ctrl falling through, Y not swapping, F6 edge handling and R3 overlay activation.
+
+
+## Reusable TM fix (0.3.14)
+
+Reproduced consumption with the released 0.3.13 component in all five games. Native-data automated regressions on engine 0.3.56 cover party-menu immediate teaching, replacement completion callbacks, cancellation, ordinary item removal and feature OFF; the fixed component passed all five games. Engine 0.3.85 source retains the same bypassing party-menu path. Presentation/choice UI is stubbed; this is not a full manual gameplay pass on 0.3.85.

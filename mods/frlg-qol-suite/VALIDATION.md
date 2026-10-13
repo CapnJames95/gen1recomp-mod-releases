@@ -1,3 +1,15 @@
+# QoL Suite 0.3.13 validation
+
+The 35-component suite loads on engine 0.3.85 in FireRed and LeafGreen. Hoenn
+probes initialize the other components but cannot initialize Key Item Help without
+imported item data. The roamer compatibility regression passes for all five games.
+These probes do not validate complete gameplay or the new features on hardware.
+See [current collection evidence](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/latest-validation.md).
+
+## Historical validation records
+
+Counts and device-installation statements below refer to previous releases.
+
 # Current validation — QoL Suite 0.3.9
 
 Current combined collection/touch checks pass **4,367 in FireRed, 4,367 in LeafGreen and 4,233 in Emerald** on both gen1recomp 0.3.39 and 0.3.42. Six additional 0.3.42 integration runs verify untaught Sweet Scent through Field Kit and the Dual Screen tile across all three games. Coverage includes Emerald PokéNav routing/acquisition guards, black upper-viewport ownership, isolated native navigation rendering, and removal of the Start size/position editor. The Mac and Thor QoL Test installations have 275 mod files verified each, with saves/settings preserved. Full gameplay validation and Thor confirmation of the navigation flicker fix remain pending. [Current evidence and limits](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md) · [Screenshot provenance](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/SCREENSHOTS.md).

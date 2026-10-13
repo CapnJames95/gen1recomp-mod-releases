@@ -1,8 +1,12 @@
+> **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
+
+> **0.4.17 — Safari encounters:** Wild Pokémon buttons now start native Safari battles while Safari Balls and steps remain. Normal Safari catching/fleeing rules apply. With Shiny Hunter 0.3.5, the odds toggle and hold-L shiny shortcut work here too.
+
 > **0.4.16 — Hold L for shiny:** With Shiny Hunter 0.3.4+ enabled, hold the mapped L shoulder button while tapping a Wild Pokémon encounter to request one shiny encounter. Saved odds stay unchanged.
 
 > **0.4.15 — Wild Pokémon shiny-odds integration:** With Shiny Hunter 0.3.3+ loaded, enable **Dual Screen odds** in its menu to apply the selected odds to Wild Pokémon button/tile encounters. The toggle defaults to OFF. Species, level, encounter availability and normal battle/capture flow remain unchanged.
 
-# Gen3DualScreen 0.4.16
+# Gen3DualScreen 0.4.18
 
 ## Changes since public v0.4.15
 
@@ -45,7 +49,7 @@ Emerald’s **POKENAV** tile opens the native PokéNav rather than the themed ma
 
 ## Install and use
 
-1. Import the current [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-dual-screen-0.4.14.zip), enable Gen3DualScreen for the desired game, then restart.
+1. Import the current [ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-dual-screen-0.4.18.zip), enable Gen3DualScreen for the desired game, then restart.
 2. Update the other collection packages and **QoL Suite 0.3.9** together. Disable older standalone QoL components to avoid duplicate hooks.
 3. Open a save. Home appears on the companion display, or in the selected desktop layout. The same arrangement is used for all three games; Hoenn Tools is Hoenn-only, with game-specific facilities.
 4. Open **Options → Display** for Separate Window/Screen or combined layouts, including Side by Side. Device detection and output settings determine where the companion appears.
@@ -53,7 +57,11 @@ Emerald’s **POKENAV** tile opens the native PokéNav rather than the themed ma
 
 All other collection mods work without Gen3DualScreen. Their native Start/QoL menus remain available. The companion provides a common presentation and shortcuts, not a requirement for Pokémon generation, breeding, events or services.
 
+Trainer battle party indicators show the opponent’s full native team, including fainted and status-affected Pokémon.
+
 ## Controls and display options
+
+- In Safari battles, controller **Y** throws a Safari Ball and **X** uses bait (Pokéblock in Hoenn). These shortcuts work only while choosing an action; normal Safari and storage rules still apply.
 
 - Touch rows to select them; release activates a valid tap. Dragged, cancelled or mismatched-finger touches do not confirm actions.
 - Keyboard **F8** opens the uncaught encounter view by default; its controller binding defaults OFF. Set **Uncaught Key / Button / Area** under Options → Controls.
@@ -67,7 +75,7 @@ All other collection mods work without Gen3DualScreen. Their native Start/QoL me
 
 **AYN Thor is the only physical dual-screen device tested.** Other dual-screen devices are untested. Desktop controls/layouts are implemented; fuller interactive Mac/Windows validation remains outstanding. Ruby and Sapphire are not supported.
 
-All eight current collection packages support the three target games. The suite has 32 components, 31 applicable per game: Hoenn Tools is Hoenn-only, with game-specific facilities, Disable L/R Help is FRLG-only. HM Field Kit requires an owned HM plus normal badge/terrain eligibility, with any non-egg party member; it does not teach moves or change PP.
+All eight current collection packages support the five target games. The suite has 35 components, 34 applicable per game: Hoenn Tools is Hoenn-only, with game-specific facilities, Disable L/R Help is FRLG-only. HM Field Kit requires an owned HM plus normal badge/terrain eligibility, with any non-egg party member; it does not teach moves or change PP.
 
 Automated checks cover imported native data, UI controls, layout migration, menu Back handling and collection integration. They use isolated sessions and do not establish an exhaustive playthrough or compatibility with unrelated creators' mods. See [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md) and [historical validation reports](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg_dual_screen/VALIDATION.md).
 

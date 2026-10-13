@@ -1,3 +1,5 @@
+> **Historical evidence:** the test runs below precede v1.5.0. For current engine compatibility checks and limitations, see [latest validation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/latest-validation.md).
+
 # Tests
 
 Run from the root of a checkout of gen1recomp containing this mod at `mods/examples/shiny_hunter`. Use LuaJIT. Engine tests require the user's existing imported ROM cache; no cache is distributed with the mod.

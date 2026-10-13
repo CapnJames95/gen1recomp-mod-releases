@@ -1,7 +1,7 @@
-# Gen1Recomp Mods — v1.4.0 · The Ruby and Sapphire Update
+# Gen1Recomp Mods — v1.5.0 · Safari, Travel and Engine Compatibility
 
 <p align="center">
-  <a href="https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest"><img src="https://img.shields.io/github/v/release/CapnJames95/gen1recomp-mod-releases?label=release&color=5c8a3c&cacheSeconds=300&refresh=v1.4.0" alt="Latest release"></a>
+  <a href="https://github.com/CapnJames95/gen1recomp-mod-releases/releases/latest"><img src="https://img.shields.io/github/v/release/CapnJames95/gen1recomp-mod-releases?label=release&color=5c8a3c&cacheSeconds=300&refresh=v1.5.0" alt="Latest release"></a>
   <a href="https://github.com/CapnJames95/gen1recomp-mod-releases/releases"><img src="https://img.shields.io/github/downloads/CapnJames95/gen1recomp-mod-releases/total?label=downloads&color=2f81f7" alt="Total downloads across all releases"></a>
   <a href="https://bryanthaboi.github.io/gen1recomp-mod-index/"><img src="https://img.shields.io/badge/official-Mod%20Index-6f42c1" alt="Gen1Recomp Mod Index"></a>
   <a href="#supported-games"><img src="https://img.shields.io/badge/games-Ruby%20%2B%20Sapphire%20%2B%20Emerald%20%2B%20FR%2FLG-e8b923" alt="Supported games: Ruby, Sapphire, Emerald, FireRed and LeafGreen"></a>
@@ -13,7 +13,16 @@ A collection of independently installable **Ruby / Sapphire / Emerald / FireRed 
 
 <a id="supported-games"></a>
 
-Release checks use **Ruby / Sapphire / Emerald / FireRed / LeafGreen** on **gen1recomp 0.3.56 (Mac) and 0.3.57 (Thor QoL Test)** in [gen1recomp](https://github.com/bryanthaboi/gen1recomp). These are unofficial mods using mod API 2 and `engine_internals`. Compatibility differs by package; read each mod's instructions. No ROMs, imported game caches or player save files are included.
+Supports **Ruby / Sapphire / Emerald / FireRed / LeafGreen**. The v1.5.0 packages were checked with the **gen1recomp 0.3.85 loader**. Earlier gameplay/export evidence used **0.3.56 (Mac) and 0.3.57 (Android)**; it is not a complete gameplay validation of this release. These unofficial mods use mod API 2 and `engine_internals`. No ROMs, imported caches or player saves are included.
+
+## New in v1.5.0
+
+- **Engine compatibility:** fixes the `Missing FRLG API: generateMon` startup error in Shiny Hunter, Encounter Reset, Encounter Tour, Dual Screen, Day Care Viewer and Pokémon Services. Modern engines retain their native roamer handling; older engines retain the legacy correction.
+- **QoL Suite 0.3.13:** 35 components (34 applicable per game), including [Safari Zone Tools](qol/mods/frlg_qol_safari_tools/README.md), [Zoom Controls](qol/mods/frlg_qol_zoom_controls/README.md) and optional [Walk Through Walls](qol/mods/frlg_qol_walk_through_walls/README.md).
+- **Expanded Teleport:** Points of Interest, berry patches, up to 50 named Saved Locations, favourites, recents and return trips, with building-entrance and Surf landing checks.
+- **Gen3DualScreen 0.4.18 / Shiny Hunter 0.3.6:** native Safari encounters, adjusted shiny odds, hold-L shinies and repeat catching. Native Safari capture/flee rules still apply.
+
+[Current validation and limits](docs/latest-validation.md). Three Hoenn Key Item Help checks require imported item data; full gameplay and new hardware validation remain incomplete. Existing screenshots illustrate earlier builds, not newly captured v1.5.0 screens.
 
 ## Changes since public v1.3.2
 
@@ -29,7 +38,7 @@ See [game-specific coverage](docs/ruby-sapphire-compatibility.md) and [validatio
 
 ## One download for all QoL features
 
-The former standalone QoL mods are now the **[QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip)**: **32 components in one download**, with **31 applicable to each game**. Turn individual features on or off to get exactly the setup you want. The seven main mods remain separate, and the suite works without Dual Screen.
+The former standalone QoL mods are now the **[QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip)**: **35 components in one download**, with **34 applicable to each game**. Turn individual features on or off to get exactly the setup you want. The seven main mods remain separate, and the suite works without Dual Screen.
 
 1. Import the QoL Suite ZIP, **disable any old standalone QoL copies**, enable the suite and restart the game.
 2. Open **START → QOL → QOL SETTINGS**.
@@ -94,21 +103,21 @@ All of these are included in the single QoL Suite download and can be toggled in
 
 <a id="mod-frlg-dual-screen"></a>
 
-## Gen3DualScreen 0.4.16
+## Gen3DualScreen 0.4.18
 
-![Current shared four-page Home layout](docs/screenshots/current/emerald-home.png)
+![Earlier shared four-page Home layout](docs/screenshots/current/emerald-home.png)
 
-**Current 0.4.16:** Ruby/Sapphire native screen support, Fly/fishing fixes and Shiny Hunter integration are included. Emerald’s **POKENAV** tile opens the full native PokéNav after you obtain it. Emerald map/PokéNav screens keep the upper display black and render without tool-bar overlap. This version also uses the Thor's shared four-page Home preset in Emerald, FireRed and LeafGreen, including a one-time migration for existing saves. The previous layout is backed up; later edits remain saved. Compact launchers, individual rod/bike tiles, dimmed field actions, immediate visibility saving and the paged **BACK** footer are included. Squirt Bottle and Headbutt shortcuts are hidden. All 31 default options match the captured Thor configuration.
+**Gen3DualScreen 0.4.18:** Ruby/Sapphire native screen support, Fly/fishing fixes and Shiny Hunter integration are included. Emerald’s **POKENAV** tile opens the full native PokéNav after you obtain it. Emerald map/PokéNav screens keep the upper display black and render without tool-bar overlap. This version also uses the Thor's shared four-page Home preset in Emerald, FireRed and LeafGreen, including a one-time migration for existing saves. The previous layout is backed up; later edits remain saved. Compact launchers, individual rod/bike tiles, dimmed field actions, immediate visibility saving and the paged **BACK** footer are included. Squirt Bottle and Headbutt shortcuts are hidden. All 31 default options match the captured Thor configuration.
 
-Use gen1recomp **0.3.42 or newer** for all collection features. The Kanto Gear 3.4.0 foundation introduced Emerald support; all eight packages now support all three target games with edition-specific limitations.
+Engine **0.3.85** startup checks pass with the limits listed above. The Kanto Gear 3.4.0 foundation introduced Emerald support; all eight packages now support all five target games with edition-specific limitations.
 
 Includes a built-in Y/F7 ball picker, configurable under Options → Battle, with a clear CHOOSE BALL prompt and themed selection/confirmation screens. No separate ball mod is required.
 
-[Download 0.4.16](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-dual-screen-0.4.16.zip) · [Instructions, coverage and limits](mods/frlg_dual_screen/README.md) · [Validation](mods/frlg_dual_screen/VALIDATION.md)
+[Download 0.4.18](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-dual-screen-0.4.18.zip) · [Instructions, coverage and limits](mods/frlg_dual_screen/README.md) · [Validation](mods/frlg_dual_screen/VALIDATION.md)
 
 **Gen3DualScreen is built on Kanto Gear 3.4.0 by AverageConsumer.** It extends Kanto Gear’s DS-style companion interface with FireRed/LeafGreen styling and integrations that bring the other mods in this collection together: shared Home shortcuts, live controls, encounter tools and QoL settings. Adds a Home encounter browser with caught/seen/new labels, sprite-triggered battles and configurable uncaught hotkeys; Home shortcuts for supported collection tools and direct-touch/live editors for the original five, native-menu fallback and live toggles for applicable QoL components. Disable the original Kanto Gear/DS mod while using this replacement. **AYN Thor is the only tested dual-screen device. Other dual-screen devices have not been tested.**
 
-Use [Encounter Tour 0.3.0](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/encounter-tour-0.3.2.zip) and [Shiny Hunter 0.2.1](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/shiny-hunter-0.3.4.zip) for live-editor/encounter coordination. Only current versions are kept in downloads. Version 0.3.1 lets you tap the battery indicator to switch to a saved percentage display. Home tiles hide their matching native Start entries while enabled. Virtual controller buttons were removed in 0.2.2; direct touch menus and physical controls remain.
+Use [Encounter Tour 0.3.3](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/encounter-tour-0.3.3.zip) and [Shiny Hunter 0.3.6](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/shiny-hunter-0.3.6.zip) for live-editor/encounter coordination. Only current versions are kept in downloads. Version 0.3.1 lets you tap the battery indicator to switch to a saved percentage display. Home tiles hide their matching native Start entries while enabled. Virtual controller buttons were removed in 0.2.2; direct touch menus and physical controls remain.
 
 ![Emerald PokéNav on the companion display](docs/screenshots/current/emerald-pokenav.png)
 
@@ -120,7 +129,7 @@ Use [Encounter Tour 0.3.0](https://github.com/CapnJames95/gen1recomp-mod-release
 
 ### Differences from Kanto Gear
 
-This compares **Gen3DualScreen 0.4.16** with its **[Kanto Gear 3.4.0](https://github.com/AverageConsumer/kanto-gear/releases/tag/v3.4.0)** foundation. The two projects have independent version numbers.
+This compares **Gen3DualScreen 0.4.18** with its **[Kanto Gear 3.4.0](https://github.com/AverageConsumer/kanto-gear/releases/tag/v3.4.0)** foundation. The two projects have independent version numbers.
 
 - **Gen III collection focus.** This fork targets Emerald, FireRed and LeafGreen, with Gen III styling and integrations for this collection. Emerald support builds on the Kanto Gear 3.4.0 foundation.
 - **Home shortcuts for this collection.** Adds shortcuts for installed, enabled Pokémon Services, LegalMon, Event Distributions, Shiny Hunter, Auto Breeder, Encounter Tour, Day Care Viewer and Encounter Reset. Their matching native Start entries are hidden while the companion is enabled and restored when it is disabled.
@@ -142,9 +151,9 @@ Public releases are hosted in [gen1recomp-mod-releases](https://github.com/CapnJ
 
 ### All-in-one manual-install bundle
 
-**[Download the complete collection — 8 installable packages](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/gen1recomp-all-mods-manual-install.zip)**
+**[Download the complete collection — 8 installable packages](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/gen1recomp-all-mods-manual-install.zip)**
 
-The 32 QoL components are combined into one QoL suite; seven other mods remain separate. Disable previously installed standalone QoL packages before enabling the suite. Standalone QoL downloads have been removed; the suite is the only QoL package.
+The 35 QoL components are combined into one QoL suite; seven other mods remain separate. Disable previously installed standalone QoL packages before enabling the suite. Standalone QoL downloads have been removed; the suite is the only QoL package.
 
 Download the ZIP directly from the release assets; no GitHub sign-in is required. The bundle uses standard uncompressed ZIP entries for extractor compatibility.
 
@@ -156,17 +165,17 @@ Extract this ZIP, then copy the contents of its `mods/` folder into the game's a
 
 | Mod | Version | Installable ZIP | Instructions |
 | --- | --- | --- | --- |
-| LegalMon | **0.18.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/legalmon-0.18.3.zip) | [README](mods/legalmon/README.md) |
-| Event Distributions | **1.4.6** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/event-distributor-1.4.6.zip) | [README](mods/event-distributor/README.md) |
-| Shiny Hunter | **0.3.4** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/shiny-hunter-0.3.4.zip) | [README](mods/shiny-hunter/README.md) |
-| Auto Breeder | **1.1.4** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/autobreeder-1.1.4.zip) | [README](mods/autobreeder/README.md) |
-| Encounter Tour — static encounter teleports | **0.3.2** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/encounter-tour-0.3.2.zip) | [README](mods/encounter-tour/README.md) |
-| Encounter Reset | **0.4.2** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/encounter-reset-0.4.2.zip) | [README](mods/encounter-reset/README.md) |
-| Gen3DualScreen | **0.4.16** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-dual-screen-0.4.16.zip) | [README](mods/frlg_dual_screen/README.md) |
+| LegalMon | **0.18.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/legalmon-0.18.3.zip) | [README](mods/legalmon/README.md) |
+| Event Distributions | **1.4.6** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/event-distributor-1.4.6.zip) | [README](mods/event-distributor/README.md) |
+| Shiny Hunter | **0.3.6** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/shiny-hunter-0.3.6.zip) | [README](mods/shiny-hunter/README.md) |
+| Auto Breeder | **1.1.4** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/autobreeder-1.1.4.zip) | [README](mods/autobreeder/README.md) |
+| Encounter Tour — static encounter teleports | **0.3.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/encounter-tour-0.3.3.zip) | [README](mods/encounter-tour/README.md) |
+| Encounter Reset | **0.4.3** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/encounter-reset-0.4.3.zip) | [README](mods/encounter-reset/README.md) |
+| Gen3DualScreen | **0.4.18** | [Download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-dual-screen-0.4.18.zip) | [README](mods/frlg_dual_screen/README.md) |
 
 ### Combined QoL package
 
-[QoL Suite 0.3.11](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) — one import for 32 QoL components (31 applicable per game), with individual toggles and original options in START → QOL → QOL SETTINGS. Requires Dual Screen 0.3.21+ for companion integration. Disable standalone QoL packages and restart before enabling it. [Instructions](mods/frlg-qol-suite/README.md) · [Validation](mods/frlg-qol-suite/VALIDATION.md).
+[QoL Suite 0.3.13](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) — one import for 35 QoL components (34 applicable per game), with individual toggles and original options in START → QOL → QOL SETTINGS. Requires Dual Screen 0.3.21+ for companion integration. Disable standalone QoL packages and restart before enabling it. [Instructions](mods/frlg-qol-suite/README.md) · [Validation](mods/frlg-qol-suite/VALIDATION.md).
 
 On GitHub, choose **Download raw file** for the suite ZIP. Import it through **MODS → Import mod .zip**, enable it and restart. Choose individual features inside **START → QOL → QOL SETTINGS**.
 
@@ -180,7 +189,7 @@ Hoenn tools with game-specific availability for **Match Call rematches and locat
 
 The dashboards use native data and refresh on opening. Pokéblock previews consume nothing; Feebas reveal does not advance RNG. The bike switch requires an owned bike and checks activity/terrain restrictions. Secret Base arrangement opens the native UI only while facing your own base PC.
 
-[Full features and controls](qol/mods/frlg_qol_hoenn_tools/README.md) · [Download QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip)
+[Full features and controls](qol/mods/frlg_qol_hoenn_tools/README.md) · [Download QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip)
 
 Native menu previews with synthetic state; not hardware gameplay screenshots:
 
@@ -195,7 +204,7 @@ Native menu previews with synthetic state; not hardware gameplay screenshots:
 
 Remote native Pokemon/item PCs, free party healing, all town/island Poke Marts, Celadon department-store counters and vending machines, free Move Reminder (no mushrooms or Heart Scales), Move Deleter, Name Rater, Day Care management. Uses existing game logic, imported stock, normal shop prices and native restrictions. Move relearning is free and preserves owned mushrooms. Two Island retains progression-dependent stock; other remote services bypass travel. Day Care eggs use Four Island in FR/LG and Route 117 in Emerald. Emerald uses Lilycove item counters and vending; furniture is excluded.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions and screenshots](mods/pokemon-services/README.md) · [Validation](mods/pokemon-services/VALIDATION.md). 402 automated checks pass across both editions, including Dual Screen launch integration. Physical device playtesting remains outstanding.
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions and screenshots](mods/pokemon-services/README.md) · [Validation](mods/pokemon-services/VALIDATION.md). 402 automated checks pass across both editions, including Dual Screen launch integration. Physical device playtesting remains outstanding.
 
 Historical preview (older build): [Pokemon Services](docs/screenshots/pokemon-services/services-home.png).
 
@@ -289,7 +298,7 @@ Use **Export / repair / help → Save + export for PKHeX** for the corrected exp
 
 Gen3DualScreen 0.3.16 adds a **TELEPORT** Home tile automatically when this mod is installed and enabled. Busy-state and landing checks protect travel.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions](mods/fly-teleport/README.md) · [Validation](mods/fly-teleport/VALIDATION.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions](mods/fly-teleport/README.md) · [Validation](mods/fly-teleport/VALIDATION.md)
 
 Historical preview (older build): [Fly Teleport](docs/screenshots/fly-teleport/destinations-firered.png).
 
@@ -301,7 +310,7 @@ Historical preview (older build): [Fly Teleport](docs/screenshots/fly-teleport/d
 
 View deposited Pokémon, levels gained, fees, EXP, steps, current and projected moves, IVs/EVs/stats, held items and trainer details. Includes breeding compatibility, offspring species, egg readiness, steps to the next egg check and party egg progress. Manage / teleport adds native party deposits, paid withdrawals and travel to either daycare. Egg collection stays at the native attendant: Four Island in FRLG or Route 117 in Emerald; browsing remains read-only.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions and screenshots](mods/daycare-viewer/README.md) · [Verification](mods/daycare-viewer/TEST-REPORT.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions and screenshots](mods/daycare-viewer/README.md) · [Verification](mods/daycare-viewer/TEST-REPORT.md)
 
 Historical preview (older build): [Day Care Viewer](docs/screenshots/daycare-viewer/daycare-home.png).
 
@@ -336,13 +345,13 @@ Event-island teleports bypass ferry/ticket access, but puzzles and encounters re
 
 **START → ENCOUNTER RESET** — individually restore Articuno, Zapdos, Moltres, Mewtwo, Lugia, Ho-Oh, Deoxys, each Snorlax, each Electrode and Lostelle's Hypno. Restores your previously unlocked roaming beast after capture or defeat, plus Eevee, Lapras, each Dojo prize, Magikarp, the Togepi egg, all three fossil revivals and all nine NPC trades. Matches Encounter Tour's native menu style.
 
-Leave the encounter map, select one entry, confirm its reset and return to catch it normally. Keeps existing Pokémon and Pokédex records. Deoxys restarts its puzzle; Hypno replays the rescue, reward and return trip. Roamer options cannot unlock a different starter's beast. [Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/encounter-reset-0.4.2.zip) · [Coverage and instructions](mods/encounter-reset/README.md) · [Validation](mods/encounter-reset/VALIDATION.md)
+Leave the encounter map, select one entry, confirm its reset and return to catch it normally. Keeps existing Pokémon and Pokédex records. Deoxys restarts its puzzle; Hypno replays the rescue, reward and return trip. Roamer options cannot unlock a different starter's beast. [Download ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/encounter-reset-0.4.3.zip) · [Coverage and instructions](mods/encounter-reset/README.md) · [Validation](mods/encounter-reset/VALIDATION.md)
 
 Historical preview (older build): [Encounter Reset menu](docs/screenshots/encounter-reset-home.png).
 
 ## QoL Suite features
 
-The QoL Suite includes 31 applicable features for each game. Emerald omits Disable L/R Help and gains Hoenn Tools; Match Call replaces VS Seeker status, and service/travel data follows Hoenn. Use QOL SETTINGS for individual switches and original options. Component version numbers and screenshots document their source history; install only the suite.
+The QoL Suite includes 34 applicable features for each game. Emerald omits Disable L/R Help and gains Hoenn Tools; Match Call replaces VS Seeker status, and service/travel data follows Hoenn. Use QOL SETTINGS for individual switches and original options. Component version numbers and screenshots document their source history; install only the suite.
 
 Every entry below includes its features, download and instructions. **Several mods have effect-focused native UI examples**, including a before/after inventory comparison. These use real mod hooks and rendering with isolated test data; they are not live-play captures. Remaining entries retain explicitly labelled manager images because a useful effect capture is not available. Individual READMEs also retain detail/options screens. [Validation](qol/VALIDATION.md) · [Engine-owned features and scope](qol/ENGINE_FEATURES.md).
 
@@ -354,7 +363,7 @@ Shows all six IVs (0–31) beside the native Pokémon Skills stat labels without
 
 **Wild Pokémon preview:** press keyboard **I** or controller **X / West** at the ordinary wild-battle command menu. Inspect native summary pages and toggle IV/EV values with Select. The battle pauses, data is read-only, and no caught requirement applies. Keyboard/gamepad bindings are configurable; existing saved bindings are preserved. This addition has automated coverage but has not been tested on physical hardware.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions and validation](mods/summary-ivs/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions and validation](mods/summary-ivs/README.md)
 
 Historical preview (older build): [Native Skills page with IVs](docs/screenshots/summary-ivs/firered.png).
 
@@ -364,7 +373,7 @@ Historical preview (older build): [Native Skills page with IVs](docs/screenshots
 
 Suppresses native L/R Help and the L=A alias while enabled, leaving shoulder presses available for menu navigation and mod hotkeys. Disabling restores normal behaviour without rewriting saved button settings. It adds no overlay; the image below shows the existing Party Held Items panel whose L shortcut remains available.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions and validation](mods/disable-lr-help/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions and validation](mods/disable-lr-help/README.md)
 
 ![Existing Party Held Items panel](docs/screenshots/qol-effect-firered-party-items.png)
 
@@ -374,7 +383,7 @@ Suppresses native L/R Help and the L=A alias while enabled, leaving shoulder pre
 
 **START → QUICK HEAL** — preview the healing items to spend and resulting party HP/status, then confirm. Heal the whole party or one Pokémon using owned medicine. Revives and status cures are configurable; Full Restores, Max Potions and Max Revives are protected by default. Uses native field item actions and the collection's FRLG menu styling.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions](mods/quick-heal-party/README.md) · [Validation](mods/quick-heal-party/VALIDATION.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions](mods/quick-heal-party/README.md) · [Validation](mods/quick-heal-party/VALIDATION.md)
 
 Historical preview (older build): [Quick Heal review](docs/screenshots/quick-heal-party/quick-heal-review.png).
 
@@ -386,7 +395,7 @@ With **Gen3DualScreen 0.4.0+** active, the assistant opens on the **bottom scree
 
 **R at the wild battle command menu** — compare owned balls, see native one-throw catch estimates and hypothetical 1 HP/sleep improvements, and inspect moveset risks. Reading takes no turn and spends no items. Master Balls are excluded from recommendations. **START → CAPTURE HELP** provides instructions. Matches the collection's native FRLG menus.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions and limits](mods/capture-assistant/README.md) · [Validation](mods/capture-assistant/VALIDATION.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions and limits](mods/capture-assistant/README.md) · [Validation](mods/capture-assistant/VALIDATION.md)
 
 Historical preview (older build): [Capture Assistant ball comparison](docs/screenshots/capture-assistant/capture-balls.png).
 
@@ -412,7 +421,7 @@ Historical preview (older build): [Folder and ordering controls](docs/screenshot
 
 Quiet EXP skips individual EXP announcements while keeping level-ups and move learning. It changes presentation without removing earned EXP.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Instructions](qol/mods/frlg_qol_quiet_exp/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Instructions](qol/mods/frlg_qol_quiet_exp/README.md)
 
 ![Quiet EXP settings](docs/screenshots/frlg_qol_quiet_exp-options.png)
 
@@ -424,7 +433,7 @@ Quiet EXP skips individual EXP announcements while keeping level-ups and move le
 
 Renamed from Auto Surf. Press A facing water, a cuttable tree, a Strength boulder, a smashable rock or a waterfall to activate the eligible move without confirmation or used-move text. Waterfall requires surfing and facing up; Strength enables normal boulder pushing. Emerald also supports Dive and surfacing. Normal animations, badge/move gates, HM Field Kit compatibility and native interaction priority remain intact. Walking alone does not trigger it. Existing Auto Surf settings carry over.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_auto_surf/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_auto_surf/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -438,7 +447,7 @@ Sort displayed pocket rows without rewriting saved inventory.
 
 Sort by name, descending quantity, or numeric item ID. Pocket assignment stays native. TM Case and Berry Pouch have separate renderers and are not reordered. Manual bag ordering is hidden while enabled; disable to restore it.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_bag_sort/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_bag_sort/README.md)
 
 Before: original inventory order.
 
@@ -456,7 +465,7 @@ Throw a selected ordinary Ball with SELECT from a wild single battle command men
 
 Configure Poke/Great/Ultra Ball, then SELECT (Tab/Shift) in the main command menu. No fallback to a different Ball and no Master Ball option. Empty stock falls through. Trainer, Safari, double, link, spectated and tutorial battles excluded. The battle engine still resolves the normal turn and catch.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_ball_shortcut/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_ball_shortcut/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -470,7 +479,7 @@ Choose independent instant HP and EXP bars while preserving battle logic and cal
 
 INSTANT HP and INSTANT EXP can be toggled separately. Uses upstream's own instant-tween path, retaining callbacks and display values. Move-animation on/off and overall battle speed are already engine options; animation-script time scaling is not included.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_battle_pacing/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_battle_pacing/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -484,7 +493,7 @@ Replace a berry actually consumed in battle using one matching berry from your B
 
 Restocks after battle writeback, only for confirmed berry consumption and an unchanged party member with an empty item slot. Never manufactures berries, restocks during battle, or replaces items merely lost to Knock Off/Thief. Link battles excluded.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_berry_restock/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_berry_restock/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -498,7 +507,7 @@ Search seen species, inspect imported evolutions and locations, and count owned 
 
 **0.1.2 Start-menu fix:** without Scrollable Start Menu, overflowing menus use a compact right-hand scrolling sidebar. If both HM Field Kit and Dex Companion are installed, update both and restart.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_dex_companion/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_dex_companion/README.md)
 
 Selecting a seen species shows its imported evolution rule and available wild-location records.
 
@@ -512,7 +521,7 @@ Accelerate the Center machine animation and remove its remaining jingle wait.
 
 Choose animation speed 2x/4x/8x (default 4x). WAIT FOR JINGLE defaults off: the nurse continues when the faster animation finishes, while the jingle plays out normally. Healing, dialogue and callbacks remain native; unrelated sound waits are unchanged.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_fast_healing/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_fast_healing/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -532,7 +541,7 @@ START > QOL > HM FIELD KIT lists actions currently usable. Existing overworld Cu
 
 **0.2.0:** fixes Flash availability in dark caves. In the mod options, **FULL CAVE LIGHTING** (off by default) instantly removes cave darkness without needing Flash, an HM or a badge. Turn it off to restore normal lighting; this setting does not change saved Flash state.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_hm_field_kit/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_hm_field_kit/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -546,7 +555,7 @@ Temporarily speed up gameplay while holding a spare keyboard key.
 
 Hold F9 or L3 by default; choose 2x/4x/8x. Legacy keyboard/controller choices remain available. Releasing restores native category speed immediately, without changing settings. Respects the engine's speed locks. Controller speed up/down and touch hold are already native.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_hold_fast_forward/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_hold_fast_forward/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -560,7 +569,7 @@ Reveal dialogue pages immediately while retaining all confirmation and choice pr
 
 TEXT selects instant (default) or fast. Applies to field and battle pages using the FRLG Message printer. Does not auto-confirm, skip scripted pauses, or change separate menu printers.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_instant_text/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_instant_text/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -574,7 +583,7 @@ Explain useful key items after acquisition and in Bag descriptions.
 
 Authored guidance replaces descriptions for Bicycle, Town Map, VS Seeker, Itemfinder, three rods, Poke Flute and Silph Scope. First acquisition through Bag.add queues a LegalMon-style help panel after scripts, movement and other UI finish. ACQUISITION HELP disables popups. Existing saves do not trigger retroactive popups. Unknown items retain native descriptions. Direct inventory writes bypass this notification. VS Seeker Readiness takes priority for that item's description when both mods are enabled.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_key_item_help/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_key_item_help/README.md)
 
 The mod’s native help panel explains the Bicycle and registered-item shortcut.
 
@@ -588,7 +597,7 @@ Read service notes and native Fly eligibility for the Town Map cursor.
 
 Press SELECT on an idle Town Map or Fly map for service notes. Fly availability uses the native map's selection checks; nothing unlocks destinations or bypasses badges. Notes cover main towns, not every building. Story access is not promised.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_map_services/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_map_services/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -602,7 +611,7 @@ Read all party held-item names in a compact panel.
 
 Press the logical L shoulder action on the normal party list (bind it in CONTROLS). Displays names without covering native HP/item icons. Read-only; giving/taking items remains native.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_party_items/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_party_items/README.md)
 
 Pressing L in the party list opens a compact list of Pokémon and held items.
 
@@ -616,7 +625,7 @@ Rename non-Egg Pokemon from the party list, regardless of original trainer.
 
 On the normal party list, highlight a Pokemon and press SELECT (default Tab/Shift). Eggs, battle selection and item-target menus are excluded. Own, event/gift and genuinely traded Pokemon can all be renamed; original-trainer data is not changed. Uses the original naming UI and 10-character limit.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_party_nickname/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_party_nickname/README.md)
 
 Pressing SELECT in the party list opens the native nickname keyboard for Charmander.
 
@@ -630,7 +639,7 @@ Open the move reminder from the party list with the original FRLG mushroom payme
 
 On the normal party list press START (default Escape). Costs two Tiny Mushrooms, otherwise one Big Mushroom, only after learning. Cancel/no eligible move costs nothing. FRLG uses mushrooms; Emerald uses one Heart Scale. The reminder inside Pokémon Services is free. Available wherever the normal party menu opens.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_party_reminder/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_party_reminder/README.md)
 
 Pressing START in the party list opens the native move reminder when a Big Mushroom is available.
 
@@ -647,7 +656,7 @@ Remove the redundant second confirmation from the normal Save menu.
 
 Selecting YES performs the existing save operation immediately. The first confirmation, success/failure handling and atomic persistence remain. This does not accelerate disk I/O or bypass verification.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_quick_save_prompt/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_quick_save_prompt/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -661,7 +670,7 @@ Offer another owned Repel after the existing wear-off message.
 
 After dismissing the normal expiry message, choose YES or NO; B means no. Prefers the last used type, then Max/Super/normal Repel. No prompt when none remain. The default selection is NO.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_repel_reuse/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_repel_reuse/README.md)
 
 After the original Repel expiry message, the mod offers another owned Repel and defaults to NO.
 
@@ -675,7 +684,7 @@ Keep a TM after successfully teaching its move, including the replacement-move f
 
 Retains compatibility checks, friendship changes and move replacement/cancel behavior. Selling, tossing, giving and other item use still consume inventory normally. HMs remain unchanged.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_reusable_tms/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_reusable_tms/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -689,7 +698,7 @@ Hold B to run immediately, without changing the Running Shoes story flag.
 
 No configuration beyond ENABLED. Indoor running already works in this upstream build. This only removes the shoes requirement.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_running_start/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_running_start/README.md)
 
 *Manager screen only; an in-use effect capture is not available for this mod. A still settings image does not demonstrate its gameplay behavior or timing.*
 
@@ -703,7 +712,7 @@ Show owned quantity while browsing a shop, before entering the purchase dialogue
 
 Browsing the buy list shows current Bag count below the money box. Native quantity/confirmation count remains unchanged. Cancel row has no count. Does not include PC inventory or held items.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_shop_count/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_shop_count/README.md)
 
 The added OWNED 7 panel shows the Bag quantity while browsing Potions.
 
@@ -717,7 +726,7 @@ Read nature effects and optional IV/EV values from the Summary screen.
 
 In an out-of-battle Summary screen press SELECT. Nature effects and ability appear in a paged read-only panel. SHOW IV/EV is off by default. These are Gen III IVs (0–31) and EVs, not Gen I DVs/stat experience. Native ability description remains on the normal Summary.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_summary_info/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_summary_info/README.md)
 
 The extra Summary panel shows nature modifiers and optional IV/EV values.
 
@@ -731,7 +740,7 @@ Show VS Seeker battery charge in its Bag description.
 
 Open the Key Items pocket and highlight VS Seeker. The description updates when reopened; full battery does not guarantee a nearby eligible rematch. Does not charge the battery or unlock encounters.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.4.0/frlg-qol-suite-0.3.11.zip) · [Full instructions](qol/mods/frlg_qol_vs_seeker_status/README.md)
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Full instructions](qol/mods/frlg_qol_vs_seeker_status/README.md)
 
 The VS Seeker’s Bag description shows 42/100 charge and 58 remaining steps.
 

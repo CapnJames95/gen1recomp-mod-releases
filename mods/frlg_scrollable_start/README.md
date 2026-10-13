@@ -4,7 +4,7 @@
 
 A FireRed / LeafGreen / Emerald component for gen1recomp, mod API 2.
 
-[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip).
+[QoL Suite download](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip).
 Import the suite through **MODS → Import mod .zip**, enable it for your edition and restart. The Scrollable Start Menu component is enabled by default.
 
 ## Current menu layout

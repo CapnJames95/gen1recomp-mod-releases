@@ -1,3 +1,5 @@
+> **Historical evidence:** the test runs below precede v1.5.0. For current engine compatibility checks and limitations, see [latest validation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/latest-validation.md).
+
 # Day Care Viewer verification
 
 Tested 27 September 2026 against the locally available upstream checkout `5540fc1538c7c9c8a3c8c85e09679ae03f28beaf` and imported FireRed / LeafGreen data. Tests use synthetic sessions and do not access player saves.

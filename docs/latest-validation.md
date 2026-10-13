@@ -1,4 +1,24 @@
-# v1.4.0 validation
+# v1.5.0 validation — 13 October 2026
+
+The release includes the latest Safari/travel/QoL sources and the engine 0.3.85
+roamer compatibility fix. The suite contains 35 components, 34 applicable per game.
+
+- 215 source startup probes against the official 0.3.85 engine (43 packages × five games): 212 completed without errors. The three Hoenn suite probes reach Key Item Help's imported-item-cache requirement, which the data-free harness cannot satisfy.
+- Regression checks cover all nine shared helper copies, legacy and modern roamer APIs, all five games, co-loading, legacy PID/IV RNG consumption and preservation of the modern engine's native functions.
+- 417 Lua source files parsed successfully before release packaging.
+- All eight extracted ZIPs pass strict modkit validation and content lint. An additional 40 packaged startup probes yield 37 clean results and the same three cache-dependent suite probes.
+- Publication checks validate all eight installable archives, source identity, version/hash metadata, local documentation links and the matching manual-install bundle.
+
+These are startup and regression checks, not a full gameplay, Android, touch or
+export-legality validation. The new Safari, teleport, zoom and collision features
+have not received an exhaustive hardware playthrough. Retained screenshots show
+earlier builds; no new screenshot coverage is claimed for the three added tools.
+
+See [engine compatibility details](engine-0.3.85-compatibility.md) and
+[screenshot provenance](SCREENSHOTS.md).
+
+## Earlier v1.4.0 evidence (not rerun for v1.5.0)
+
 
 ## LegalMon 0.18.3
 

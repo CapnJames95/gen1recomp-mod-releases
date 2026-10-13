@@ -1,4 +1,12 @@
-# Shiny Hunter 0.3.4
+> **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
+
+# Shiny Hunter 0.3.6
+
+## Changes introduced in 0.3.5
+
+Safari Zone encounters now support the Shiny odds setting, the Dual Screen odds toggle and hold-L shiny shortcut in all five games. Hoenn rerolls use native Safari/Pokéblock nature rules. Safari Ball capture and fleeing use the native battle system; shiny does not guarantee a catch.
+
+**After catch: Keep hunting** also supports walking/fishing Safari hunts. Successful catches, spent Safari Balls and remaining steps become the next checkpoint. Hunts stop when Safari resources run out or the Safari game ends. Rejected attempts retain the existing snapshot/reset behavior. Gen3DualScreen 0.4.17 enables its Wild Pokémon encounters during an active Safari game.
 
 ## Changes since public v0.3.0
 
@@ -62,7 +70,7 @@ Requires **gen1recomp 0.3.42+**. Open **START → SHINY HUNTER → Shiny odds**.
 
 The original encounter still selects the species and level. Extra complete personality/IV candidates are generated before battle; the first shiny is kept, or the original candidate if none succeeds. The shiny threshold, trainer IDs and existing Pokémon are unchanged. Rates are approximate because the setting is a bounded number of correlated RNG trials, not an independent exact-probability switch. The approximate settings use up to 5,678 candidates per encounter at 1/2. The 1/1 setting has no attempt cap and stops only on a shiny candidate. Higher rates can cause a short pause before battle, especially 1/1; they do not speed up the search by editing a Pokémon’s PID or IVs. Emerald candidates use the native nature/Cute Charm/Synchronize path.
 
-**Scope:** ordinary grass/cave/surf encounters, fishing, Rock Smash, Sweet Scent and fresh standard stationary encounters, including Ruby’s Rayquaza. Static encounters reroll complete Method 1 PID/IV pairs; their species, level and held item remain unchanged. Set the odds before interacting with the Pokémon. Newly generated starters, gifts, eggs and roamers are also supported as described above. **Excluded:** fixed event distributions, fixed NPC trades, Unown wild encounters, Safari and Battle Frontier, prebuilt encounters, and encounters replaced through another mod's encounter-roll/species hook. This is a first prototype, not full encounter coverage or a cartridge-RNG-history guarantee. It skips excluded cases rather than forcing their shininess.
+**Scope:** ordinary grass/cave/surf encounters, fishing, Rock Smash, Sweet Scent and fresh standard stationary encounters, including Ruby’s Rayquaza. Static encounters reroll complete Method 1 PID/IV pairs; their species, level and held item remain unchanged. Set the odds before interacting with the Pokémon. Newly generated starters, gifts, eggs and roamers are also supported as described above. **Excluded:** fixed event distributions, fixed NPC trades, Unown wild encounters and Battle Frontier, prebuilt encounters, and encounters replaced through another mod's encounter-roll/species hook. This is a first prototype, not full encounter coverage or a cartridge-RNG-history guarantee. It skips excluded cases rather than forcing their shininess.
 
 **Validation:** 50,000 synthetic encounter attempts through the generation code, including normal FR/LG/Emerald and Emerald Synchronize/Cute Charm leads, at the ~1/64 setting. Each group of 10,000 produced 154–170 shinies. All **807 exported shiny catches passed PKHeX**, using the real battle constructor and capture path. Save/reload of settings, no-op vanilla mode, exclusions, wrapper nesting/reload/disable and failure cleanup have regression coverage. Measured generation maxima were under 3 ms on this Mac in the headless fixture; this is not a Thor gameplay-performance measurement. This sample covers Route 1 Pidgey and Route 101 Zigzagoon and does not prove every encounter slot or species legal.
 
@@ -113,7 +121,7 @@ Automatic attempts reset rather than fighting or fleeing from each unwanted enco
 
 By default **any shiny stops the hunt**, including one that fails your species/nature/IV filters. Keep this protection enabled unless you deliberately want to discard other shinies. Settings requires an explicit choice before turning protection off.
 
-The optional auto-catch mode submits normal ball-use actions with your selected ball; Safari encounters use Safari Balls. It consumes inventory and obeys normal capture results. It does not attack, heal, switch, prevent fleeing, or guarantee a capture. Depleted balls, full storage, a fainted lead, unexpected menus or a capture timeout return control to you. By default it stops after a catch. With **Settings → On match: Auto-catch** and **After catch: Keep hunting**, walking and fishing hunts resume automatically after successful catches. Repeat catching is off by default and does not support recorded routes, interactions, Safari or roamers. Failed captures and unexpected battle endings always stop.
+The optional auto-catch mode submits normal ball-use actions with your selected ball; Safari encounters use Safari Balls. It consumes inventory and obeys normal capture results. It does not attack, heal, switch, prevent fleeing, or guarantee a capture. Depleted balls, full storage, a fainted lead, unexpected menus or a capture timeout return control to you. By default it stops after a catch. With **Settings → On match: Auto-catch** and **After catch: Keep hunting**, walking and fishing hunts resume automatically after successful catches. Repeat catching is off by default and does not support recorded routes, interactions or roamers. Failed captures and unexpected battle endings always stop.
 
 The hunter freezes the game while its menu is open. It releases its input holds when paused/stopped. Hunt speed is temporarily applied only inside an active update, preserving your game speed settings. Normal SAVE is blocked while automation is running, so a failed attempt cannot accidentally become your ordinary save.
 

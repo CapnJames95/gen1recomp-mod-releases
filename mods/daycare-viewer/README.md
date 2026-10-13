@@ -1,4 +1,6 @@
-# Day Care Viewer 0.2.1
+> **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
+
+# Day Care Viewer 0.2.2
 
 Current companion preview (synthetic Emerald session; Dual Screen is optional):
 

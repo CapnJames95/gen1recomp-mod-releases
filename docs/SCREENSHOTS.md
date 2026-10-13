@@ -1,16 +1,20 @@
 # Screenshots and preview provenance
 
-[Every main mod and all 32 suite components](RELEASE-SCREENSHOTS.md) have current screenshot coverage.
+All retained gallery images are **historical examples** captured before v1.5.0.
+They may illustrate unchanged features, but are not evidence of current labels,
+layouts, version numbers or new feature coverage. The folder name `current/` is a
+legacy path retained to preserve links.
 
-## Current gallery status
+Native renderer previews use synthetic test state and locally imported assets;
+they are not AI mockups or new hardware gameplay captures. The earlier Thor image
+is a hardware screenshot. No new hardware coverage is claimed for Safari Tools,
+Zoom Controls, Walk Through Walls or the expanded Teleport menus.
 
-The gallery contains **171 current native previews**, checked against the released versions: Gen3DualScreen **0.4.14**, QoL Suite **0.3.9** and the other versions listed in [release metadata](releases.json). The renderer hosts are gen1recomp **0.3.39 and 0.3.42**. These images were visually reviewed in contact sheets.
+The [image audit](screenshot-audit.json) preserves capture-build metadata and
+records image hashes separately from current release versions. See the
+[gallery index](RELEASE-SCREENSHOTS.md) and [current validation](latest-validation.md).
 
-These are **native renderer previews with synthetic test state**, not AI-generated mockups or new hardware gameplay captures. They use locally imported fonts/sprites; ROMs, caches, player saves and traces containing local paths are not distributed. Empty inventories, zero records, test Pokémon and Unknown Area labels reflect the fixtures.
-
-**114 older images are retained as historical examples**, not presented as current-build screenshots in the active READMEs. Their image embeds were replaced with explicitly labelled historical links. They may illustrate unchanged behaviour, but must not be used to infer current labels, version numbers, layouts or feature availability. The older Thor teleport capture is a hardware screenshot; the new previews do not extend hardware-validation claims.
-
-The [image audit](screenshot-audit.json) records every retained PNG's SHA-256 and whether it represents the current UI (including unchanged earlier captures) or is retained as historical evidence. It also records package versions. A complete hardware gallery and exhaustive gameplay validation remain deferred.
+## Historical gallery
 
 ## Shared Home layout
 
@@ -22,7 +26,7 @@ FireRed, pages 1–4; the same shared defaults apply to LeafGreen:
 
 ![FireRed Home layout](screenshots/current/firered-home.png)
 
-These previews use the current shared preset. Game-specific unavailable shortcuts are omitted; other tiles retain their coordinates. Squirt Bottle and Headbutt are hidden. Rods/bike actions and field shortcuts use compact rows.
+These previews use the earlier shared preset. Game-specific unavailable shortcuts are omitted; other tiles retain their coordinates. Squirt Bottle and Headbutt are hidden. Rods/bike actions and field shortcuts use compact rows.
 
 ## Emerald navigation
 
@@ -32,7 +36,7 @@ These refreshed captures show the full native screen below the companion toolbar
 | --- | --- |
 | ![Native PokéNav](screenshots/current/emerald-pokenav.png) | ![Native Town Map](screenshots/current/emerald-town-map.png) |
 
-## Current mod menus
+## Earlier mod menus
 
 The companion renders the actual native mod menu. The paged footer shows **PREV PAGE / NEXT PAGE / BACK**. Each tool also works through its ordinary game menu without Dual Screen.
 

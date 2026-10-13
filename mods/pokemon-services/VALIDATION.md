@@ -1,3 +1,5 @@
+> **Historical evidence:** the test runs below precede v1.5.0. For current engine compatibility checks and limitations, see [latest validation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/latest-validation.md).
+
 # Pokemon Services validation
 
 > **Historical validation record.** Counts, versions and pending-work statements below refer to the recorded test runs. For current package versions, installation status and latest checks, see [collection verification](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md).

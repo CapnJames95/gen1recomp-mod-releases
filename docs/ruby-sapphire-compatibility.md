@@ -1,6 +1,6 @@
 # Ruby/Sapphire feature parity audit
 
-Implementation checked against engine 0.3.56 on Mac and 0.3.57 on Thor QoL Test. “Shared” means the implementation uses common engine APIs; it does not mean every gameplay interaction has been manually tested.
+Earlier implementation checks used engine 0.3.56 on Mac and 0.3.57 on Thor QoL Test. “Shared” means the implementation uses common engine APIs; it does not mean every gameplay interaction has been manually tested.
 
 ## Main packages
 
@@ -13,7 +13,7 @@ Implementation checked against engine 0.3.56 on Mac and 0.3.57 on Thor QoL Test.
 | Encounter Tour | 26 native destinations: static encounters, gifts, fossils, trades, ordinary Kecleon and Southern Island. |
 | Encounter Reset | 28 reset entries plus three repeat starters, including prepared level-45 Groudon/Kyogre battles after the original encounter. Original story/starter choice retained; already-unlocked roamer only. |
 | Gen3DualScreen | Native RS PokéNav, bag, summary, PC and progression data; common Home layout and mod integration. Move-selection touch supports sparse slots and Cancel. |
-| QoL Suite | All 32 components accounted for below; game-specific functions remain scoped to games that have them. |
+| QoL Suite | All 35 components accounted for below; game-specific functions remain scoped to games that have them. |
 
 ## All 32 Suite components
 
@@ -93,3 +93,7 @@ Screenshot status: experimental trace captures show incorrect native RS small-te
 ### Day Care nature display correction
 
 Ruby/Sapphire Day Care previews now read the native `gNatureNames` table. The previous FR/LG table lookup could crash the refreshed screen after a successful deposit. Native-cache regression checks cover deposit, read-only preview and withdrawal for all 25 natures in both Ruby and Sapphire.
+
+## v1.5.0 additions
+
+Safari Zone Tools, Zoom Controls and optional Walk Through Walls support all five games; expanded Teleport uses game-specific destinations. Engine 0.3.85 startup checks and their limits are recorded in [latest validation](latest-validation.md).

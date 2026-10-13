@@ -1,4 +1,19 @@
-# Collection verification
+# Collection verification — v1.5.0
+
+Current versions and download hashes are in [release metadata](releases.json).
+The collection has eight installable ZIPs and one manual-install bundle. The QoL
+Suite includes 35 components, 34 applicable per game. See the [latest validation](latest-validation.md)
+for the 0.3.85 startup checks, regression coverage and remaining gameplay limits.
+
+The package verifier checks CRCs, safe paths, manifests, source identity and
+SHA-256 hashes. Screenshot hashes are checked as historical evidence, not as
+proof of current UI coverage. The manual bundle must match every individual
+archive byte-for-byte.
+
+## Historical verification record
+
+The following counts and installation statements describe earlier builds only.
+
 
 Current package checks pass for **8 installable ZIPs plus the manual bundle and 285 PNGs**, with no broken local links. The suite accounts for all 32 canonical components; only the eight main package archives are distributed. Key Item Wheel, PC Box Tools, Battle Type Hints and Move Inspector are excluded.
 
@@ -30,4 +45,4 @@ Dual Screen device testing is limited to AYN Thor, as confirmed by the maintaine
 
 The bundle contains `INSTALL.txt` and 8 mod folders (the suite plus seven other packages) under `mods/<mod-id>/`. It uses classic ZIP, uncompressed STORE entries, portable metadata and no ZIP64. Archive contents are checked against the individual packages. All packaged files match their individual releases byte-for-byte; the withdrawn mods are absent.
 
-Rebuild with `python3 tools/build-manual-bundle.py`; verify with `python3 tools/build-manual-bundle.py --check` or `python3 tools/verify-collection.py`. This is for manual extraction, not the launcher's one-mod ZIP import. The previous damaged-download report was not reproduced; this extraction check does not establish its cause.
+The build process verifies the bundle against the individual packages. This is for manual extraction, not the launcher's one-mod ZIP import. The previous damaged-download report was not reproduced; this extraction check does not establish its cause.

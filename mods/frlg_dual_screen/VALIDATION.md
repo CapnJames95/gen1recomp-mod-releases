@@ -1,3 +1,5 @@
+> **Historical evidence:** the test runs below precede v1.5.0. For current engine compatibility checks and limitations, see [latest validation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/latest-validation.md).
+
 # Current validation — Gen3DualScreen 0.4.14
 
 Current combined collection/touch checks pass **4,367 in FireRed, 4,367 in LeafGreen and 4,233 in Emerald** on gen1recomp 0.3.39. Coverage includes Emerald PokéNav routing/acquisition guards, black upper-viewport ownership, isolated native navigation rendering, and removal of the Start size/position editor. The Mac and Thor QoL Test installations have 275 mod files verified each, with saves/settings preserved. Full gameplay validation and Thor confirmation of the navigation flicker fix remain pending. [Current evidence and limits](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/VERIFICATION.md) · [Screenshot provenance](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/SCREENSHOTS.md).

@@ -18,7 +18,7 @@
   {
     "id": "daycare-viewer",
     "name": "Day Care Viewer",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "entry": "main.lua",
     "source": "mods/daycare-viewer",
     "files": {
@@ -26,7 +26,7 @@
       "main.lua": "857066c4d0c3dfc51b8e7dfe28d8dfde7db5769085fb04187c45abd38f5369ed",
       "mod.card": "a060e64f83554b4267ee47ab2cb3f7d7faa3f33d32007ea7dee3afdea4e51d0e",
       "model.lua": "9839d433d963d37f89ee8a3483e9481b0bbfe915b27fa5e3012a57e952c0d3ff",
-      "native_legality.lua": "7282ee821791e608cc7cb9e002975dd52f812e1bfc43ef4dbe2f61e403b50a48",
+      "native_legality.lua": "a6f1fa36e5c33e38feb3e83df974fa673bc1a6c6d9f3357cc17f8ad93f7e6e66",
       "screen.lua": "4ec837fec454a8b96fa6fc02e0f75ffa8aa8c47d3ffa47f82a4d2798807c3757",
       "travel.lua": "be03bec08b28bbbee2a401395d9259b29a92d3bbb997a2a234e317882e7ba5e8",
       "view.lua": "44ef5a1a40447e74d903b97243c73fbcf61a0d83f8350d923a50ee381dad6493"
@@ -45,17 +45,19 @@
   },
   {
     "id": "fly-teleport",
-    "name": "Fly Teleport",
-    "version": "0.2.2",
+    "name": "Teleport",
+    "version": "0.3.0",
     "entry": "main.lua",
     "source": "mods/fly-teleport",
     "files": {
       "catalog.lua": "130e8890cf26e36ae687c45ae5bbcfa3d39fc46489c787dcfca6c149e8871f0e",
-      "main.lua": "1700dbfbcfee31a8b2fb867a0d3f3120cf1e3db98e8535436a662106574494c6",
+      "locations.lua": "ae25e71e67759bef8f88cb1dea484cbc8da9138312443f08a82e826b472c6eb7",
+      "main.lua": "8c977220a5bb3db68d4034c7bcaee40e608fa7b6c153dafc0ea4d58420f49073",
       "menu.lua": "c44889cdbdac8c18474ac70e7e282b0091dc92946edbbdb19ffbff5ec963d380",
-      "mod.card": "38029b0c4d68607835579f92c2bc8a26cf00de5378f5ddc96532673c574e0287",
+      "mod.card": "0fad2cde28b76cc26bc8d3660fa991c5009befea4b5d6594d5748f8b750432b6",
+      "poi.lua": "9f3a9cbe3fbf7dc50048b763ffd95d76f3298564482943b851a8e3e9e919c5e7",
       "runtime.lua": "15395d9c6047d6b4eee847792b126891d216bf037e46e893e74bf52cfd4db64f",
-      "travel.lua": "4f761298cee165d90233e049b37741f8247fccf6150146df6f7862f16967a32d",
+      "travel.lua": "3bd6942945cb5f287c434a15ec94a03e696f800fc273111ae65bfd5899c8514f",
       "view.lua": "3fa69a0dd3f6215f377a3ffbfa130d110559b9de3b3b6121ab6963a52b47a716"
     }
   },
@@ -314,6 +316,20 @@
     }
   },
   {
+    "id": "frlg_qol_safari_tools",
+    "name": "Safari Zone Tools",
+    "version": "0.1.0",
+    "entry": "main.lua",
+    "source": "qol/mods/frlg_qol_safari_tools",
+    "files": {
+      "main.lua": "b3d19f9a8fe4a4bdd7e62bc34506a88560919f0df12450d296eb70a8c7bcca28",
+      "menu.lua": "c44889cdbdac8c18474ac70e7e282b0091dc92946edbbdb19ffbff5ec963d380",
+      "model.lua": "03b99188a8a68f6a5085a624aff88a09447ea9f0f1567cc9687f59255710ef21",
+      "runtime.lua": "15395d9c6047d6b4eee847792b126891d216bf037e46e893e74bf52cfd4db64f",
+      "view.lua": "3fa69a0dd3f6215f377a3ffbfa130d110559b9de3b3b6121ab6963a52b47a716"
+    }
+  },
+  {
     "id": "frlg_qol_shop_count",
     "name": "Shop Owned Count",
     "version": "0.2.0",
@@ -350,6 +366,26 @@
     }
   },
   {
+    "id": "frlg_qol_walk_through_walls",
+    "name": "Walk Through Walls",
+    "version": "0.1.0",
+    "entry": "main.lua",
+    "source": "qol/mods/frlg_qol_walk_through_walls",
+    "files": {
+      "main.lua": "495df39717a000a724f47731da7d8bf0c6d46ff226294be6d90e6cda9997a6ea"
+    }
+  },
+  {
+    "id": "frlg_qol_zoom_controls",
+    "name": "Zoom Controls",
+    "version": "0.1.0",
+    "entry": "main.lua",
+    "source": "qol/mods/frlg_qol_zoom_controls",
+    "files": {
+      "main.lua": "66b09b8609d4771576d8bd001839c8cdc62ebc04c80998aadd75b4d1289eb057"
+    }
+  },
+  {
     "id": "frlg_scrollable_start",
     "name": "Scrollable Start Menu",
     "version": "0.3.1",
@@ -366,7 +402,7 @@
   {
     "id": "pokemon-services",
     "name": "Pokemon Services",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "entry": "main.lua",
     "source": "mods/pokemon-services",
     "files": {
@@ -375,7 +411,7 @@
       "main.lua": "e77c34ffba43ea56b09cd94bff2447db68d927941cc60b587ff8e7006b9b9995",
       "menu.lua": "36436686f277df576215b4936c5ac0826ace5abedf88c26938d50f2734ab7d79",
       "mod.card": "d8a6de63e568d853f8a917b9009771756c593795fc6ec6806e24dfbe5365b3af",
-      "native_legality.lua": "7282ee821791e608cc7cb9e002975dd52f812e1bfc43ef4dbe2f61e403b50a48",
+      "native_legality.lua": "a6f1fa36e5c33e38feb3e83df974fa673bc1a6c6d9f3357cc17f8ad93f7e6e66",
       "runtime.lua": "6823afffa73310ee09fcb9458c787427143d993a34bdad2becd96161a2498f4f",
       "screen.lua": "e92315bbb6d4ddb041d4d245119068aa9d3d61f184b3db057d021e2a7ce3adfb",
       "services.lua": "0a5f416beba2e8cbc70166fd3e5cd28dc151ce2278860c417b32865e01bc50ba",

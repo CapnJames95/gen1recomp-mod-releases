@@ -1,14 +1,26 @@
-# QoL Suite 0.3.11
+> **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
+
+**Walk Through Walls:** disabled by default. Enable in QOL SETTINGS; hold keyboard R or controller R/RB to pass through solid obstacles. SELECT opens configurable bindings. Releasing restores collision.
+
+**Zoom Controls:** configurable keyboard/controller hotkey; cycle available levels or toggle two chosen levels. Optional independent indoor/outdoor zoom. Open the Suite settings and select Zoom Controls; defaults are F10, cycle mode and automatic area zoom OFF.
+
+# QoL Suite 0.3.13
+
+## Features introduced in 0.3.12
+
+**Safari Zone Tools** is a new individually configurable component. Open **START → QOL → SAFARI TOOLS** (or its Dual Screen tile). Choose normal/x2/x5/unlimited steps and normal/50/99/unlimited Safari Balls. Allowances apply at entry; Refill applies them to the current game. At exhaustion, choose **Refill balls and steps** or **Retire from Safari** before native time-up text. The final ball's catch/flee outcome is retained, and Shiny Hunter pauses for the choice. Catch rates and fleeing are unchanged.
+
+**Teleport** opens with **Fly Destinations**, **Points of Interest** and **Saved Locations**, in that order; select one to open its list. Left/Right skips five rows. Save and name up to 50 positions, rename/reorder/replace/delete them, mark favourites, revisit the last ten destinations or return to your previous position. Data belongs to this save and edition; save normally to retain it. POIs recognise existing save flags and recorded visits; locations without native visit records use area-progress milestones. The default-OFF Unlock All option remains available. Arrival checks reject blocked or restricted tiles; Surf/Dive landings require the relevant owned HM and badge. Berry patch destinations appear when Hoenn Tools is enabled.
 
 ## Changes since public v0.3.10
 
-Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Updates all 32 components for game-appropriate five-game support. Fixes daycare deposits, native text, bag touch actions, bike swapping and Repel handling; Hoenn tools use Ruby/Sapphire’s native facilities.
+Support for **all five Gen 3 games — Ruby, Sapphire, Emerald, FireRed and LeafGreen — is here**. Updates all 35 components for game-appropriate five-game support. Fixes daycare deposits, native text, bag touch actions, bike swapping and Repel handling; Hoenn tools use Ruby/Sapphire’s native facilities.
 
 
 <!-- RS-COMPATIBILITY -->
 ## Ruby and Sapphire compatibility
 
-All 32 components now recognize Ruby and Sapphire where applicable. Native HM shortcuts require the owned HM and normal badge permissions, but do not require a compatible party species. Hoenn tools use Trainer’s Eyes, Battle Tower records and native Level 50/100 party-entry checks in Ruby/Sapphire; Emerald-only facilities and weather-cave features stay restricted to Emerald. Teleport offers 16 native Ruby/Sapphire Fly destinations with progression locks enabled by default. Route 117 daycare, Pokémon services and summary IV/EV integration use native Ruby/Sapphire paths.
+All 35 components now recognize Ruby and Sapphire where applicable. Native HM shortcuts require the owned HM and normal badge permissions, but do not require a compatible party species. Hoenn tools use Trainer’s Eyes, Battle Tower records and native Level 50/100 party-entry checks in Ruby/Sapphire; Emerald-only facilities and weather-cave features stay restricted to Emerald. Teleport offers 16 native Ruby/Sapphire Fly destinations with progression locks enabled by default. Route 117 daycare, Pokémon services and summary IV/EV integration use native Ruby/Sapphire paths.
 
 Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks do not replace exhaustive gameplay testing.
 <!-- /RS-COMPATIBILITY -->
@@ -31,9 +43,9 @@ Validated with gen1recomp **0.3.56 (Mac) / 0.3.57 (Android)**. Automated checks 
 
 0.2.1: Fly Teleport lists destinations first, then the inline Unlock All toggle, followed by Help and Close.
 
-**32 QoL components in one importable mod**, with individual on/off switches and their original options. Ruby, Sapphire, Emerald, FireRed and LeafGreen support; gen1recomp 0.3.56+ recommended. Each game shows 31 applicable tools: Disable L/R Help is FRLG-only and Hoenn Tools is Hoenn-only, with game-specific facilities. Gameplay-changing options such as reusable TMs and the wild inspector retain their existing defaults.
+**35 QoL components in one importable mod**, with individual on/off switches and their original options. Ruby, Sapphire, Emerald, FireRed and LeafGreen support; gen1recomp 0.3.56+ recommended. Each game shows 34 applicable tools: Disable L/R Help is FRLG-only and Hoenn Tools is Hoenn-only, with game-specific facilities. Gameplay-changing options such as reusable TMs and the wild inspector retain their existing defaults.
 
-[Download the suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.11.zip) · [Validation and limitations](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) · [Included components and source hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/components.json)
+[Download the suite](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip) · [Validation and limitations](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/VALIDATION.md) · [Included components and source hashes](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/components.json)
 
 ## New in 0.3.0
 
@@ -72,7 +84,7 @@ The suite's manager ENABLED switch gates the whole package. Individual switches 
 
 ## Compatibility
 
-The package embeds the canonical runtime files from the 24 `qol/mods` modules plus Disable L/R Help, Scrollable Start Menu, Summary IVs, Quick Heal Party, Capture Assistant, Pokemon Services, Fly Teleport and Day Care Viewer. There is exactly one installable root manifest. Components initialize once at `game.ready`, using the engine's original per-ID option and storage APIs. They do not appear as 32 extra installed mods.
+The package embeds the canonical runtime files from the 27 `qol/mods` modules plus Disable L/R Help, Scrollable Start Menu, Summary IVs, Quick Heal Party, Capture Assistant, Pokemon Services, Fly Teleport and Day Care Viewer. There is exactly one installable root manifest. Components initialize once at `game.ready`, using the engine's original per-ID option and storage APIs. They do not appear as 35 extra installed mods.
 
 Dual Screen 0.3.21 resolves active bundled features through an explicit compatibility API. This preserves Home availability, party/map context actions, HM field checks, shared ball-menu ownership, native IV Summary routing and hold-to-fast-forward exports. Component failures are reported in the host's error feed and the settings menu; failed components remain inactive.
 
@@ -132,4 +144,10 @@ Fast Forward defaults to F9 (keyboard) and L3 (controller). Dual Screen screen s
 
 Regression checks cover F9/L3 defaults, Right Ctrl falling through, Y not swapping, F6 edge handling and R3 overlay activation.
 
-[Current screenshots for every included component](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/RELEASE-SCREENSHOTS.md).
+[Published screenshots (Safari Tools and new Teleport screens are not yet included)](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/docs/RELEASE-SCREENSHOTS.md).
+
+Safari entrance POIs land outside reception in all five games. Enter and pay normally; old saved/recent destinations inside Safari reception are blocked.
+
+Building POIs land just outside the native entrance door, including services on upper floors. Enter normally to reach the service; cave and other exploration POIs retain their existing destinations.
+
+Walk Through Walls temporarily yields to normal collision while Surfing, underwater or mounting/dismounting Surf. Use a normal shoreline to land; holding the hotkey works again once on foot.

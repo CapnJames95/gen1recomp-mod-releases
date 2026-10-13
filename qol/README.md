@@ -1,10 +1,10 @@
 # FRLG QoL Suite
 
-The [QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) is the only installable QoL package, containing 32 individually configurable components, with 31 applicable in each of Emerald, FireRed and LeafGreen. [Download and installation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/qol/PACKAGES.md). Disable older standalone packages and restart before using it.
+The [QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md) is the only installable QoL package, containing 35 individually configurable components in the local 0.3.12 build, with 34 applicable in each of Ruby, Sapphire, Emerald, FireRed and LeafGreen. [Download and installation](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/qol/PACKAGES.md). Disable older standalone packages and restart before using it.
 
 Use **START → QOL → QOL SETTINGS** for feature toggles/options and **QOL SHORTCUTS** for configurable bindings with context descriptions. Dual Screen requires 0.3.21+.
 
-The `mods/` folders here contain component documentation. Runtime code is included in the suite ZIP. They are not separate distributed mods. Component manager previews have been refreshed from current source; older test reports are labelled historical. Use the suite menus for installed settings.
+The `mods/` folders here are canonical component source retained for the suite builder and regression tests. They are not separate distributed mods. Component manager previews have been refreshed from current source; older test reports are labelled historical. Use the suite menus for installed settings.
 
 ## Main controls
 
@@ -39,7 +39,7 @@ Read [VALIDATION.md](https://github.com/CapnJames95/gen1recomp-mod-releases/blob
 
 The source and packages contain no ROMs, extracted game graphics, audio, map data or species tables. No existing save was opened or modified by validation. New game progress made while using a mod is not undone by uninstalling it.
 
-Source is in `mods/`, reproducible checks in `tests/`, machine-readable modkit results in `check-results.json`, and the single installable [QoL Suite ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.3/frlg-qol-suite-0.3.9.zip).
+Source is in `mods/`, reproducible checks in `tests/`, machine-readable modkit results in `check-results.json`, and the single installable [QoL Suite ZIP](https://github.com/CapnJames95/gen1recomp-mod-releases/releases/download/v1.5.0/frlg-qol-suite-0.3.13.zip).
 
 ## Screenshot gallery
 

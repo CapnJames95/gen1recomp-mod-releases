@@ -1,4 +1,6 @@
-# Encounter Reset 0.4.2
+> **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
+
+# Encounter Reset 0.4.3
 
 ## Changes since public v0.4.1
 
@@ -46,7 +48,7 @@ Native menu previews below use synthetic fixture state, not live gameplay captur
 
 ## Install and use
 
-Import `encounter-reset-0.4.2.zip` through **MODS → Import mod .zip**, enable it and restart. Supports FireRed, LeafGreen and Emerald, mod API 2, with `engine_internals` permission.
+Import `encounter-reset-0.4.3.zip` through **MODS → Import mod .zip**, enable it and restart. Supports FireRed, LeafGreen and Emerald, mod API 2, with `engine_internals` permission.
 
 1. Pause Shiny Hunter / Encounter Tour automation. Keep a backup of your save.
 2. Leave the map containing the encounter you want to restore.

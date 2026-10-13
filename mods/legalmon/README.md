@@ -303,7 +303,7 @@ luajit mods/examples/legalmon/tests/trades_test.lua
 luajit mods/examples/legalmon/tests/movehistory_test.lua
 luajit mods/examples/legalmon/tests/eggmoves_test.lua
 luajit mods/examples/legalmon/tests/breedingchains_test.lua
-python3 tools/modkit.py pack mods/examples/legalmon -o legalmon-0.17.0.zip
+python3 tools/modkit.py pack mods/examples/legalmon -o legalmon-0.18.3.zip
 ```
 
 Set `MODKIT_LUAJIT` to a LuaJIT executable path if it is not on PATH. Tests use synthetic species data and cover RNG vectors/reversal, impossible exact spreads, malformed requests, search exhaustion, edition/evolution constraints, native hook integration, party/PC capacity, duplicate/stale proof refusal, encrypted cartridge record round trips, UI search/controllers, presets, confirmation, favourites and report export. Test fixtures are excluded from the distributable archive.

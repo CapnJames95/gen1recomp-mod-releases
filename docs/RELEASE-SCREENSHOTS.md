@@ -1,10 +1,12 @@
-# v1.3 screenshot coverage
+# Historical screenshot gallery
 
-These current native renderer previews use synthetic sessions, not AI-generated artwork or new hardware gameplay captures. A settings view is used for background-only features. [Provenance and limitations](SCREENSHOTS.md).
+These earlier native renderer previews use synthetic sessions, not AI-generated artwork or new hardware gameplay captures. A settings view is used for background-only features. [Provenance and limitations](SCREENSHOTS.md).
+
+No new v1.5.0 screenshots are claimed. The new Safari Tools, Zoom Controls and Walk Through Walls components are documented in their READMEs and have no current screenshots.
 
 ## Main mods
 
-| Mod | Current view |
+| Mod | Earlier view |
 | --- | --- |
 | Gen3DualScreen | [Preview](screenshots/current/emerald-home.png) |
 | LegalMon | [Preview](screenshots/current/emerald-legalmon.png) |
@@ -18,9 +20,9 @@ These current native renderer previews use synthetic sessions, not AI-generated 
 
 [Feature switches](screenshots/qol-suite-menu.png) · [Feature options](screenshots/qol-suite-options.png) · [Shortcuts](screenshots/qol-suite-shortcuts.png)
 
-Each component below is included in the single suite download. Disable L/R Help applies only to FR/LG; Hoenn Tools applies only to Emerald. These component-manager views show the component metadata/options, not separate downloads.
+Each component below is included in the single suite download. Disable L/R Help applies only to FR/LG; Hoenn Tools applies to Ruby, Sapphire and Emerald. These component-manager views show the component metadata/options, not separate downloads.
 
-| Component | Current settings/details |
+| Component | Earlier settings/details |
 | --- | --- |
 | Capture Assistant | [Details](screenshots/capture-assistant-detail.png) · [Options](screenshots/capture-assistant-options.png) |
 | Day Care Viewer | [Details](screenshots/daycare-viewer-detail.png) |

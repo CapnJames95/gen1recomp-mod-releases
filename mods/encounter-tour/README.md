@@ -1,4 +1,6 @@
-# Encounter Tour 0.3.2
+> **Engine 0.3.85 compatibility:** fixes startup after removal of the legacy roamer API. Older engines retain their original correction. Startup/regression checks passed; full gameplay and Android validation of this release remain incomplete.
+
+# Encounter Tour 0.3.3
 
 ## Changes since public v0.3.1
 
@@ -46,7 +48,7 @@ A standalone gen1recomp FireRed/LeafGreen teleport mod with the same native blue
 
 ## Install
 
-Import `encounter-tour-0.3.2.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed, LeafGreen or Emerald, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
+Import `encounter-tour-0.3.3.zip` in gen1recomp's mod manager, enable **Encounter Tour** for FireRed, LeafGreen or Emerald, and restart if requested. Open your save, then choose **START → ENCOUNTER TOUR**. Alternatively, extract the archive into a new `encounter_tour` folder in the game's mods directory, with `manifest.json` directly inside that folder.
 
 Tested against an isolated copy of the installed **0.3.21** engine payload using both games' imported data. This uses engine internals; future releases may need an adapter update. It does not modify installed game files or live saves during installation. Pokemon art and UI assets load from your own imported game; the mod ZIP contains no ROM data.
 

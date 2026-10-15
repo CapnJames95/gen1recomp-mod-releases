@@ -42,3 +42,8 @@ Dual Screen odds produced 500/500 shiny encounters across the five games at 1/1;
 ## Reusable TM fix (0.3.14)
 
 Reproduced consumption with the released 0.3.13 component in all five games. Native-data automated regressions on engine 0.3.56 cover party-menu immediate teaching, replacement completion callbacks, cancellation, ordinary item removal and feature OFF; the fixed component passed all five games. Engine 0.3.85 source retains the same bypassing party-menu path. Presentation/choice UI is stubbed; this is not a full manual gameplay pass on 0.3.85.
+
+
+## Repel reuse movement fix (0.3.15)
+
+Reproduced the released component leaving the native step-event queue busy after Yes/No in all five games. Automated native-data regressions on engine 0.3.56 now pass for Yes, No, B/back, empty bags, disabling while open, repeated prompts and subsequent field events. Only the native wore-off text is automatically dismissed; the reuse menu and event queue execute normally. Strict modkit validation and lint pass. This is not a new manual hardware or full latest-engine gameplay validation.

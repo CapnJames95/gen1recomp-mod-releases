@@ -282,11 +282,11 @@
   {
     "id": "frlg_qol_repel_reuse",
     "name": "Repel Reuse Prompt",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "entry": "main.lua",
     "source": "qol/mods/frlg_qol_repel_reuse",
     "files": {
-      "main.lua": "17f4d78b735a17a6ef6007b426230feb993051d25e120e29ddddb1fe5533dd0f",
+      "main.lua": "7d14a967cbd7f586867e1414ae61f2511b63785bfeff2ff2e90cd03d41a3a166",
       "mod.card": "8c7a7cfc6e9c74621ea4503e9e7eda3a411a734625bc377097f858bd414392b2",
       "support.lua": "7a7b8f6407350c76b3f46a710828080a4ffb0110ffd9d71a433a4507c7091ab6"
     }

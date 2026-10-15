@@ -1,3 +1,5 @@
+> **Fixed in QoL Suite 0.3.15:** Fixes movement freezing after choosing Yes or No in the Repel reuse prompt across FireRed, LeafGreen, Ruby, Sapphire and Emerald. The prompt now completes its field event correctly.
+
 # Repel Reuse Prompt
 
 **Suite component source:** This feature is now distributed only in [FRLG QoL Suite](https://github.com/CapnJames95/gen1recomp-mod-releases/blob/main/mods/frlg-qol-suite/README.md). Import the suite, then use **START → QOL → QOL SETTINGS** to toggle it or edit its options. Disable any older standalone installation and restart. This folder is retained for rebuilding and testing, not as a separate release.
